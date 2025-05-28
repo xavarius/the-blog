@@ -21,12 +21,15 @@
 title: Maciej Malak
 email: hellomonkeydevs@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  You can review testimonials here, companies I fored with here and my values here. Here are my blog posts.
+  You can review testimonials here, companies I worked with here and my values here. Here are my blog posts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://maciejmalak.com" # the base hostname & protocol for your site, e.g. http://example.com
-author: Maciej Malak
+author: Contact me at
 github_username: xavarius
 linkedin_username: maciejmalak
+twitter_username: MonkeyDevsPl
+instagram_username: barabaszbonawentura
+stackoverflow_id: "2230031"
 medium_profile_url: "https://medium.com/@maciekmalak"
 job_title: Stuff Software Engineer
 

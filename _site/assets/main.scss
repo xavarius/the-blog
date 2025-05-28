@@ -1,0 +1,25 @@
+@import "minima"; // Import Minima's default styles
+
+// Your custom styles below
+
+// Widen the social media column in the footer
+.footer-col-1 {
+  width: calc(30% - 15px); // Was 35%
+}
+
+.footer-col-2 {
+  width: calc(30% - 15px); // Was 20% - This is the social media column
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-3 {
+  width: calc(40% - 15px); // Was 45%
+}
+
+// Increase footer padding to make it appear lower
+.site-footer {
+  padding-top: 15px;    // Original was 30px
+  padding-bottom: 5px; // Original was 30px; // Original was 30px
+}
