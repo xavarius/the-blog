@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   You can review testimonials here, companies I worked with here and my values here. Here are my blog posts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://maciejmalak.com" # the base hostname & protocol for your site, e.g. http://example.com
-author: Contact me at
+author: "Maciej Malak"
 github_username: xavarius
 linkedin_username: maciejmalak
 twitter_username: MonkeyDevsPl
@@ -34,9 +34,9 @@ medium_profile_url: "https://medium.com/@maciekmalak"
 job_title: Stuff Software Engineer
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
+# plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
