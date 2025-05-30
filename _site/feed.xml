@@ -1,1 +1,790 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-29T14:55:42+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maciej Malak</title><subtitle>You can review testimonials here, companies I worked with here and my values here. Here are my blog posts.</subtitle><author><name>Maciej Malak</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-30T22:03:07+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maciej Malak</title><subtitle>You can review testimonials here, companies I worked with here and my values here. Here are my blog posts.</subtitle><author><name>Maciej Malak</name></author><entry><title type="html">My Medium Partner Program Experiment: A Look at Earnings</title><link href="http://localhost:4000/2025/05/30/my-medium-partner-program-experiment.html" rel="alternate" type="text/html" title="My Medium Partner Program Experiment: A Look at Earnings" /><published>2025-05-30T00:00:00+02:00</published><updated>2025-05-30T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/30/my-medium-partner-program-experiment</id><content type="html" xml:base="http://localhost:4000/2025/05/30/my-medium-partner-program-experiment.html"><![CDATA[<p>For a period, I experimented with Medium.com’s Partner Program, placing some of my articles behind their paywall. It was an interesting venture into monetizing blog content directly through the platform. The earnings weren’t astronomical, and I wasn’t even trying to optimize for it. I learned one thing. There too much paid content on the internet. I can’t justify making money from my blog posts. Let’s share knowledge for free.</p>
+
+<p>Here’s a quick rundown of which posts generated some earnings during that time:</p>
+
+<ul>
+  <li>How to start writing reusable components for Android apps? - $37</li>
+  <li>Be effective with Bitrise CI for Android—lessons I learned the hard way. - $8</li>
+  <li>You shouldn’t take AWS Pearson Vue Online Proctoring, if you can, and here is why - $8</li>
+  <li>Android 15 enhanced App Links is an opportunity to give a user an excellent experience - $0.20</li>
+  <li>App Links: Associating Multiple Android App Build Types with a Single Domain - $0.20</li>
+  <li>Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI - $0.20</li>
+  <li>Take your fucking notes in the era of AI. - $0.20</li>
+  <li>How do I feel like an ADHD-powered Software Engineer? - $0.10</li>
+</ul>
+
+<p>So, dear readers, that’s for that couple cups of good coffee. :coffee:</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[For a period, I experimented with Medium.com’s Partner Program, placing some of my articles behind their paywall. It was an interesting venture into monetizing blog content directly through the platform. The earnings weren’t astronomical, and I wasn’t even trying to optimize for it. I learned one thing. There too much paid content on the internet. I can’t justify making money from my blog posts. Let’s share knowledge for free.]]></summary></entry><entry><title type="html">Take your fucking notes in the era of AI.</title><link href="http://localhost:4000/2025/02/26/take-your-fucking-notes-in-the-era-of-ai.html" rel="alternate" type="text/html" title="Take your fucking notes in the era of AI." /><published>2025-02-26T00:00:00+01:00</published><updated>2025-02-26T00:00:00+01:00</updated><id>http://localhost:4000/2025/02/26/take-your-fucking-notes-in-the-era-of-ai</id><content type="html" xml:base="http://localhost:4000/2025/02/26/take-your-fucking-notes-in-the-era-of-ai.html"><![CDATA[<h3 id="take-your-fucking-notes-in-the-era-of-ai">Take your fucking notes in the era of AI.</h3>
+
+<p>And poke with “AI” but does not assume it’s gonna do the job if you can’t.</p>
+
+<p><img src="/assets/1*9lusakuUa6cjSylbVHjWyw.jpeg" alt="Yeah" /></p>
+
+<p>Most of us, young folks, are aware that in the era of so-called-AI or so-called-Gen-AI everything needs to be automated, are we? Is that what we want?</p>
+
+<p>I doubt that, highly.</p>
+
+<p>I’m writing this from a position of a Software Engineer who, <em>ugh,</em> want AI to success. I want us to do crazy, creative stuff with less overhead. No, I don’t mean stakeholder value, I mean we need to grow us humans and finding new ways, solving challenges and making things better is what we have to focus on.</p>
+
+<p>Anyway, if we’re aware that AI does not solve complex challenges nor it’s going to soon enough (or not and I will need to change my mind 🤷‍♂) why are we investing more and more time and money into “AI-based tool”.</p>
+
+<p>I’m doing it for two reasons. The first one is that I’m interested in technology in general and its (often overrated) impact on the society and economy from a long, long time. I also want boring tasks to be done quicker so I can do more relevant work — or spend more time with my family.</p>
+
+<p>The second reason is quite prosaic — I fear that I won’t stand out anymore. I won’t be relevant in the era of aggressive capitalism without embracing my tech-bros-solution to everything = AI tools. And I’m guilty as charged! Currently paying for Windsurf, ChatGPT and Copilot. L O L</p>
+
+<p>Why!?</p>
+
+<p>Back to the topic.</p>
+
+<p>If you realised that people around you stoped taking notes during meetings… ask them why? Is that because automatic AI-based transcription is running in the background? Ask them this: What have you been noting so far, mate? What people said? What’s the role of taking notes?</p>
+
+<p>I stopped taking notes for a brief moment. Now, I’m back to it.</p>
+
+<p>I realised this:</p>
+
+<p>Taking notes is never about what people have said.</p>
+
+<p>Taking notes it’s about building a mental model of the challange the team is facing. Pinpointing crucial knowledge and creating wisdom from it. It’s about uncovering insights and directions by asking the right questions, connecting dots, nailing down assumptions and making space for thoughts and ideas that are important but does not necessary have to be addressed here and now.</p>
+
+<p>I cannot really express how this is different to the AI based transcription happening in the background.</p>
+
+<p>So, please, do take your fucking notes. #okBoomer</p>
+
+<p>Draw manually (on screen too!) and ideate like a human because that will always be a worthy, interesting and fulfilling task to do.</p>
+
+<p>And try out AI tools from time to time. They might help with some of your challenges.</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[Take your fucking notes in the era of AI.]]></summary></entry><entry><title type="html">Android 15 enhanced App Links is an opportunity to give a user an excellent experience</title><link href="http://localhost:4000/2025/01/29/android-15-enhanced-app-links-is-an-opportunity-to-give-a-user-an-excellent-experience.html" rel="alternate" type="text/html" title="Android 15 enhanced App Links is an opportunity to give a user an excellent experience" /><published>2025-01-29T00:00:00+01:00</published><updated>2025-01-29T00:00:00+01:00</updated><id>http://localhost:4000/2025/01/29/android-15-enhanced-app-links-is-an-opportunity-to-give-a-user-an-excellent-experience</id><content type="html" xml:base="http://localhost:4000/2025/01/29/android-15-enhanced-app-links-is-an-opportunity-to-give-a-user-an-excellent-experience.html"><![CDATA[<h3 id="android-15-enhanced-app-links-is-an-opportunity-to-give-a-user-an-excellent-experience">Android 15 enhanced App Links is an opportunity to give a user an excellent experience</h3>
+
+<p><img src="/assets/1*b6AzImEA43XyjdHhOQ1YNg.png" alt="Featured image for &quot;Android 15 enhanced App Links...&quot;" /></p>
+
+<p>In the latest Android 15 update, developers are greeted with enhanced control over App Links. It’s introducing a level of flexibility and precision that was previously unattainable. Let’s talk quickly about that.
+For the example and summary please jump at the end of the article.</p>
+
+<p>Software Engineers now have the power to <em>exclude</em> or <em>allow</em> app links.
+It’s something new, delivering fine grained experience - as you can imagine disabling/enabling an entire group of app links or <em>a very specific</em> <em>scenario</em>
+is now available to us.</p>
+
+<p>On top of the above, beyond the traditional <code class="language-plaintext highlighter-rouge">&lt;data&gt;</code> attributes,
+Android 15 extends its functionality to allow filtering based on:</p>
+
+<ul>
+  <li>a query parameter and the corresponding value,</li>
+  <li>fragment,</li>
+  <li>and path prefix;</li>
+</ul>
+
+<p>The granular approach Google introduced to app link management ensures that a user is taken to the appropriate resources in your application.
+Mixing that with accurate data being passed as query params, in example,
+a user can see improvements from enhanced filtering and smoother experience, to less bandwidth heavy and more narrowed
+API calls! As long as your code can handle it. ;)</p>
+
+<p>Embracing these updates, developers can craft more refined and targeted app experiences, while users enjoy more customised interaction with their apps.</p>
+
+<hr />
+
+<p>No more talking!</p>
+
+<p><img src="/assets/1*i5SnphHIujLd3oz9CIrDfA.gif" alt="No more talking GIF" /></p>
+
+<hr />
+
+<p>Lets dive into some details and examples.</p>
+
+<p><img src="/assets/1*_NzlS8Vr5mhbBRsD-KnLMw.jpeg" alt="Review the new stuff. The work is mine." />
+<em>Review the new stuff. The work is mine.</em></p>
+
+<p>Having in mind the fact, that nothing is perfect, including the schema and the designs on URL/URI in every company, the new App Links capabilities could save us from impossible scenarios.</p>
+
+<p>I will omit the path prefix examples, since it’s quite obvious, and on top of that, we all had <em>pathPattern</em> already defined in the <code class="language-plaintext highlighter-rouge">&lt;data&gt;</code> attributes.
+Please see right hand side of the above image.</p>
+
+<p>I would argue that a mix of allow/block lists and the query parameter filter group is a simple, yet powerful feature delivered to our hands. I myself, benefited from in the following scenario.</p>
+
+<p>In the company I worked for, we had a request to reroute mobile web users to the native application <strong>only and only</strong> when a particular query parameter with a particular value is present and when another query parameter with any value is present as well. It would enable us to personalise the experience for a given user, I cannot really tell the details now.</p>
+
+<p>Although, the challange was… the domain, host, schema and path was always the same. We obviously wasn’t able to change schema nor even path, since it would influence the entire business (web+native).
+Also, those links were the most common URLs (schema) used by the company. We weren’t really ready nor happy to handle all of the variations. We didn’t want to provide a generic experience, like, you’re being thrown into a main screen in 90% of times — since mobile web experience was very good. Native mobile experience was obviously excellent but still narrowed to a few features.</p>
+
+<p>I want you to imagine how could you improve your user experience and business metric as well. If you had a hard time to get clues from the above article here is a short list of examples and ideas you could start implementing with fine-grained app link filters:</p>
+
+<ul>
+  <li>You can lower the bandwidth used — the amount of data being transferred via API calls, by both getting precise data from app links and by using those in API calls.</li>
+  <li>You can easily filter out the content you do not need — and narrow it to the stuff your user is really looking for.</li>
+  <li>You can be more specific around business metrics and analytics and how web and native apps work together.</li>
+  <li>You can prevent to fallback to native apps whenever they aren’t ready while attaining nice app links coverage where needed.</li>
+  <li>You can workaround/hackaround bad URLs schema design in your company and get what you really need for our app/user.</li>
+</ul>
+
+<hr />
+
+<p>Thanks for reading, hit that clap or subscribe button hard! :)</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[Android 15 enhanced App Links is an opportunity to give a user an excellent experience]]></summary></entry><entry><title type="html">How do I feel like an ADHD-powered Software Engineer?</title><link href="http://localhost:4000/2025/01/14/how-do-i-feel-like-an-adhd-powered-software-engineer.html" rel="alternate" type="text/html" title="How do I feel like an ADHD-powered Software Engineer?" /><published>2025-01-14T00:00:00+01:00</published><updated>2025-01-14T00:00:00+01:00</updated><id>http://localhost:4000/2025/01/14/how-do-i-feel-like-an-adhd-powered-software-engineer</id><content type="html" xml:base="http://localhost:4000/2025/01/14/how-do-i-feel-like-an-adhd-powered-software-engineer.html"><![CDATA[<hr />
+
+<p>How do I feel like an ADHD-powered Software Engineer?</p>
+
+<p>It’s like being a chipset with one processor and one virtual thread. However, you’re forced to run software that requires sophisticated parallel processing. You know you could do better sometimes but you can’t.</p>
+
+<p>It’s like being sure you have a lot of cache memory available but the miss cache event happens too often since your algorithm is quite f*cked up.</p>
+
+<p>You know you have a massive L1 and L2cache size. Your processor runs more efficiently than most people’s processors but just for the shortest period. This leads to overheating again.</p>
+
+<p>On the other hand, the L3 cache is not even considered as the source of commands. So, in the end, you forget to do basic stuff. For example, turn on the cooling system (do some rest). Leading to being nearly dead at the end of the day (from overheating) since the deadline triggers alarms instead of planning for the maintenance.</p>
+
+<p>It’s like you know your memory drive cannot store commands (ideas, plans) so you have to process them NOW or NEVER. Then it’s gone.</p>
+
+<p>You’re aware that you cannot process boring stuff for too long. The system would eventually shut down since “boring” stuff makes gooooo “blue screen of death”.</p>
+
+<p>It makes you stuck on tasks that should take seconds for days. And you need someone to help you reset.</p>
+
+<p><a href="https://www.youtube.com/watch?v=DPqdyoTpyEs">Have you tried to turn it off and on again?</a></p>
+
+<p>You are supposed to!</p>
+
+<p>But do not worry. Attention distraction disorder is a mixture of super-powers which make you an interesting person. But yeah, it’s a super-burden as well. We’re not just happy people with lots of energy.</p>
+
+<p>Be aware of yourself. Be kind. Cut off daily information ingestion. Take care of yourself. Take breaks. Change your habits and follow your dreams when you can. Take a rest, when you need it.<br />
+The world will wait. Even if the entire world is screaming the opposite.</p>
+
+<p>PS</p>
+
+<p>This is my own, a bit satirical opinion on ADHD/ADD. Please do not treat it as guidance, because I’m not an expert and we differ.</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI</title><link href="http://localhost:4000/2022/12/06/mobile-devops-blueprint-jumpstart-into-android-ui-testing-workflow-on-bitrise-ci.html" rel="alternate" type="text/html" title="Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI" /><published>2022-12-06T00:00:00+01:00</published><updated>2022-12-06T00:00:00+01:00</updated><id>http://localhost:4000/2022/12/06/mobile-devops-blueprint-jumpstart-into-android-ui-testing-workflow-on-bitrise-ci</id><content type="html" xml:base="http://localhost:4000/2022/12/06/mobile-devops-blueprint-jumpstart-into-android-ui-testing-workflow-on-bitrise-ci.html"><![CDATA[<p><img src="/assets/1*i5a9u-Ec_NYsMcKm1e8MYw.jpeg" alt="Illustration of a child jumping on a trampoline" />
+<em>Image source: <a href="https://vectorportal.com/pt/vector/crian%C3%A7a-pulando-em-um-trampolim/35471">Creative Commons Attribution</a></em></p>
+
+<h3 id="mobile-devops-blueprint-jumpstart-into-android-ui-testing-workflow-on-bitrise-ci">Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI</h3>
+
+<h4 id="just-run-those-tests-in-minutes">Just run those tests in minutes</h4>
+
+<h4 id="the-challange">The Challange</h4>
+<p>I want to run UI tests on Bitrise CI <strong>asap</strong>. I have a sample test suite
+or I’m migrating from another CI. Perhaps I want to customize the workflow a bit to run custom annotation that scopes the test suite or sets device config, etc.</p>
+
+<h4 id="who-would-benefit"><strong>Who would benefit?</strong></h4>
+<p>DevOps, Automation Engineer, Android Dev, Tech Lead.</p>
+
+<h4 id="assumptions">Assumptions</h4>
+<p>I’m assuming you’re a beginner to intermediate Bitrise user, or you’re
+a skilled professional looking for a shortcut to just run your test suite asap. What I’m providing here is supposed to be a blueprint for you to jumpstart running your tests on Bitrise CI.</p>
+
+<p>This article will cover <strong>the Mobile DevOps</strong> side of how to kick off UI testing on Bitrise for Android. Code included. I’ll also share a couple
+of good practices for UI automation configuration.</p>
+
+<p>I’m assuming you want a <em>quasi-infrastructure-as-a-code</em> approach, meaning you are going to use <em>bitrise.yaml</em> instead of Bitrise web console.
+In fact, please use <em>bitrise.yaml</em> + version control system to maintain control over changes and learn more.</p>
+
+<p>I’m assuming you have configured the auth mechanism between your repository and Bitrise, meaning you can clone your repo while running Bitrise builds.</p>
+
+<p>I’m assuming you know where to find the most recent <em>bitrise.yaml</em> version. BTW See Workflow Editor -&gt; <em>bitrise.yaml</em> tab and download it.</p>
+
+<p>The Firebase Device Lab will be used to run the automation suite.
+The default account is linked with your Bitrise instance — it’s recommended to provide your own account.</p>
+
+<p>If you would like to learn in-depth Bitrise concepts and how to navigate and use it in an optimized way, I would recommend you read <a href="https://proandroiddev.com/be-effective-with-bitrise-ci-for-android-lessons-i-learned-the-hard-way-5a85e45a33dc">my article on being effective with Bitrise CI</a>. These two articles will share a few tips for sure.</p>
+
+<hr />
+
+<h4 id="the-blueprint">The Blueprint</h4>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">runTests</span><span class="pi">:</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">git-clone</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span>
+      <span class="pi">-</span> <span class="na">cache-pull@2</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span>
+      <span class="pi">-</span> <span class="na">install-missing-android-tools@3</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span>
+      <span class="pi">-</span> <span class="na">android-sdk-update@1</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span>
+      <span class="pi">-</span> <span class="na">android-build-for-ui-testing@0</span><span class="pi">:</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">variant</span><span class="pi">:</span> <span class="s">debug</span>
+            <span class="pi">-</span> <span class="na">module</span><span class="pi">:</span> <span class="s">app</span>
+      <span class="pi">-</span> <span class="na">virtual-device-testing-for-android@1</span><span class="pi">:</span>
+          <span class="na">is_skippable</span><span class="pi">:</span> <span class="kc">true</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">test_type</span><span class="pi">:</span> <span class="s">instrumentation</span>
+            <span class="pi">-</span> <span class="na">test_devices</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Pixel2,28,en_US,portrait"</span>
+            <span class="pi">-</span> <span class="na">inst_test_targets</span><span class="pi">:</span> <span class="s2">"</span><span class="s">annotation</span><span class="nv"> </span><span class="s">com.example.annotation.SMOKE"</span>
+            <span class="pi">-</span> <span class="na">inst_use_orchestrator</span><span class="pi">:</span> <span class="s1">'</span><span class="s">true'</span>
+            <span class="pi">-</span> <span class="na">test_timeout</span><span class="pi">:</span> <span class="m">3600</span>
+      <span class="pi">-</span> <span class="na">custom-test-results-export@0.1</span><span class="pi">:</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">test_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*"</span>
+            <span class="pi">-</span> <span class="na">search_pattern</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*"</span>
+      <span class="pi">-</span> <span class="na">cache-push@2</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span>
+</code></pre></div></div>
+<p>Just basic configs, nothing to see here, really. <em>runTest</em> steps live alongside other steps.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">runTests</span><span class="pi">:</span> <span class="c1">#name of the workflow</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">git-clone</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span> <span class="c1"># clones repo, more config may be required, out of scope</span>
+      <span class="pi">-</span> <span class="na">cache-pull@2</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span> <span class="c1"># gets prev cached artifacts, faster build</span>
+      <span class="pi">-</span> <span class="na">install-missing-android-tools@3</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span> <span class="c1"># update</span>
+      <span class="pi">-</span> <span class="na">android-sdk-update@1</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span> <span class="c1"># update</span>
+<span class="c1"># this</span>
+<span class="c1"># is</span>
+<span class="c1"># where</span>
+<span class="c1"># testing</span>
+<span class="c1"># happens</span>
+      <span class="pi">-</span> <span class="na">custom-test-results-export@0.1</span><span class="pi">:</span> <span class="c1"># Test reports. You want them.</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">test_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*"</span>
+            <span class="pi">-</span> <span class="na">search_pattern</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*"</span>
+      <span class="pi">-</span> <span class="na">cache-push@2</span><span class="pi">:</span> <span class="pi">{</span> <span class="pi">}</span> <span class="c1"># push artifacts</span>
+<span class="c1"># Optionally you may like Slack notification</span>
+</code></pre></div></div>
+<p>As said before, no magic happens here. Just housekeeping like cloning
+the repository and being sure things are up to date.
+Keep an eye on reports - those are useful to track what’s exactly wrong with your test including screenshots, logs, state, execution time, etc.</p>
+
+<p>Ok, let’s explain the UI tests running part.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">runTests</span><span class="pi">:</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="c1"># Test builds</span>
+      <span class="pi">-</span> <span class="na">android-build-for-ui-testing@0</span><span class="pi">:</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">variant</span><span class="pi">:</span> <span class="s">debug</span>
+            <span class="pi">-</span> <span class="na">module</span><span class="pi">:</span> <span class="s">app</span>
+      <span class="c1"># Testing</span>
+      <span class="pi">-</span> <span class="na">virtual-device-testing-for-android@1</span><span class="pi">:</span>
+          <span class="na">is_skippable</span><span class="pi">:</span> <span class="kc">true</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">test_type</span><span class="pi">:</span> <span class="s">instrumentation</span>
+            <span class="pi">-</span> <span class="na">test_devices</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Pixel2,28,en_US,portrait"</span>
+            <span class="pi">-</span> <span class="na">inst_test_targets</span><span class="pi">:</span> <span class="s2">"</span><span class="s">annotation</span><span class="nv"> </span><span class="s">com.example.annotation.SMOKE"</span>
+            <span class="pi">-</span> <span class="na">inst_use_orchestrator</span><span class="pi">:</span> <span class="s1">'</span><span class="s">true'</span>
+            <span class="pi">-</span> <span class="na">test_timeout</span><span class="pi">:</span> <span class="m">3600</span>
+</code></pre></div></div>
+
+<h4 id="how-test-builds-are-being-prepared">How test builds are being prepared?</h4>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Test builds creation</span>
+      <span class="pi">-</span> <span class="na">android-build-for-ui-testing@0</span><span class="pi">:</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">variant</span><span class="pi">:</span> <span class="s">debug</span>
+            <span class="pi">-</span> <span class="na">module</span><span class="pi">:</span> <span class="s">app</span>
+</code></pre></div></div>
+<p>No magic here again. <strong>Both</strong> your APK and testing APK will be built as a part of these steps. Bitrise will figure out the paths to APKs itself.
+If you want to see the guide — here is <a href="https://www.bitrise.io/integrations/steps/android-build-for-ui-testing">the official one</a>.</p>
+
+<h4 id="the-ui-testing-steps">The UI testing steps</h4>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">virtual-device-testing-for-android@1</span><span class="pi">:</span>
+          <span class="na">is_skippable</span><span class="pi">:</span> <span class="kc">true</span>
+          <span class="na">inputs</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">test_type</span><span class="pi">:</span> <span class="s">instrumentation</span>
+            <span class="pi">-</span> <span class="na">test_devices</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Pixel2,28,en_US,portrait"</span> <span class="c1">#example</span>
+            <span class="pi">-</span> <span class="na">inst_test_targets</span><span class="pi">:</span> <span class="s2">"</span><span class="s">annotation</span><span class="nv"> </span><span class="s">com.example.annotation.SMOKE"</span> <span class="c1">#OPTIONAL</span>
+            <span class="pi">-</span> <span class="na">inst_use_orchestrator</span><span class="pi">:</span> <span class="s1">'</span><span class="s">true'</span>
+            <span class="pi">-</span> <span class="na">test_timeout</span><span class="pi">:</span> <span class="m">900</span>
+</code></pre></div></div>
+<p>Step by step</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">is_skippable</span><span class="pi">:</span> <span class="kc">true</span> <span class="c1"># not required</span>
+</code></pre></div></div>
+<p>You may want to have a green build even though the UI test failed because some of the tests are flaky and brittle. Maybe you just care about configuration (for now) or maybe you’re running an experiment. It’s useful. Use it whenever necessary.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">test_type</span><span class="pi">:</span> <span class="s">instrumentation</span> <span class="c1"># required, other: game loop, robo</span>
+</code></pre></div></div>
+<p>In most cases, Android UI tests are instrumentation tests. Ask Automation Engineer if that’s the truth for you.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># required, schema deviceID,version,language,orientation</span>
+<span class="pi">-</span> <span class="na">test_devices</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Pixel2,28,en_US,portrait"</span>
+</code></pre></div></div>
+<p>You have to provide at least one device, you can provide many.
+Separated by comma.</p>
+
+<p>You can find config details and a list of devices on <a href="https://github.com/bitrise-steplib/steps-virtual-device-testing-for-android/blob/master/step.yml">the official Bitrise Github step codebase</a>.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">inst_test_targets</span><span class="pi">:</span> <span class="s2">"</span><span class="s">annotation</span><span class="nv"> </span><span class="s">com.example.annotation.SMOKE"</span> <span class="c1"># optional</span>
+</code></pre></div></div>
+<p>You can define test targets — if not provided, <strong>every</strong> test in <em>androidTest</em> package will be triggered. You’re required to provide a <strong>fully qualified</strong> class or a package.</p>
+
+<p>You can also configure your test targets via annotations. Annotations give you the opportunity to scope out what test to run by grouping them. It’s up to you what, how, and when to group which gives you the opportunity to adapt to the current context (release, feature branch or smoke testing?) — it’s all up to you and can be done both manually and dynamically.
+A short and sweet article on annotation is found <a href="https://evanfang.medium.com/run-specific-android-espresso-tests-by-creating-custom-annotations-using-kotlin-and-command-line-6a90e8728e3b">here</a>.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">inst_use_orchestrator</span><span class="pi">:</span> <span class="s1">'</span><span class="s">true'</span> <span class="c1"># optional, default false</span>
+</code></pre></div></div>
+<p>This listing defines if tests are using Android Test Orchestrator or not. Default: false. Ask your Automation Engineer.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">test_timeout</span><span class="pi">:</span> <span class="m">900</span> <span class="c1"># optional, default 900=15m</span>
+</code></pre></div></div>
+<p>A question: How much time must pass before <strong>a test</strong> is canceled?
+Default 900 = 15m. I would assume it should be much quicker for an efficient automation suite.</p>
+
+<p>But <a href="https://github.com/bitrise-steplib/steps-virtual-device-testing-for-android/blob/master/step.yml">there</a> is obviously much more, like</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">num_flaky_test_attempts</span><span class="pi">:</span> <span class="m">0</span>
+</code></pre></div></div>
+<p>And more, and more, and more.</p>
+
+<p>You can compare what I have shown you with the official documentation from Github. In this case for <a href="https://github.com/bitrise-steplib/steps-virtual-device-testing-for-android/blob/master/step.yml">the UI testing step</a>. It’s way better than website documentation.</p>
+
+<hr />
+
+<p>We’re finally at the end. Now, you can use provided a blueprint and run your test suite in minutes via Bitrise. Happy coding!</p>
+
+<hr />
+
+<p>I hope you like this piece. As you can see I love a fast feedback loop —
+if you have any objections, comments, or questions — please drop a comment or DM message.</p>
+
+<p>If you want to reach out, I’m based in Wrocław, Poland.
+Here are my <a href="https://pl.linkedin.com/in/maciejmalak">LinkedIn</a> and <a href="https://twitter.com/monkeydevspl">Twitter</a>.</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[Image source: Creative Commons Attribution]]></summary></entry><entry><title type="html">App Links: Associating Multiple Android App Build Types with a Single Domain</title><link href="http://localhost:4000/2022/06/08/app-links-associating-multiple-android-app-build-types-with-a-single-domain.html" rel="alternate" type="text/html" title="App Links: Associating Multiple Android App Build Types with a Single Domain" /><published>2022-06-08T00:00:00+02:00</published><updated>2022-06-08T00:00:00+02:00</updated><id>http://localhost:4000/2022/06/08/app-links-associating-multiple-android-app-build-types-with-a-single-domain</id><content type="html" xml:base="http://localhost:4000/2022/06/08/app-links-associating-multiple-android-app-build-types-with-a-single-domain.html"><![CDATA[<h3 id="app-links-associating-multiple-android-app-build-types-with-a-single-domain"><strong>App Links: Associating Multiple Android App Build Types with a Single Domain</strong></h3>
+
+<p>Although I won’t go into the configuration nor benefits of Android App Links,
+you can find them <a href="https://developer.android.com/training/app-links">here</a>, <a href="https://developer.android.com/training/app-links/verify-site-associations">here</a>, and <a href="https://developers.google.com/digital-asset-links/v1/create-statement">here</a>, I would like to elaborate on the missing documentation bit.</p>
+
+<p>Specifically, how to associate and verify ownership between your domain
+(a website) and multiple build types <strong>of the same</strong> Android application
+using a Digital Asset Links JSON file.
+Simply put, how to get rid of disambiguous dialog in such an environment.</p>
+
+<p><img src="/assets/1*sNCApKUp4caWwqZWqXZrMA.jpeg" alt="We do not want that, ever!" />
+<em>We do not want that, ever! Source: <a href="https://www.flickr.com/photos/adewale_oshineye/21830113332">https://www.flickr.com/photos/adewale_oshineye/21830113332</a> Licence CC.</em></p>
+
+<hr />
+
+<p>While it’s not groundbreaking research, this guide can spare you
+a couple of hours or even days of waiting impatiently to see if ownership
+over an app has been verified.</p>
+
+<p>In most cases, you’re not able to deploy a Digital Asset Links JSON file
+on your own, thus you’re dependent on a third party to do so.
+It means waiting. It’s better to Do it once, properly.</p>
+
+<p>App links (deep links) are usually not a standalone functionality of an app
+yet rather a collaboration between many teams that drives users
+into an app (for example, marketing campaigns).</p>
+
+<p>More precisely app links usually require a bit of collaboration from a mobile team and marketing/DevOps/web/backend/you-name-it team from your company.</p>
+
+<hr />
+
+<p>Let’s give an answer by starting with a question.</p>
+
+<p><strong>Given</strong> the fact that an app has multiple build types, each having its own, distinct certificate fingerprint SHA-1
+<strong>When</strong> a subset of build types points into the same domain
+<strong>Then</strong> could ownership be verified for all build types using a single domain?</p>
+
+<p><img src="/assets/1*MSFfUt4ondPMJ5aVmTPGuQ.jpeg" alt="This is the “complexity” we’re facing." />
+<em>This is the “complexity” we’re facing. Source: DIY.</em></p>
+
+<p>Let’s give an example since it might be confusing.</p>
+
+<p>An app has DEV (<em>debug</em>) and QA/UAT/SIT (<em>debug</em> and <em>release</em>) build type configurations that are both pointing to the same domain (website),
+say, <em>uat.example.com</em>. That means you have two “apps” with
+two <strong>distinct</strong> signing key configs: two distinct SHA-1 certificate fingerprints are being used to validate ownership of App Links via a single domain that hosts the assetlinks.json file.</p>
+
+<p>If you have a single domain, can you verify ownership of two apps using two distinct certificates?</p>
+
+<p>Yes, you can, it’s <a href="https://developer.android.com/training/app-links/verify-site-associations#multiple-apps">documented</a>.</p>
+
+<p>Our case is a bit different. What if an app also has links configured for <em>uat.mobile.example.com</em> subdomain and both <em>debug</em> and <em>release</em> build types of the same app are pointed into it? Could I verify ownership upon a second subdomain using both <em>debug</em> and <em>release</em> certificates again?</p>
+
+<p>The answer is: Yes, it can be easily achieved.</p>
+
+<p>This is an assetlinks.json content you have to <a href="https://developer.android.com/training/app-links/verify-site-associations">upload</a> to your subdomains.</p>
+
+<noscript><pre>[{
+  &quot;relation&quot;: [&quot;delegate_permission/common.handle_all_urls&quot;],
+  &quot;target&quot;: {
+    &quot;namespace&quot;: &quot;android_app&quot;,
+    &quot;package_name&quot;: &quot;com.example.app.buildType1&quot;,
+    &quot;sha256_cert_fingerprints&quot;:
+    [&quot;debugCertificateFingerprintHere&quot;]
+  }
+},
+{
+  &quot;relation&quot;: [&quot;delegate_permission/common.handle_all_urls&quot;],
+  &quot;target&quot;: {
+    &quot;namespace&quot;: &quot;android_app&quot;,
+    &quot;package_name&quot;: &quot;com.example.app.buildType2&quot;,
+    &quot;sha256_cert_fingerprints&quot;:
+    [&quot;releaseCertificateFingerprintHere&quot;]
+  }
+},
+{
+  &quot;relation&quot;: [&quot;delegate_permission/common.handle_all_urls&quot;],
+  &quot;target&quot;: {
+    &quot;namespace&quot;: &quot;android_app&quot;,
+    &quot;package_name&quot;: &quot;com.example.app.buildType3&quot;,
+    &quot;sha256_cert_fingerprints&quot;:
+    [&quot;anyOtherFancyCertificateFingerprintHere&quot;]
+  }
+}]</pre></noscript>
+<script src="https://gist.github.com/xavarius/2a532bf2d187b5911d38d00fb3de7385.js"> </script>
+
+<p>In the example above, the Digital Asset Links JSON file is configured to support a particular build type</p>
+
+<blockquote>
+  <p>“package_name”: “com.example.app.buildType1”</p>
+</blockquote>
+
+<p>which should be verified using debug SHA-1 certificate</p>
+
+<blockquote>
+  <p>“sha256_cert_fingerprints”: [“debugCertificateFingerprintHere”]</p>
+</blockquote>
+
+<p>while the second build type has a “release” nature and uses a release SHA-1 certificate for ownership to be verified</p>
+
+<blockquote>
+  <p>“package_name”: “com.example.app.buildType2”,</p>
+</blockquote>
+
+<blockquote>
+  <p>“sha256_cert_fingerprints”: [“releaseCertificateFingerprintHere”]</p>
+</blockquote>
+
+<p>Lemme explain a bit. The Digital Asset Links JSON file is a plain JSON file.</p>
+
+<p>It contains a list (table) of elements as a top-level element.</p>
+
+<p>All you have to do is to provide an entry for each of your build types with an appropriate SHA-1 fingerprint. And <a href="https://developer.android.com/training/app-links/verify-site-associations">deploy</a> it in <a href="https://developers.google.com/digital-asset-links/v1/create-statement#website_statement_file">each domain</a> you’re interested in. Voila!</p>
+
+<hr />
+
+<p>This configuration is extremely useful if you love the flexibility and the opportunity of using any number of environments with any of your build types. It enhances the testability of an app and increases data diversity while easing debugging— all because you can choose which environment will be used while implementing and testing your application.</p>
+
+<p><img src="/assets/1*pqei5mOJjnLprLAotZuAZg.jpeg" alt="Yeah, sharing is caring, remember that!" />
+<em>Yeah, <strong>sharing is caring</strong>, remember that!</em></p>
+
+<hr />
+
+<p>Thank you, <a href="https://www.linkedin.com/in/wdawiskiba/">Wojtek</a> for the peer review. It’s delightful to have such support. :)</p>
+
+<hr />
+
+<p>If you wanna reach me do not hesitate to do so. :)</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://www.linkedin.com/in/maciejmalak/">Linkedin</a></td>
+      <td><a href="https://twitter.com/MonkeyDevsPl">Twitter</a></td>
+      <td><a href="http://hellomonkeydevs@gmail.com">email</a></td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[App Links: Associating Multiple Android App Build Types with a Single Domain]]></summary></entry><entry><title type="html">You shouldn’t take AWS Pearson Vue Online Proctoring, if you can, and here is why</title><link href="http://localhost:4000/2020/08/18/you-shouldnt-take-aws-pearson-vue-online-proctoring-if-you-can-and-here-is-why.html" rel="alternate" type="text/html" title="You shouldn’t take AWS Pearson Vue Online Proctoring, if you can, and here is why" /><published>2020-08-18T00:00:00+02:00</published><updated>2020-08-18T00:00:00+02:00</updated><id>http://localhost:4000/2020/08/18/you-shouldnt-take-aws-pearson-vue-online-proctoring-if-you-can-and-here-is-why</id><content type="html" xml:base="http://localhost:4000/2020/08/18/you-shouldnt-take-aws-pearson-vue-online-proctoring-if-you-can-and-here-is-why.html"><![CDATA[<h3 id="you-shouldnt-take-aws-pearson-vue-online-proctoring-exam-and-here-is-why">You shouldn’t take AWS Pearson Vue Online Proctoring exam and here is why</h3>
+
+<p><img src="/assets/1*Uu8oUZMJZ8gXt0N1HlubWQ.png" alt="Generic AWS certificate. Make it your weapon! :)" /></p>
+
+<p>Today, I took AWS Architect Associate exam. I’m already a holder of a <a href="https://www.linkedin.com/posts/maciejmalak_aws-certified-developer-associate-activity-6644182230807654400--1E_">AWS Developer Associate certification</a> so I expected no issues. I couldn’t be more wrong!</p>
+
+<p>I will tell you what to expect, what the policies are, what surprised me and why you should avoid online proctoring exam, if you have alternatives.</p>
+
+<hr />
+
+<h4 id="what-you-will-be-obliged-to-do-before-even-starting-an-exam">What you will be <strong>obliged</strong> to do before even starting an exam?</h4>
+
+<ol>
+  <li>Be sure to <strong>run</strong> <a href="https://home.pearsonvue.com/theopengroup/onvue">system test</a>. You should do it in the same room, with the same devices and WiFi that you will use during an exam. I have couple of WiFi networks which can be switched dynamically so I checked all of the options beforehand. Think what could go wrong because something most likely will.</li>
+  <li><strong>Read</strong> <a href="https://home.pearsonvue.com/theopengroup/onvue">the online exam policy</a>, that’s the best one thing you can do. And don’t be scared of it at all. I won’t elaborate on it. I will describe what wasn’t there later in this article so you will be well-prepared!</li>
+  <li>Disconnect all external devices from your PC/Mac/laptop. Remove them from the desk. That includes <strong>external monitor</strong> if you’re using MacBook or Windows powered laptop. Any Linux powered devices are strictly prohibited. I ended up disconnecting and removing my monitor 10 minutes before an exam! My fault.</li>
+  <li>You have to be in a <strong>closed, well-lit and calm environment</strong>. They need to see closed doors as a part of “room verification” process. No one can enter, no one can talk, remember!</li>
+</ol>
+
+<h4 id="what-was-surprising-since-it-wasnt-written-in-the-policy">What was surprising since it wasn’t written in the policy?</h4>
+
+<p>The recommendation is to start 30 minutes (!) before exam scheduled time. But it isn’t written why. It’s because <strong>entire verification process takes eons.</strong> In my case it <strong>took 1h.</strong> Sitting and waiting was the major part of it. Although <a href="https://www.reddit.com/r/AWSCertifications/comments/ftbpk9/beware_of_pearson_vue_online_proctoring/">I saw it could be worst than that</a>. One must be ready to spend 140 minutes of exam alone. Additionally, there will be couple of minutes on pre- and post-exam activities. Finally, you would have to spend from (promised) 15 minutes to 1h (or more as few people shared) on verification process. That adds up to almost <strong>4h spent in one position in front of your computer</strong>. Remember, while verification process and exam is happening you <strong>cannot</strong> stand up, you cannot go to bathroom, you cannot drink nor eat, you cannot talk and you cannot look into window. Talk to your partner and/or roomies and plan for it. You have to make your room a <em>Temple Of Silence</em> for a time being.</p>
+
+<p>As I mentioned, they will verify your identity. That’s understandable and would also happen on-site. The verification process can be done via your smartphone, for example. Also, a proctor might try resolve technical issues with an exam by calling your phone. But, according to policy, you’re not allowed to have phone within your reach. Nor any smart devices. If someone would call you — exam could be cancelled. I recommend having your phone on <em>silent mode</em>, at least 1,5h meters away but with visible screen — so you know when agent is calling (strange, unknown and international number) and you won’t end up with cancelled exam because you picked up a call from your boss/partner/parent/friend.</p>
+
+<p>Policy also states that you need government issued <strong>ID card</strong> in order to identify yourself before an exam. During the verification process I was able to choose from driver license or passport only. <strong>ID card is not an option</strong> and that was a big surprise to me. I had to find one of the approved documents very quickly. Don’t do it to yourself and prepare ID card and the second document beforehand, just to be sure.</p>
+
+<h4 id="so-what-really-happened-and-why-im-simply-disappointed">So, what really happened and why I’m simply disappointed?</h4>
+
+<p>As a part of verification process I was contacted by a polite agent.
+She checked my workspace using my camera view, so, what’s behind
+and in front of my desk, my hands and wrists for watches and cheat sheets.
+All good! Good to go!</p>
+
+<p>Everything was fine until she disconnected from the chat and remotely triggered an exam. My entire screen went black instantly.
+The only thing I was able to see was an overflow menu with the following items: Pearson logo, chat, whiteboard and my camera view.
+I waited around 10 minutes hoping for exam to be loaded. Then, I clicked ‘chat’ icon — instantly — entire application <strong>froze</strong>. I waited for some time hoping it will ‘unfroze’, unfortunately, it have not happened. I had to force restart entire device.</p>
+
+<p>I’m running MacBook Pro with quad-core CPU and 16GB of RAM. You can be sure it’s enough. I’m running Android Studio, Docker and much more on a daily basis. Additionally, I was at 300Mbs fiber backed internet connection. So, I kinda blame Pearson software.</p>
+
+<h4 id="how-to-resolve-broken-exam-situation">How to resolve broken exam situation?</h4>
+
+<p>You need to go to <a href="https://home.pearsonvue.com/aws/contact">AWS dedicated Pearson help center</a>. Since my country don’t have dedicated Pearson phone number I spent more than 1 hour waiting for online assistant. It took around 15 minutes to open a case. Now, I need to wait from 3 to 5 business days to resolve the situation. The entire process is “very corporate” if you understand what I mean. It’s slow.</p>
+
+<h4 id="take-exam-on-site">Take exam on site!</h4>
+
+<p>Take the above mentioned points into consideration while scheduling an exam. It’s all understandable but it’s quite limiting comparing to taking an exam on site. On site you can go to bathroom, drink, you will have a piece of paper to work on, you can relax a bit. If you’re able to schedule on site I recommend it. I won’t do online exam again unless #covid19 will force me to.</p>
+
+<hr />
+
+<p>Obviously, shit happens. I’m not furious nor mad but <strong>I want to warn you</strong> what <strong>may</strong> happen, <strong>how reality looks like</strong>, so you’re not disappointed. Every student spends a lot of time beforehand in order to pass an exam — it’s a bit frustrating when technical issues gets in the way.
+I understand software sometimes is not functioning as expected as I’m also introducing issues from time to time. All software engineers do.
+Simply, if I would have a choice between on site stable exam environment and unstable, unpredictable software — my choice is obvious.</p>
+
+<hr />
+
+<p>What was your experience with online proctor exam? Let others know in the comments!</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[You shouldn’t take AWS Pearson Vue Online Proctoring exam and here is why]]></summary></entry><entry><title type="html">Be effective with Bitrise CI for Android — lessons I learned the hard way.</title><link href="http://localhost:4000/2020/05/05/be-effective-with-bitrise-ci-for-android-lessons-i-learned-the-hard-way.html" rel="alternate" type="text/html" title="Be effective with Bitrise CI for Android — lessons I learned the hard way." /><published>2020-05-05T00:00:00+02:00</published><updated>2020-05-05T00:00:00+02:00</updated><id>http://localhost:4000/2020/05/05/be-effective-with-bitrise-ci-for-android-lessons-i-learned-the-hard-way</id><content type="html" xml:base="http://localhost:4000/2020/05/05/be-effective-with-bitrise-ci-for-android-lessons-i-learned-the-hard-way.html"><![CDATA[<h3 id="be-effective-with-bitrise-ci-for-androidthe-lessons-i-learned-the-hard-way"><strong>Be effective with Bitrise CI for Android — the lessons I learned the hard way.</strong></h3>
+<p><img src="/assets/1*TQOKYOUKm5mDiYlF7cKO1A.png" alt="Featured image" /></p>
+
+<hr />
+<p>I won’t elaborate here on how important and crucial for any software development-oriented team the <a href="https://www.thoughtworks.com/continuous-integration">continuous integration</a> (CI) practise is.<br />
+I’m pretty sure we can all agree on how CI tools support our day to day effectiveness. How they <strong>might</strong> save dozens of hours spent on non-essential tasks. Yet, it’s common to present CI tools as a hassle; slow, bulky,<br />
+and unreliable pipelines bloated with chaotic events instead of fast, maintainable feedback loop configured to support both product quality<br />
+and team flexibility.</p>
+
+<p>As the title implies, our CI process was far from optimal. We learned what “slow and chaotic” means the hard way. Below, you will find an overview<br />
+of each issue that slowed us down, with full explanation of what the solution was (including code and external links), as well as honest <strong>results</strong> measured by minutes.</p>
+
+<p>In this article, you will find discussion surrounding architecture, <em>flavour agnostic</em> unit testing, Gradle usage as well as keeping your logs and artefacts deployment in order. Additionally, at the end of the article, several tips<br />
+and tricks beyond optimisation will be included.<br />
+It’s not a step-by-step tutorial. We gathered results that work for us,<br />
+and <strong>you</strong> have to <strong>think them through.</strong> If those solutions make sense to you then, and only then, apply them to your environment.</p>
+
+<hr />
+<h3 id="the-landscape">The landscape</h3>
+<p>In order to fully understand <strong>why</strong> we provided a particular optimisation<br />
+it is crucial to understand how our landscape looked at the time.</p>
+
+<p>There is <a href="https://nvie.com/posts/a-successful-git-branching-model/">git flow approach</a> in place, which usually means multiple <em>feature</em> branches exist at the same time in a remote repository. There is at least one <em>pull request</em> per story. Each pull request needs to go through an integration <em>process</em> meaning the newest commit in a pull request triggers a fresh CI build. That’s being done in order to ensure the newest change won’t introduce any flaws. Yep, automation and unit test suites test each <em>software incrementation</em>. Software Engineers in Test (SET) writes automation tests<br />
+as “a part of“ the feature in some cases.</p>
+
+<p>We are supporting multiple modules as a part of our architecture.<br />
+Let’s assume it is a <a href="https://five.agency/android-architecture-part-2-clean-architecture/">clean-ish architecture</a> with <em>domain</em>, <em>data</em> and <em>app</em> layers packed into separate modules. Each of the modules has its own unit tests suite — between dozens to few hundreds of them per module. We have to support multiple <em>flavours</em> and they differ greatly. Each flavour has<br />
+a separate set of automation and unit test, although most of them are shared.</p>
+
+<p>When it comes to infrastructure, there is a separate Bitrise workflow for every build type. Also, a separate one for each of: <em>feature</em> development,<br />
+<em>automation</em> efforts, <em>release</em> (<em>tags</em>) activities and after merging feature<br />
+to the develop. Seeing how many distinct configs we have, there is a need<br />
+to run multiple builds every day. We can’t and won’t have “infinite” amount<br />
+of concurrent jobs, so time devoted to each build is very important to us.<br />
+It’s also important because we <strong>value sh*t done the right way</strong>.</p>
+
+<p>The basic measurement that <strong>will prove effectiveness here is build time</strong> — both <em>entire</em> build time or a particular step time (such as unit tests step or deploy step).</p>
+
+<hr />
+<h3 id="improvements">Improvements</h3>
+<h4 id="unit-testing">Unit testing</h4>
+<p>The most commonly used feedback loop is unit tests suite, in particular<br />
+if you’re supporting multiple flavours for Android app and you want to be sure that none of the changes would break any of the flavours.<br />
+Unit tests are supposed to be a fast and reliable feedback loop, which can be automated at the CI level. So, we used docs and tutorials to set them up for<br />
+all of the flavours. After few changes to CI, we ended up with 30 minutes long unit test step for 3 flavours.<br />
+Yes, you read it properly: 30 minutes for 3 flavours.</p>
+
+<p>Ok, let’s fix that.</p>
+
+<p>After a little bit of research it occurred to us that we used two separate steps for unit tests. <a href="https://devcenter.bitrise.io/testing/android-run-a-unit-test/">Android unit test step for Bitrise</a> was running <em>app</em> module unit tests. <a href="https://www.bitrise.io/integrations/steps/gradle-unit-test">Gradle Unit Test</a> step was just running <em>.gradlew test</em> task.</p>
+
+<p><img src="/assets/1*ZDxhzjlV0QFs2JDvktxfuA.png" alt="Total time for each step in minutes." />
+<em>Total time for each step in minutes.</em></p>
+
+<p>What’s wrong with gradle unit test step in our case? According to the Gradle documentation:</p>
+
+<p><img src="/assets/1*6z7dHF2MnY1nAVjGlLGntQ.png" alt="Gradle CLI documentation screenshot" />
+<em>Source: <a href="https://docs.gradle.org/current/userguide/command_line_interface.html">https://docs.gradle.org/current/userguide/command_line_interface.html</a></em></p>
+
+<p>In simple terms, <em>./gradlew test</em> <a href="https://medium.com/android-testing-daily/running-your-tests-on-the-command-line-with-gradle-bcba78244487">triggers <strong>dozens</strong> of different <em>test</em> <em>tasks</em></a> from every module. In our case, it triggered both <em>debug</em> and <em>release</em> related tests<br />
+for every <em>subproject (</em>module<em>)</em>. That’s too much redundancy; consider the final result of <em>./gradlew test</em> command:</p>
+
+<p><em>(amount of flavours) x (amount of supported envs) x (amount of modules)</em></p>
+
+<p>But the amount of tasks triggered is not all we can improve here.<br />
+I already mentioned we have several modules. Since it’s <em>cleanish architecture,</em> it consists of <em>app</em>, <em>domain</em>, <em>data</em> and <em>api</em> modules.<br />
+It’s easy to see that some of those modules are <em>flavour agnostic — </em>domain, data and api layers can and should be treated as libraries. Those are <em>external dependencies</em> that <em>could</em> be used via any JVM compatible code.<br />
+Do we need to run those tests separately for each flavour?<br />
+Of course we don’t! Where does it lead us?</p>
+
+<h4 id="flavour-agnostic-unit-tests"><strong>Flavour agnostic unit tests</strong></h4>
+<p>Split <em>flavour dependent</em> and <em>flavour agnostic</em> unit tests. Gain greater control over how your application is tested. Use <a href="https://www.bitrise.io/integrations/steps/gradle-unit-test">Gradle Unit Test step</a> in your <a href="https://devcenter.bitrise.io/bitrise-cli/basics-of-bitrise-yml/">Bitrise.yml</a> to run targeted <em>flavour agnostic</em> unit tests, like this:</p>
+
+<noscript><pre>  _UnitTests_Flavour_Agnostic_Modules:
+    steps:
+      - gradle-unit-test@1.0.5:
+          inputs:
+            - gradlew_file_path: &quot;./gradlew&quot;
+            - unit_test_task: &quot;:data:testDebugUnitTest&quot;
+            - gradle_file: &quot;./build.gradle&quot;
+          title: &quot;Data module unit testing&quot;
+      - gradle-unit-test@1.0.5:
+          inputs:
+            - gradlew_file_path: &quot;./gradlew&quot;
+            - unit_test_task: &quot;:domain:test&quot;
+            - gradle_file: &quot;./build.gradle&quot;
+          title: &quot;Domain unit testing&quot;
+      - gradle-unit-test@1.0.5:
+          inputs:
+            - gradlew_file_path: &quot;./gradlew&quot;
+            - unit_test_task: &quot;:feature1:test&quot;
+            - gradle_file: &quot;./build.gradle&quot;
+          title: &quot;Feature1 unit testing&quot;</pre></noscript>
+<script src="https://gist.github.com/xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3.js"> </script>
+
+<p><em>My gist lets you configure module dependent unit testing. Source: <a href="https://gist.github.com/xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3">https://gist.github.com/xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3</a></em></p>
+
+<p>Using <em>unit_test_task</em> attribute enables you to configure a particular task to be run. Basically, any gradle task. You can obviously chain gradle commands, but I want <strong>granularity</strong> here. Additionally, the usage of <em>title</em> attribute keeps build logs in order and enables you to track each step separately.</p>
+
+<p><img src="/assets/1*SQSkq3ZylChkaKHJxCGHTw.png" alt="The result of applying the above mentioned recommendations." />
+<em>The result of applying the above mentioned recommendations. Cleaning up resources gave us unit tests result in seconds instead of minutes.</em></p>
+
+<h4 id="flavour-dependent-unit-tests">Flavour dependent unit tests</h4>
+<p>The second recommendation relates to <a href="https://devcenter.bitrise.io/testing/android-run-a-unit-test/">Android unit test step for Bitrise</a><br />
+and how <em>flavour dependent</em> unit tests are managed. In most cases,<br />
+I would recommend you to run only what you need. But I came to conclusion that ‘run only what you need’ could be counterintuitive in our case.</p>
+
+<p>It’s <strong>really easy</strong> to break one of the flavours by introducing changes to only one of them. That’s why we ended up with running unit tests for every flavour in every build. In addition, the above mentioned set of <em>flavour agnostic</em> tests is triggered. What does it mean when it comes to Bitrise CI setup?</p>
+
+<noscript><pre>  _UnitTestsPerFlavour:
+    steps:
+      - android-unit-test:
+          inputs:
+            - module: app
+            - variant: ${FLAVOUR_NAME}UatDebug
+          title: &quot;Flavour unit tests&quot;
+    before_run:
+      - _UnitTests_Flavour_Agnostic_Modules</pre></noscript>
+<script src="https://gist.github.com/xavarius/d14bb74261ac9cc40f134b20e66f5542.js"> </script>
+
+<p><em>Targeted unit tests per flavour. Source: <a href="https://gist.github.com/xavarius/d14bb74261ac9cc40f134b20e66f5542">https://gist.github.com/xavarius/d14bb74261ac9cc40f134b20e66f5542</a></em></p>
+
+<p>The above snippet runs unit tests for the <em>app</em> module for a particular flavour injected as an <a href="https://devcenter.bitrise.io/builds/env-vars-secret-env-vars/"><em>environment variable</em></a> and a particular build variant.<br />
+So, if CI builds only one flavour at time, this snippet is supposed to be triggered three times, once for each flavour. If all of the flavours are built simultaneously, then each flavour should run its own unit tests in order to avoid redundancy and save a few minutes from build. Notice that, before <em>_UnitTestsPerFlavour step, UnitTests_Flavour_Agnostic_Modules</em> step is triggered. It runs flavour agnostic tests, so <em>domain</em>, <em>data and feature</em> modules unit tests. Either way, all unit tests are always validated.</p>
+
+<p>Alternatively to the above setup, you can use the following setup to hardcode which flavour’s unit tests should be run:</p>
+
+<noscript><pre>  _TargetedUnitTestForAllFlavours:
+    steps:
+      - gradle-unit-test@1.0.5:
+          inputs:
+            - gradlew_file_path: &quot;./gradlew&quot;
+            - unit_test_task: &quot;:app:testFlavourAUatDebugUnitTest&quot;
+            - gradle_file: &quot;./build.gradle&quot;
+          title: &quot;FlavourA App unit testing&quot;
+      - gradle-unit-test@1.0.5:
+          inputs:
+            - gradlew_file_path: &quot;./gradlew&quot;
+            - unit_test_task: &quot;:app:testFlavourBUatDebugUnitTest&quot;
+            - gradle_file: &quot;./build.gradle&quot;
+          title: &quot;FlavourB App unit testing&quot;
+      - gradle-unit-test@1.0.5:
+          inputs:
+            - gradlew_file_path: &quot;./gradlew&quot;
+            - unit_test_task: &quot;:app:testFlavourCUatDebugUnitTest&quot;
+            - gradle_file: &quot;./build.gradle&quot;
+          title: &quot;FlavourC App unit testing&quot;
+    before_run:
+      - _UnitTests_Flavour_Agnostic_Modules</pre></noscript>
+<script src="https://gist.github.com/xavarius/4699179027cce14007257d7b17984d55.js"> </script>
+
+<p>That way we’re all covered, no matter if we’re building all the flavours, or just one. Remember, the lesson here is <em>flavour dependent and agnostic</em> unit tests should be triggered <strong>once.</strong> There is no redundancy, but there is full coverage. Every software increment is <strong>safe</strong>.</p>
+
+<h4 id="results">Results</h4>
+<p>We started with around <strong>30 minutes</strong> per build.</p>
+
+<p><img src="/assets/1*ZDxhzjlV0QFs2JDvktxfuA.png" alt="Total time for unit testing then." />
+<em>Total time for unit testing then.</em></p>
+
+<p>And finished up with the below results when running one flavour.<br />
+<strong>Down to ~5/6 minutes per build.</strong></p>
+
+<p><img src="/assets/1*-ah-XIlWh18Ac0-6z7JEXA.jpeg" alt="Total time for unit testing now." />
+<em>Total time for unit testing now.</em></p>
+
+<p>And also <strong>down to ~3 minutes per build</strong> when running all the flavours<br />
+at once, which means each flavour is responsible for its own unit tests finally. Yes, that’s a separate config in order to optimise build time even further.</p>
+
+<p><img src="/assets/1*eFTwp0OYl-5lIMLpKgx3GA.png" alt="Total time when running all of the flavours." />
+<em>Total time when running all of the flavours. Build time for those unit tests per one flavour.</em></p>
+
+<hr />
+<h3 id="artefacts-deployment">Artefacts Deployment</h3>
+<p>Review your <em>Deploy to Bitrise.io</em> step. According to the documentation <a href="https://devcenter.bitrise.io/testing/test-reports/">[1]</a> <a href="https://www.bitrise.io/integrations/steps/deploy-to-bitrise-io">[2]</a> <a href="https://devcenter.bitrise.io/testing/device-testing-for-android/">[3]</a> for the following steps test reports are deployed automatically:</p>
+
+<ul>
+  <li>Xcode Test for iOS</li>
+  <li>Android Unit Test</li>
+  <li>iOS Device Testing</li>
+  <li>Virtual Device Testing for Android</li>
+</ul>
+
+<p>As noted in the documentation, by default Android unit and UI tests are deployed to Bitrise directory and are provided via the <em>Test reports</em> tab. They are easily accessible — but the question is — are they really necessary?</p>
+
+<p>We have robust unit tests. They fail rarely in CI because the entire team writes and runs them frequently. On the other hand, it’s easy to check Bitrise for which logs failed.</p>
+
+<h4 id="deciding-what-to-deploy">Deciding what to deploy</h4>
+<p>We already changed from <a href="https://devcenter.bitrise.io/testing/android-run-a-unit-test/">Android unit test step for Bitrise</a> to <a href="https://www.bitrise.io/integrations/steps/gradle-unit-test">Gradle Unit Test</a> step which does not deploy unit tests reports automatically. And we want it that way. What about the rest of the artefacts? For <em>automation</em> builds we’ve decided not to deploy any APKs. They are not needed.</p>
+
+<p>We also already know that <a href="https://www.bitrise.io/integrations/steps/virtual-device-testing-for-android">Virtual Device Testing for Android</a> step deploys UI tests results into the <em>Test Reports</em> directory. We decided that for all of the builds we are going to move or remove <em>Deploy to Bitrise.io</em> step completely as an experiment.<br />
+Also, <em>Deploy to Bitrise.io</em> step is always triggered before unit tests but after APK creation. That way, only application (<em>uatRelease</em> APK for example) and the UI tests report are deployed.</p>
+
+<p>Initially <em>deploy to Bitrise.io</em> <strong>step took from 2.1 to 3.2 minutes</strong>.</p>
+
+<p><img src="/assets/1*rPm9k8yro36t8KsQr9f1oQ.png" alt="Initially 3.2 min was total time per this step." />
+<em>Initially 3.2 min was total time per this step.</em></p>
+
+<p><strong>After the changes it’s 0 minutes for some builds. It is ~8 seconds for most of them.</strong></p>
+
+<p><img src="/assets/1*QkK3s1i0SLgx5Zo1NBNw0A.png" alt="That’s how quick it could be!" />
+<em>That’s how quick it could be!</em></p>
+
+<p><img src="/assets/1*kFe06gXR1oM1b5rbmSR9BQ.jpeg" alt="Oh yeah!" />
+<em>Oh yeah! Source: <a href="https://knowyourmeme.com/photos/988454-we-did-it-reddit">https://knowyourmeme.com/photos/988454-we-did-it-reddit</a></em></p>
+
+<hr />
+<h3 id="automation-workflow">Automation workflow</h3>
+<p>One of the low hanging fruits was to change what is being done<br />
+as a part of a particular workflow, since they all have different goals.<br />
+As I mentioned, we have <em>feature</em>, <em>automation</em>, <em>develop</em> and <em>release</em> workflow.<br />
+In our case, initially, all of the mentioned workflows had basically<br />
+the same setup. Why is this wrong? Because, as we said, workflows simply have different <strong>responsibilities</strong>.</p>
+
+<h4 id="understanding-the-differences-in-workflows"><strong>Understanding the differences in workflows</strong></h4>
+<p>I have already mentioned the <em>automation</em> workflow. It’s because it is special compared to other workflows. The only responsibility automation workflow has is to support Software Engineers in Test in writing and securing automation test suite. That simple conclusion means we can trim<br />
+several steps from it; in our case, APK and other artefacts creation<br />
+and deployment. We were also able to get rid of custom scripts we had there for the release app or “runtime” resources optimisations steps and beyond.</p>
+
+<h4 id="results-1">Results</h4>
+<p>By doing this, the <em>automation</em> build is a fast feedback loop for the SETs.<br />
+<strong>It takes around 10 minutes less than other builds.</strong><br />
+I believe it’s a huge win for the SETs team.</p>
+
+<hr />
+<h3 id="investigating-tools-configuration">Investigating tools configuration</h3>
+<p>Here is a quick and simple story as an example. Our builds produced <em>uatDebug</em> and <em>uatRelease</em> APKs. UAT stands for ‘<a href="https://en.wikipedia.org/wiki/Acceptance_testing#User_acceptance_testing">user acceptance testing</a>’ and it’s also a name of one of our environment s— environment with almost <em>production</em> setup but more over <em>development</em> data — and simply used for testing purposes. So, producing those two build sounds about right, doesn’t it? I started asking questions anyway. We were sure we need <em>uatRelease</em> for testing purposes. It makes sense since testing production ready app (<em>release</em>) using development data (<em>uat</em>) is one of the best practices. But why do we need <em>uatDebug</em> then?</p>
+
+<h4 id="trimming-unused-resources"><strong>Trimming unused resources</strong></h4>
+<p>The sole reason was a misconfiguration of the <a href="https://www.charlesproxy.com/">Charles proxy</a> tool, which led testers to not being able to use proxy tools while testing <em>uatRelease</em> build variant. Famous <a href="https://developer.android.com/training/articles/security-config"><em>network_security_config</em></a> file had been added to the project but it wasn’t working, since the build variant has to be <em>debuggable.</em> The quick fix was to add <em>android:debuggable</em> attribute to all <em>uat</em> builds. And since we’re not testing <em>uat</em> builds using any public channels — it’s secure enough.</p>
+
+<h4 id="results-2">Results</h4>
+<p>A simple configuration fix to the existing toolset <strong>brought an 8 minutes time reduction to each build and fixed SETs headache.</strong></p>
+
+<hr />
+<h3 id="all-numbers-together">All numbers together</h3>
+<p>In summary</p>
+
+<ul>
+  <li>Unit tests time <strong>down from 30 minutes to 3~6 minutes.</strong> Depends on build type.</li>
+  <li>Automation build cut off by <strong>another 10 minutes</strong> through removing a few unnecessary steps.</li>
+  <li>Artefacts deployment reduced <strong>from 2.1~3.2 minutes into 8 seconds!</strong></li>
+  <li>Fix to Charles configs gave us another <strong>8 minutes</strong> — due <em>uatDebug</em> build removal.</li>
+</ul>
+
+<p>We were able to shorten builds by between <strong>48 minutes and 34 minutes<br />
+per each build</strong>. That was a huge win and relief as you can imagine!</p>
+
+<p>We obviously made some rookie mistakes. But the most important part<br />
+is to learn from them. We were able to adapt quickly and we’re providing other small improvements since then. It can’t happen on a daily basis because we also need to deliver <em>business value</em> to our clients — but with an appropriate plan in place, I’m sure you can do even more.</p>
+
+<hr />
+<h3 id="tips-and-tricks-beyond-optimisations">Tips and tricks beyond optimisations</h3>
+<p>Bitrise and its plugins’ documentation is quite limited. You will need to deep dive into the plugins code if you want to understand the platform fully. Plugins code is mostly open source — you can find links inside plugin documentation. In particular, review the <a href="https://github.com/bitrise-steplib/steps-gradle-unit-test/blob/master/main.go"><em>main.go</em></a> file if you’re looking for attributes and parameters which could customise the build.</p>
+
+<p>Use <a href="https://app.bitrise.io/cli">Bitrise CLI</a> in your terminal in order to test configuration locally. It will save you a lot of time.</p>
+
+<p>Have as granular CI steps as possible. Use <em>title</em> attribute extensively. Greater readability — greater control over time. Solid foundations are the first step for future optimisation.</p>
+
+<p>Do what we haven’t done yet — introduce tools to measure build metrics automatically.</p>
+
+<p>Leverage version control since Bitrise is <em>similar</em> to <a href="https://en.wikipedia.org/wiki/Infrastructure_as_code">infrastructure as a code</a>.</p>
+
+<p>That’s a separate story but in Tigerspike, we <strong>optimised APK size by 13%</strong> during our internal hackathon day. You should be aware of best practises for Android app configuration. Get rid or optimise resources, configuration and APK size. These kinds of things are also impacting your build time: git pull, compilation and build time, tests, deploy time — these are some of many examples.</p>
+
+<p>Listen. Observe. Experiment. Formulate a plan and adopt only what’s needed for your team. Good luck!</p>
+
+<p><img src="/assets/1*BZQiSFYjEQF1yKdcpJuWXA.png" alt="Donald Duck says Thank you!" />
+<em>Thanks! Source: <a href="http://123emoji.com/donald-duck-stickers-2-9606/">http://123emoji.com/donald-duck-stickers-2-9606/</a></em></p>
+
+<hr />
+<p>I hope you like this piece. As you can see I love a fast feedback loop —<br />
+if you have any objections, comments or questions — please drop a comment or DM message.</p>
+
+<p>The article showcases what we have done for one of our projects in <a href="https://tigerspike.com/">Tigerspike</a>. We’re <a href="https://tigerspike.com/join-us/">hiring</a> — please mention my name! ;)</p>
+
+<hr />
+<p>If you want to reach me out, I’m based in Wrocław, Poland.<br />
+I’m also visiting London from time to time.<br />
+Here is my <a href="https://pl.linkedin.com/in/maciejmalak">LinkedIn</a> and <a href="https://twitter.com/monkeydevspl">Twitter</a>.</p>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[Be effective with Bitrise CI for Android — the lessons I learned the hard way.]]></summary></entry><entry><title type="html">How to start writing reusable components for Android apps?</title><link href="http://localhost:4000/2019/11/22/how-to-start-writing-reusable-components-for-android-apps.html" rel="alternate" type="text/html" title="How to start writing reusable components for Android apps?" /><published>2019-11-22T00:00:00+01:00</published><updated>2019-11-22T00:00:00+01:00</updated><id>http://localhost:4000/2019/11/22/how-to-start-writing-reusable-components-for-android-apps</id><content type="html" xml:base="http://localhost:4000/2019/11/22/how-to-start-writing-reusable-components-for-android-apps.html"><![CDATA[<section name="0e5b" class="section section--body section--first"><div class="section-divider"><hr class="section-divider" /></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn">![Reusable SpaceX rockets. Credits to SpaceX](/assets/1*tA0R1UunvGr1H3AovQp9JA.jpeg)<h3 name="9469" id="9469" class="graf graf--h3 graf-after--figure graf--title">How to start writing reusable components for Android apps?</h3><p name="de89" id="de89" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">The purpose</strong></p><p name="16f6" id="16f6" class="graf graf--p graf-after--p">For anyone, like myself, interested in building custom, reusable view components for an Android app. And those who had problems with finding good guidelines on the topic.</p><p name="a173" id="a173" class="graf graf--p graf-after--p">I will provide the basic reasoning behind architecting custom reusable views. There won’t be implementation details (code) for many reasons, <br />one of those is my trial to focus on the <em class="markup--em markup--p-em">concept</em> rather than technicalities.</p><p name="5d7f" id="5d7f" class="graf graf--p graf-after--p">Anyway, I hope that after reading this article you will be able to apply those principles to any interface architecture pattern such as MVP, MVC, MVVM <br />or MVI.</p><p name="990d" id="990d" class="graf graf--p graf-after--p">The first part says <em class="markup--em markup--p-em">why and when </em>adapt such technique. <br />You can jump to the second part for the list of recommendations.</p><p name="3c24" id="3c24" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">First, ask yourself a question: Do we need reusable components?</strong></p><p name="9fa5" id="9fa5" class="graf graf--p graf-after--p">IMHO you should be a part of a bigger, long-lasting project to consider doing so. I understand it’s hard to draw a line between MVP/short-term <br />and a long-term project sometimes. It is sometimes also hard to let go of technical nicety such as custom views but please be mature to do so. <br />The following list should help you making a decision.</p>![Definitely a hard nut to crack. via meme generator](/assets/1*8l4Mdcs-At2Q-PM-aJBcbA.jpeg)<p name="5364" id="5364" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">YAYS</em></strong></p><ul class="postList"><li name="87c9" id="87c9" class="graf graf--li graf-after--p">If you’re in a flexible environment where design decisions are done based upon <strong class="markup--strong markup--li-strong">many perspectives </strong>(not just your own) so you can pitch for good UX/UI.</li><li name="4af0" id="4af0" class="graf graf--li graf-after--li">If you see one (or more) view is used (will be used) in many places (reused). Plan for it. Those views should have <em class="markup--em markup--li-em">fairly</em> similar UX/UI to serve as a reusable components. Otherwise, reusing them will be challenging. Again, pitch the team to sustain consistent user experience.</li><li name="b8db" id="b8db" class="graf graf--li graf-after--li">If your teams plans to build extremely custom view like karaoke, <br />piano keyboard, fancy animated overlays, etc.</li><li name="4c0d" id="4c0d" class="graf graf--li graf-after--li">Finally, I have not tested this theory but IMHO if you’re bored and you feel like making an old legacy project interesting. <br />Since writing reusable components is like writing complex new features.</li><li name="4ec2" id="4ec2" class="graf graf--li graf-after--li">If you’re able to deliver business value by creating such components.</li><li name="8e42" id="8e42" class="graf graf--li graf-after--li">If your team plans major refactors and you have time to just play with the product.</li></ul><p name="4d7d" id="4d7d" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">NOPE</em></strong></p><ul class="postList"><li name="c5ba" id="c5ba" class="graf graf--li graf-after--p">POC or MVP cases. Although, MVP cases could be a good playground.</li><li name="562a" id="562a" class="graf graf--li graf-after--li">Small, simple app cases. There are situations where you know an app will be coded once and left as is. BTW Consider going cross-platform with those. Again, nice playground.</li><li name="ef06" id="ef06" class="graf graf--li graf-after--li">An inflexible environment. Design system gave to you up-front instead <br />of being discussed with all parties involved.</li><li name="73b0" id="73b0" class="graf graf--li graf-after--li graf--trailing">Your codebase is not ready to handle reusable components. <br />Please see <strong class="markup--strong markup--li-strong">Prerequisites </strong>section at the very end for few tips. <br />In this case you might have to put some work beforehand in order to <em class="markup--em markup--li-em">enable</em> reusable components.</li></ul></div></div></section>
+<section name="6ebe" class="section section--body"><div class="section-divider"><hr class="section-divider" /></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn">![Brace yourself! via meme generator](/assets/1*yuyQNA5y2y7LhGBidiY9IQ.jpeg)<p name="bc0d" id="bc0d" class="graf graf--p graf-after--figure">Ok, so now you’re <strong class="markup--strong markup--p-strong">sure</strong>. Let’s go with recommendations!</p><ol class="postList"><li name="43cc" id="43cc" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Custom views</strong></li></ol><p name="b202" id="b202" class="graf graf--p graf-after--li">It could be quite obvious for some and not necessary for some others <br />as I noticed. Deeply research the case of custom views first and try to imagine them as reusable and self-contained components. Don’t be afraid. <br />There are <a href="https://developer.android.com/guide/topics/ui/custom-components" data-href="https://developer.android.com/guide/topics/ui/custom-components" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">plenty of materials</a> to learn how to create simple custom view. <br />Remember, it doesn’t mean you’re responsible for rendering everything yourself. It doesn’t mean you have to create those components from scratch neither. It will be the better and simpler version of what Fragments suppose to be.</p><p name="b3ba" id="b3ba" class="graf graf--p graf-after--p">Think of a custom view as a container (f.ex ViewGroup like FrameLayout) <br />for other components grouped together to <strong class="markup--strong markup--p-strong">serve one purpose</strong>. <br />For example list of results used in couple places, part of product detail screen, or maybe just a grid product item used on different screens of your app, <br />or a search-bar and corresponding list of results. In the Toolbar/bars case <br />be careful. We had a lot of work with extracting Toolbar out of custom view after we realised Toolbar should be a separate, reusable component itself. <br />The important parts are <em class="markup--em markup--p-em">reusability</em>, <em class="markup--em markup--p-em">testability</em> and <em class="markup--em markup--p-em">independency</em>. <br />Decouple your view and controller from everything else, more on this shortly.</p><p name="9cf9" id="9cf9" class="graf graf--p graf-after--p">I would suggest to read about <a href="https://bradfrost.com/blog/post/atomic-web-design/" data-href="https://bradfrost.com/blog/post/atomic-web-design/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Atomic Design</a> in order to imagine the building process better. Basically, think of an any widget like button or label as a basic building block for bigger component. No matter if custom or native one. <br />Then imagine your custom, reusable view (imagine now list of results with reload button) and just compose those two views together. Handle composed views through your view controller or/and communicate through business logic (f.ex in a reactive way but that is not an only option) and you’re good to go.</p><p name="42ba" id="42ba" class="graf graf--p graf-after--p">Please remember, it is complex stuff. Probably the first place you will choose for refactor will be the wrong one. It was the case in my case. <br />My tip would be to go with the simplest view first.</p><p name="4f8f" id="4f8f" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">DON’TS</em></strong><br />Fragments inside “main” fragment.<br /><a href="http://hannesdorfmann.com/android/mosby3-mvi-4" data-href="http://hannesdorfmann.com/android/mosby3-mvi-4" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Parent-child</a> relation between views or view controllers. <br />Toolbar as a part of custom view. <br />Navigation bottom bar (iOS Toolbar) as a part of custom view. <br />Coupling. Activity/Fragments does setup for view.</p><p name="09a7" id="09a7" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">DOS</em></strong><br />Custom view that <strong class="markup--strong markup--p-strong">serves one purpose</strong>. <br />Activity/Fragments just render/show/hide view.</p><p name="7dc3" id="7dc3" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">2. Use platform-native components as much as possible</strong></p><p name="f5e5" id="f5e5" class="graf graf--p graf-after--p">Speaking of custom views, don’t go fully custom if not forced to. <br />Reusing existing components and widgets just makes your life easier <br />and enables you to work on <strong class="markup--strong markup--p-strong">actual, unique to your app business value</strong>. Work alongside with product/UX/UI/your own team to build <em class="markup--em markup--p-em">native-first</em> design systems. In most cases there is no need to go completely custom <br />and I’m sure your client is more than happy to get rid of an animation or fancy screen transition just to <strong class="markup--strong markup--p-strong">get business value on the place</strong>. <br />Ours clients are #trueStory.</p><p name="b12c" id="b12c" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">What do you mean by native components?</em></p><p name="44d0" id="44d0" class="graf graf--p graf-after--p">Google did a great job introducing <a href="https://material.io/develop/android/" data-href="https://material.io/develop/android/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Material Components</a> — guidelines with the corresponding implementation you can reuse in your application.</p><p name="9f83" id="9f83" class="graf graf--p graf-after--p">You could also consider not-views related components like <a href="https://developer.android.com/guide/navigation/navigation-getting-started" data-href="https://developer.android.com/guide/navigation/navigation-getting-started" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Navigation Component</a> which plays nicely with bottom nav bar f.ex. and could simplify your codebase.</p><p name="a969" id="a969" class="graf graf--p graf-after--p">You should take a look on how to compose and reuse themes and styles for your application, <a href="https://www.youtube.com/watch?v=6o3KqyX_tEA&amp;feature=youtu.be" data-href="https://www.youtube.com/watch?v=6o3KqyX_tEA&amp;feature=youtu.be" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here is a presentation from Googlers on the topic</a>.</p><p name="4541" id="4541" class="graf graf--p graf-after--p">But in the end just reuse old, good widgets and layouts to get things done.</p><p name="7c86" id="7c86" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">3. Use modern app layer (view layer) designs patterns</strong></p><p name="fa99" id="fa99" class="graf graf--p graf-after--p">Yep, and not only for the app layer. Plenty articles on that matter. I recommend you to read <a href="http://hannesdorfmann.com/android/mosby3-mvi-1" data-href="http://hannesdorfmann.com/android/mosby3-mvi-1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Hannes Dorfmann’s story on MVI</a> since a lot of useful concepts and ideas are there. He elaborates on topics such as how to organise, test, reuse and maintain your code which is not a part of this article but those two topics are strictly related. On the other hand I’m not a fan of tools like <a href="https://github.com/sockeqwe/mosby" data-href="https://github.com/sockeqwe/mosby" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Mosby</a> or <a href="https://github.com/moxy-community/Moxy" data-href="https://github.com/moxy-community/Moxy" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Moxy</a> because I painfully found out they are rather constraining. Inheriting behaviour, state or plugins from base classes was catastrophic in our cases. Refactors and building custom behaviour for new screens were messy tasks and required much effort. Instead, use lifecycle aware components (again, see Android tools) or setup your architecture the way that you can call your business logic anytime. Some people calls it overhead. I would call it simplicity especially most of us happen to use caching.</p><p name="ab41" id="ab41" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">4. Use dependency inversion frameworks extensively</strong></p><p name="f03f" id="f03f" class="graf graf--p graf-after--p">Nowadays, there is world beyond <a href="https://dagger.dev/android" data-href="https://dagger.dev/android" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Dagger</a>. Dagger itself offers quite good support for Android apps also. You can leverage <a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle" data-href="https://en.wikipedia.org/wiki/Dependency_inversion_principle" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">dependency inversion principle</a> alongside with framework of your choosing to inject views the same way you are injecting other collaborators like controllers, use cases or data sources. That way you’re decoupling actual view from the place it is rendered.</p><p name="9e6f" id="9e6f" class="graf graf--p graf-after--p">The great news is your custom view is <a href="https://developer.android.com/reference/android/view/View" data-href="https://developer.android.com/reference/android/view/View" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">View</a> implementation which means your Fragment or Activity doesn’t have to know what is rendered inside. Providing View subclasses enables you to use many custom views <strong class="markup--strong markup--p-strong">interchangeable</strong> as particular a component. Voila! Basic A/B testing setup done. Based on condition X you’re providing View Y or Z. Or you want to support multiple apps with one codebase. No worries, just inject different views for different flavours. There is much flexibility in this approach.</p><p name="a22a" id="a22a" class="graf graf--p graf-after--p">The only thing that Fragment or Activity need to do is to add view <br />to the layout (programmatically or through inflated xml if you want to <br />be direct). Don’t over-engineer it since you cannot escape from those <br />few lines. Just show/hide/gone view first based on the state that must <br />be rendered on the screen, and then optimise if necessary. <br />We’re building an app for Android OS 6+ so obviously those devices are quite fast devices. We have not encountered any glitches.</p><p name="6fb1" id="6fb1" class="graf graf--p graf-after--p">Oh, and really focus on cleaning up dependencies declarations like Dagger Modules. If you don’t understand it — spend time on it. Leave readable <br />and understandable legacy to you colleagues. Piling up dependencies are the worst enemy of a clean dependency graph, could lower performance and definitely causes headaches while coding the solution.</p><p name="84c4" id="84c4" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">5. Infamous parent-child dependency</strong></p><p name="acf3" id="acf3" class="graf graf--p graf-after--p">Don’t introduce <a href="http://hannesdorfmann.com/android/mosby3-mvi-4" data-href="http://hannesdorfmann.com/android/mosby3-mvi-4" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">parent-child dependency</a> in case of custom views. They really need to be testable and independent. You don’t want to create/mock parent view or controller in order to test a child. And you would need to create or mock such instances for UI or unit test eventually. Don’t introduce hidden dependencies like setup of a custom view partially delegated to the Activity/Fragment or parent view. And definitely don’t inject your Activity/Fragment to a custom view which could lead to cycle dependency and memory leaks. That would also mean other developers will not understand how to use your component. It’s not in reusable fashion.</p><p name="3e20" id="3e20" class="graf graf--p graf-after--p graf--trailing">The same goes for view controllers (Presenters, ViewModels, Models, etc). Don’t introduce parent-child link between them. Navigation and analytics are the common mistake — just inject those (hopefully) reusable components to custom view controller instead of calling methods from parent controller in order to do any job like analytics tracking.</p></div></div></section>
+<section name="65c0" class="section section--body"><div class="section-divider"><hr class="section-divider" /></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="ea57" id="ea57" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">In summary, what was the effect of aligning to those principles…</strong></p><p name="29be" id="29be" class="graf graf--p graf-after--p">Simply put, reusable components which could be used anywhere in the app with only small changes to the codebase required. By architecting those properly you should be able to decouple from Android lifecycle hell. <br />TBH we still sometimes need to sync data <em class="markup--em markup--p-em">onResume()</em> or <em class="markup--em markup--p-em">onPause()</em> somehow. That is why we created an abstract class <em class="markup--em markup--p-em">CustomView</em> with <em class="markup--em markup--p-em">onForeground()</em> <br />and <em class="markup--em markup--p-em">onBackground()</em> methods which are then implemented by custom views. We have done it for simplify, since it’s not breaking good architecture rules. We’re still doing our research on this topic. We know some tricks including lifecycle aware components but in the end our goal was to decouple from lifecycle! I will update this article when and if solved.</p><p name="e041" id="e041" class="graf graf--p graf-after--p">So, for example, by creating a list of results which was decoupled completely from other components we were able to switch views inside the screen in couple of lines enabling <strong class="markup--strong markup--p-strong">A/B testing</strong> and easy multiple <strong class="markup--strong markup--p-strong">flavour </strong>handling. It is also in the testing stage, so stay tuned. I’m definitely eager to edit this or write new article after long-term usage of the solution.</p><p name="845a" id="845a" class="graf graf--p graf-after--p graf--trailing">The way to achieve that wasn’t easy. We talked to the client and other devs <br />a lot in order to simplify and learn what is really needed. <br />We started refactor in one place and then thrown away code. And started again because system and requirements were quite complex. But that enabled us to understand business requirements and technical dependencies which opened new perspective on the solution. We knew how to simplify.</p></div></div></section>
+<section name="0de3" class="section section--body"><div class="section-divider"><hr class="section-divider" /></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="b1e4" id="b1e4" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Prerequisites</strong></p><p name="2492" id="2492" class="graf graf--p graf-after--p">I assumed your codebase is prepared for custom views in a way that many other collaborators are already reusable, testable, independent components. Or at least you’re able to inject them where needed. That would mean Analytics, Navigators, business logic, sensor handlers components and much more. That really depends on your application and you need to resolve it for yourself. Hopefully, by using the above mentioned principles as a reference. Although, there are few basic rules:</p><ul class="postList"><li name="4910" id="4910" class="graf graf--li graf-after--p">Your business logic is separated from views and view controllers.</li><li name="c50f" id="c50f" class="graf graf--li graf-after--li">Your business logic can be easily injected and reused.</li><li name="5246" id="5246" class="graf graf--li graf-after--li">View controllers are decoupled from views and how views are rendered.</li><li name="0146" id="0146" class="graf graf--li graf-after--li">View controllers are <em class="markup--em markup--li-em">framework agnostic</em>.</li><li name="1197" id="1197" class="graf graf--li graf-after--li">View controllers are easily injectable to views.</li><li name="9a88" id="9a88" class="graf graf--li graf-after--li graf--trailing">Views are are easily injectable to Fragments/Activities.</li></ul></div></div></section>
+<section name="9497" class="section section--body"><div class="section-divider"><hr class="section-divider" /></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="079f" id="079f" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">DISCLAIMER</strong></p><p name="e963" id="e963" class="graf graf--p graf-after--p graf--trailing">That is my story behind architecting reusable components for an Android app. I’m not saying it is silver bullet nor the best practise. Still, I consider above rules as a great approach to organise our system. <br />It was <strong class="markup--strong markup--p-strong">the first iteration</strong> we did in <a href="https://tigerspike.com/" data-href="https://tigerspike.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tigerspike</a> as a part of the larger project so stay tuned for more! Big shout out to my colleagues as they made this article possible. :)</p></div></div></section>
+<section name="8591" class="section section--body section--last"><div class="section-divider"><hr class="section-divider" /></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="d34e" id="d34e" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">PS</strong></p><p name="cd56" id="cd56" class="graf graf--p graf-after--p graf--trailing">I would love to see your comments, ideas and improvements as I’m looking to improve and share knowledge as much as possible. <br />If you want to reach me out I’m based in Wrocław, Poland. <br />From time to time I’m visiting London. <br />Here is my <a href="https://pl.linkedin.com/in/maciejmalak" data-href="https://pl.linkedin.com/in/maciejmalak" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">LinkedIn</a> and <a href="https://twitter.com/monkeydevspl" data-href="https://twitter.com/monkeydevspl" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Twitter</a>.</p></div></div></section>]]></content><author><name>Maciej Malak</name></author><summary type="html"><![CDATA[![Reusable SpaceX rockets. Credits to SpaceX](/assets/1*tA0R1UunvGr1H3AovQp9JA.jpeg)How to start writing reusable components for Android apps?The purposeFor anyone, like myself, interested in building custom, reusable view components for an Android app. And those who had problems with finding good guidelines on the topic.I will provide the basic reasoning behind architecting custom reusable views. There won’t be implementation details (code) for many reasons, one of those is my trial to focus on the concept rather than technicalities.Anyway, I hope that after reading this article you will be able to apply those principles to any interface architecture pattern such as MVP, MVC, MVVM or MVI.The first part says why and when adapt such technique. You can jump to the second part for the list of recommendations.First, ask yourself a question: Do we need reusable components?IMHO you should be a part of a bigger, long-lasting project to consider doing so. I understand it’s hard to draw a line between MVP/short-term and a long-term project sometimes. It is sometimes also hard to let go of technical nicety such as custom views but please be mature to do so. The following list should help you making a decision.![Definitely a hard nut to crack. via meme generator](/assets/1*8l4Mdcs-At2Q-PM-aJBcbA.jpeg)YAYSIf you’re in a flexible environment where design decisions are done based upon many perspectives (not just your own) so you can pitch for good UX/UI.If you see one (or more) view is used (will be used) in many places (reused). Plan for it. Those views should have fairly similar UX/UI to serve as a reusable components. Otherwise, reusing them will be challenging. Again, pitch the team to sustain consistent user experience.If your teams plans to build extremely custom view like karaoke, piano keyboard, fancy animated overlays, etc.Finally, I have not tested this theory but IMHO if you’re bored and you feel like making an old legacy project interesting. Since writing reusable components is like writing complex new features.If you’re able to deliver business value by creating such components.If your team plans major refactors and you have time to just play with the product.NOPEPOC or MVP cases. Although, MVP cases could be a good playground.Small, simple app cases. There are situations where you know an app will be coded once and left as is. BTW Consider going cross-platform with those. Again, nice playground.An inflexible environment. Design system gave to you up-front instead of being discussed with all parties involved.Your codebase is not ready to handle reusable components. Please see Prerequisites section at the very end for few tips. In this case you might have to put some work beforehand in order to enable reusable components. ![Brace yourself! via meme generator](/assets/1*yuyQNA5y2y7LhGBidiY9IQ.jpeg)Ok, so now you’re sure. Let’s go with recommendations!Custom viewsIt could be quite obvious for some and not necessary for some others as I noticed. Deeply research the case of custom views first and try to imagine them as reusable and self-contained components. Don’t be afraid. There are plenty of materials to learn how to create simple custom view. Remember, it doesn’t mean you’re responsible for rendering everything yourself. It doesn’t mean you have to create those components from scratch neither. It will be the better and simpler version of what Fragments suppose to be.Think of a custom view as a container (f.ex ViewGroup like FrameLayout) for other components grouped together to serve one purpose. For example list of results used in couple places, part of product detail screen, or maybe just a grid product item used on different screens of your app, or a search-bar and corresponding list of results. In the Toolbar/bars case be careful. We had a lot of work with extracting Toolbar out of custom view after we realised Toolbar should be a separate, reusable component itself. The important parts are reusability, testability and independency. Decouple your view and controller from everything else, more on this shortly.I would suggest to read about Atomic Design in order to imagine the building process better. Basically, think of an any widget like button or label as a basic building block for bigger component. No matter if custom or native one. Then imagine your custom, reusable view (imagine now list of results with reload button) and just compose those two views together. Handle composed views through your view controller or/and communicate through business logic (f.ex in a reactive way but that is not an only option) and you’re good to go.Please remember, it is complex stuff. Probably the first place you will choose for refactor will be the wrong one. It was the case in my case. My tip would be to go with the simplest view first.DON’TSFragments inside “main” fragment.Parent-child relation between views or view controllers. Toolbar as a part of custom view. Navigation bottom bar (iOS Toolbar) as a part of custom view. Coupling. Activity/Fragments does setup for view.DOSCustom view that serves one purpose. Activity/Fragments just render/show/hide view.2. Use platform-native components as much as possibleSpeaking of custom views, don’t go fully custom if not forced to. Reusing existing components and widgets just makes your life easier and enables you to work on actual, unique to your app business value. Work alongside with product/UX/UI/your own team to build native-first design systems. In most cases there is no need to go completely custom and I’m sure your client is more than happy to get rid of an animation or fancy screen transition just to get business value on the place. Ours clients are #trueStory.What do you mean by native components?Google did a great job introducing Material Components — guidelines with the corresponding implementation you can reuse in your application.You could also consider not-views related components like Navigation Component which plays nicely with bottom nav bar f.ex. and could simplify your codebase.You should take a look on how to compose and reuse themes and styles for your application, here is a presentation from Googlers on the topic.But in the end just reuse old, good widgets and layouts to get things done.3. Use modern app layer (view layer) designs patternsYep, and not only for the app layer. Plenty articles on that matter. I recommend you to read Hannes Dorfmann’s story on MVI since a lot of useful concepts and ideas are there. He elaborates on topics such as how to organise, test, reuse and maintain your code which is not a part of this article but those two topics are strictly related. On the other hand I’m not a fan of tools like Mosby or Moxy because I painfully found out they are rather constraining. Inheriting behaviour, state or plugins from base classes was catastrophic in our cases. Refactors and building custom behaviour for new screens were messy tasks and required much effort. Instead, use lifecycle aware components (again, see Android tools) or setup your architecture the way that you can call your business logic anytime. Some people calls it overhead. I would call it simplicity especially most of us happen to use caching.4. Use dependency inversion frameworks extensivelyNowadays, there is world beyond Dagger. Dagger itself offers quite good support for Android apps also. You can leverage dependency inversion principle alongside with framework of your choosing to inject views the same way you are injecting other collaborators like controllers, use cases or data sources. That way you’re decoupling actual view from the place it is rendered.The great news is your custom view is View implementation which means your Fragment or Activity doesn’t have to know what is rendered inside. Providing View subclasses enables you to use many custom views interchangeable as particular a component. Voila! Basic A/B testing setup done. Based on condition X you’re providing View Y or Z. Or you want to support multiple apps with one codebase. No worries, just inject different views for different flavours. There is much flexibility in this approach.The only thing that Fragment or Activity need to do is to add view to the layout (programmatically or through inflated xml if you want to be direct). Don’t over-engineer it since you cannot escape from those few lines. Just show/hide/gone view first based on the state that must be rendered on the screen, and then optimise if necessary. We’re building an app for Android OS 6+ so obviously those devices are quite fast devices. We have not encountered any glitches.Oh, and really focus on cleaning up dependencies declarations like Dagger Modules. If you don’t understand it — spend time on it. Leave readable and understandable legacy to you colleagues. Piling up dependencies are the worst enemy of a clean dependency graph, could lower performance and definitely causes headaches while coding the solution.5. Infamous parent-child dependencyDon’t introduce parent-child dependency in case of custom views. They really need to be testable and independent. You don’t want to create/mock parent view or controller in order to test a child. And you would need to create or mock such instances for UI or unit test eventually. Don’t introduce hidden dependencies like setup of a custom view partially delegated to the Activity/Fragment or parent view. And definitely don’t inject your Activity/Fragment to a custom view which could lead to cycle dependency and memory leaks. That would also mean other developers will not understand how to use your component. It’s not in reusable fashion.The same goes for view controllers (Presenters, ViewModels, Models, etc). Don’t introduce parent-child link between them. Navigation and analytics are the common mistake — just inject those (hopefully) reusable components to custom view controller instead of calling methods from parent controller in order to do any job like analytics tracking. In summary, what was the effect of aligning to those principles…Simply put, reusable components which could be used anywhere in the app with only small changes to the codebase required. By architecting those properly you should be able to decouple from Android lifecycle hell. TBH we still sometimes need to sync data onResume() or onPause() somehow. That is why we created an abstract class CustomView with onForeground() and onBackground() methods which are then implemented by custom views. We have done it for simplify, since it’s not breaking good architecture rules. We’re still doing our research on this topic. We know some tricks including lifecycle aware components but in the end our goal was to decouple from lifecycle! I will update this article when and if solved.So, for example, by creating a list of results which was decoupled completely from other components we were able to switch views inside the screen in couple of lines enabling A/B testing and easy multiple flavour handling. It is also in the testing stage, so stay tuned. I’m definitely eager to edit this or write new article after long-term usage of the solution.The way to achieve that wasn’t easy. We talked to the client and other devs a lot in order to simplify and learn what is really needed. We started refactor in one place and then thrown away code. And started again because system and requirements were quite complex. But that enabled us to understand business requirements and technical dependencies which opened new perspective on the solution. We knew how to simplify. PrerequisitesI assumed your codebase is prepared for custom views in a way that many other collaborators are already reusable, testable, independent components. Or at least you’re able to inject them where needed. That would mean Analytics, Navigators, business logic, sensor handlers components and much more. That really depends on your application and you need to resolve it for yourself. Hopefully, by using the above mentioned principles as a reference. Although, there are few basic rules:Your business logic is separated from views and view controllers.Your business logic can be easily injected and reused.View controllers are decoupled from views and how views are rendered.View controllers are framework agnostic.View controllers are easily injectable to views.Views are are easily injectable to Fragments/Activities. DISCLAIMERThat is my story behind architecting reusable components for an Android app. I’m not saying it is silver bullet nor the best practise. Still, I consider above rules as a great approach to organise our system. It was the first iteration we did in Tigerspike as a part of the larger project so stay tuned for more! Big shout out to my colleagues as they made this article possible. :) PSI would love to see your comments, ideas and improvements as I’m looking to improve and share knowledge as much as possible. If you want to reach me out I’m based in Wrocław, Poland. From time to time I’m visiting London. Here is my LinkedIn and Twitter.]]></summary></entry></feed>

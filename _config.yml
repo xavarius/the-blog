@@ -35,8 +35,9 @@ job_title: Stuff Software Engineer
 
 # Build settings
 # theme: minima
-# plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-feed
+  - jekyll-gist
 
 # Exclude from processing.
 # The following items will not be processed, by default.
