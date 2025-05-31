@@ -23,3 +23,15 @@
   padding-top: 15px;    // Original was 30px
   padding-bottom: 5px; // Original was 30px; // Original was 30px
 }
+
+// Styling for post dividers on the home page
+.post-divider {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;    // Adjust as needed for space above
+  margin-bottom: 40px; // Adjust as needed for space below
+  border: 0;
+  height: 1px;
+  background-color: #ccc; // A light grey color, adjust as needed
+}
