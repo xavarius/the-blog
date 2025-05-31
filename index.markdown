@@ -14,7 +14,9 @@ title: Home
         <div class="post-content-preview">
           {{ post.content }}
         </div>
-      <hr>
+        {%- unless forloop.last -%}
+          <hr class="post-divider">
+        {%- endunless -%}
     {% endfor %}
   </ul>
 </div>
