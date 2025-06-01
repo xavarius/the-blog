@@ -29,13 +29,11 @@ API calls! As long as your code can handle it. ;)
 
 Embracing these updates, developers can craft more refined and targeted app experiences, while users enjoy more customised interaction with their apps.
 
----
 
 No more talking!
 
 ![No more talking GIF](/assets/1*i5SnphHIujLd3oz9CIrDfA.gif)
 
----
 
 Lets dive into some details and examples.
 
@@ -61,7 +59,5 @@ I want you to imagine how could you improve your user experience and business me
 *   You can be more specific around business metrics and analytics and how web and native apps work together.
 *   You can prevent to fallback to native apps whenever they aren’t ready while attaining nice app links coverage where needed.
 *   You can workaround/hackaround bad URLs schema design in your company and get what you really need for our app/user.
-
----
 
 Thanks for reading, hit that clap or subscribe button hard! :)

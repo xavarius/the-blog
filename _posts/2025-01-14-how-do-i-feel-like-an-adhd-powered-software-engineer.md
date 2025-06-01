@@ -3,7 +3,6 @@ layout: default
 title: "How do I feel like an ADHD-powered Software Engineer?"
 date: 2025-01-14
 ---
----
 
 How do I feel like an ADHD-powered Software Engineer?
 

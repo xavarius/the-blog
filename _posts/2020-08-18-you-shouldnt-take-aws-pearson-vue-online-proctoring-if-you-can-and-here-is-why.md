@@ -12,7 +12,6 @@ Today, I took AWS Architect Associate exam. I’m already a holder of a [AWS Dev
 
 I will tell you what to expect, what the policies are, what surprised me and why you should avoid online proctoring exam, if you have alternatives.
 
----
 
 #### What you will be **obliged** to do before even starting an exam?
 
@@ -50,12 +49,8 @@ You need to go to [AWS dedicated Pearson help center](https://home.pearsonvue.co
 
 Take the above mentioned points into consideration while scheduling an exam. It’s all understandable but it’s quite limiting comparing to taking an exam on site. On site you can go to bathroom, drink, you will have a piece of paper to work on, you can relax a bit. If you’re able to schedule on site I recommend it. I won’t do online exam again unless #covid19 will force me to.
 
----
-
 Obviously, shit happens. I’m not furious nor mad but **I want to warn you** what **may** happen, **how reality looks like**, so you’re not disappointed. Every student spends a lot of time beforehand in order to pass an exam — it’s a bit frustrating when technical issues gets in the way.
 I understand software sometimes is not functioning as expected as I’m also introducing issues from time to time. All software engineers do.
 Simply, if I would have a choice between on site stable exam environment and unstable, unpredictable software — my choice is obvious.
-
----
 
 What was your experience with online proctor exam? Let others know in the comments!

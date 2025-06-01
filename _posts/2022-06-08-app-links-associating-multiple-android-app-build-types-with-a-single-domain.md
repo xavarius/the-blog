@@ -17,8 +17,6 @@ Simply put, how to get rid of disambiguous dialog in such an environment.
 ![We do not want that, ever!](/assets/1*sNCApKUp4caWwqZWqXZrMA.jpeg)
 *We do not want that, ever! Source: [https://www.flickr.com/photos/adewale_oshineye/21830113332](https://www.flickr.com/photos/adewale_oshineye/21830113332) Licence CC.*
 
----
-
 While it’s not groundbreaking research, this guide can spare you
 a couple of hours or even days of waiting impatiently to see if ownership
 over an app has been verified.
@@ -32,8 +30,6 @@ yet rather a collaboration between many teams that drives users
 into an app (for example, marketing campaigns).
 
 More precisely app links usually require a bit of collaboration from a mobile team and marketing/DevOps/web/backend/you-name-it team from your company.
-
----
 
 Let’s give an answer by starting with a question.
 
@@ -82,18 +78,12 @@ It contains a list (table) of elements as a top-level element.
 
 All you have to do is to provide an entry for each of your build types with an appropriate SHA-1 fingerprint. And [deploy](https://developer.android.com/training/app-links/verify-site-associations) it in [each domain](https://developers.google.com/digital-asset-links/v1/create-statement#website_statement_file) you’re interested in. Voila!
 
----
-
 This configuration is extremely useful if you love the flexibility and the opportunity of using any number of environments with any of your build types. It enhances the testability of an app and increases data diversity while easing debugging— all because you can choose which environment will be used while implementing and testing your application.
 
 ![Yeah, sharing is caring, remember that!](/assets/1*pqei5mOJjnLprLAotZuAZg.jpeg)
 *Yeah, **sharing is caring**, remember that!*
 
----
-
 Thank you, [Wojtek](https://www.linkedin.com/in/wdawiskiba/) for the peer review. It’s delightful to have such support. :)
-
----
 
 If you wanna reach me do not hesitate to do so. :)
 

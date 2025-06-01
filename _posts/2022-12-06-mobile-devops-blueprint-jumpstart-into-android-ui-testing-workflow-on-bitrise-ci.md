@@ -37,8 +37,6 @@ The default account is linked with your Bitrise instance — it’s recommended 
 
 If you would like to learn in-depth Bitrise concepts and how to navigate and use it in an optimized way, I would recommend you read [my article on being effective with Bitrise CI](https://proandroiddev.com/be-effective-with-bitrise-ci-for-android-lessons-i-learned-the-hard-way-5a85e45a33dc). These two articles will share a few tips for sure.
 
----
-
 #### The Blueprint
 ```yaml
   runTests:
@@ -174,11 +172,7 @@ And more, and more, and more.
 
 You can compare what I have shown you with the official documentation from Github. In this case for [the UI testing step](https://github.com/bitrise-steplib/steps-virtual-device-testing-for-android/blob/master/step.yml). It’s way better than website documentation.
 
----
-
 We’re finally at the end. Now, you can use provided a blueprint and run your test suite in minutes via Bitrise. Happy coding!
-
----
 
 I hope you like this piece. As you can see I love a fast feedback loop —
 if you have any objections, comments, or questions — please drop a comment or DM message.
