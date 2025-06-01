@@ -1,5 +1,69 @@
----
----
+// Responsive Breakpoints (Mobile-First)
+$breakpoint-small: 576px;  // Small devices (landscape phones)
+$breakpoint-medium: 768px; // Medium devices (tablets)
+$breakpoint-large: 992px;  // Large devices (desktops)
+$breakpoint-xlarge: 1200px; // Extra large devices (large desktops)
+
+// Mixin for mobile-first media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $breakpoint-small) { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media (min-width: $breakpoint-medium) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (min-width: $breakpoint-large) { @content; }
+  }
+  @else if $breakpoint == xlarge {
+    @media (min-width: $breakpoint-xlarge) { @content; }
+  }
+  @else {
+    @warn "Breakpoint `#{$breakpoint}` not recognized.";
+  }
+}
+
+// Basic Body Styles (Mobile-First)
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // A common system font stack
+  line-height: 1.6;
+  color: #333; // Default text color
+  background-color: #fff; // Default background
+}
+
+// Wrapper for main content (Mobile-First)
+.wrapper {
+  padding-left: 15px;  // Basic padding for mobile
+  padding-right: 15px; // Basic padding for mobile
+  width: 100%;
+  box-sizing: border-box; // Include padding and border in the element's total width and height
+
+  @include respond-to(medium) { // For tablets and larger
+    max-width: calc(#{$breakpoint-medium} - 30px); 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include respond-to(large) { // For desktops
+    max-width: calc(#{$breakpoint-large} - 60px);
+  }
+
+  @include respond-to(xlarge) { // For very large desktops
+    max-width: calc(#{$breakpoint-xlarge} - 100px);
+  }
+}
+
+// Styles for page-content, often used with wrapper
+.page-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 // Widen the social media column in the footer
 .footer-col-1 {
   width: calc(30% - 15px); // Was 35%
@@ -22,14 +86,33 @@
   padding-bottom: 5px; // Original was 30px; // Original was 30px
 }
 
-// Styling for post dividers on the home page
+// Styling for post dividers on the home page (Mobile-First)
 .post-divider {
-  width: 35%;
+  width: 80%; // Wider for mobile
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;    // Adjust as needed for space above
-  margin-bottom: 40px; // Adjust as needed for space below
+  margin-top: 30px;    // Adjusted for mobile
+  margin-bottom: 30px; // Adjusted for mobile
   border: 0;
   height: 1px;
-  background-color: #ccc; // A light grey color, adjust as needed
+  background-color: #ccc;
+
+  @include respond-to(medium) { // For tablets and larger
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(large) { // For desktops and larger
+    width: 35%;
+  }
+}
+
+// Global Styles for Responsive Media
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block; // Helps prevent unexpected spacing issues
 }
