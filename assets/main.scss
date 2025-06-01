@@ -28,6 +28,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // A common system font stack
+  font-size: 16px; // Base font size, 1rem = 16px
   line-height: 1.6;
   color: #333; // Default text color
   background-color: #fff; // Default background
@@ -63,27 +64,121 @@ body {
   padding-bottom: 20px;
 }
 
+// Typography (Mobile-First)
+p {
+  font-size: 1rem; // Approx 16px
+  margin-top: 0;
+  margin-bottom: 1rem; // Approx 16px
+}
 
-// Widen the social media column in the footer
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 600; // A bit bolder than normal
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;    // Approx 32px
+  margin-bottom: 1.5rem;
+  @include respond-to(medium) {
+    font-size: 2.5rem; // Approx 40px
+  }
+}
+
+h2 {
+  font-size: 1.75rem; // Approx 28px
+  margin-bottom: 1.25rem;
+  @include respond-to(medium) {
+    font-size: 2.15rem; // Approx 34px
+  }
+}
+
+h3 {
+  font-size: 1.5rem;  // Approx 24px
+  margin-bottom: 1rem;
+  @include respond-to(medium) {
+    font-size: 1.75rem; // Approx 28px
+  }
+}
+
+h4 {
+  font-size: 1.25rem; // Approx 20px
+  margin-bottom: 0.75rem;
+  @include respond-to(medium) {
+    font-size: 1.5rem; // Approx 24px
+  }
+}
+
+h5 {
+  font-size: 1.1rem;  // Approx 17.6px
+  margin-bottom: 0.5rem;
+  @include respond-to(medium) {
+    font-size: 1.25rem; // Approx 20px
+  }
+}
+
+h6 {
+  font-size: 1rem;    // Approx 16px
+  margin-bottom: 0.5rem;
+  font-weight: 700; // Bolder for smallest heading
+  @include respond-to(medium) {
+    font-size: 1.1rem; // Approx 17.6px
+  }
+}
+
+
+// Site Footer (Mobile-First)
+.site-footer {
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+  @include respond-to(medium) {
+    display: flex;
+    justify-content: space-between; // Distribute columns
+    flex-wrap: wrap; // Allow wrapping if needed
+  }
+}
+
+// Footer Columns (Mobile-First)
+.footer-col { // A common class for all footer columns for base styling
+  width: 100%;
+  margin-bottom: 15px; // Spacing when stacked vertically
+  box-sizing: border-box; // Ensure padding doesn't add to width
+
+  @include respond-to(medium) {
+    margin-bottom: 0; // Remove bottom margin when horizontal
+  }
+}
+
 .footer-col-1 {
-  width: calc(30% - 15px); // Was 35%
+  @extend .footer-col; // Inherit common styles
+
+  @include respond-to(medium) {
+    width: calc(30% - 10px); // Adjusted for 3 columns with some space
+    margin-right: 15px; // Space between col-1 and col-2
+  }
 }
 
 .footer-col-2 {
-  width: calc(30% - 15px); // Was 20% - This is the social media column
+  @extend .footer-col; // Inherit common styles
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond-to(medium) {
+    width: calc(30% - 10px); // Adjusted for 3 columns with some space
+    margin-right: 15px; // Space between col-2 and col-3
+  }
 }
 
 .footer-col-3 {
-  width: calc(40% - 15px); // Was 45%
-}
+  @extend .footer-col; // Inherit common styles
+  margin-bottom: 0; // Last column, no bottom margin needed when stacked
 
-// Increase footer padding to make it appear lower
-.site-footer {
-  padding-top: 15px;    // Original was 30px
-  padding-bottom: 5px; // Original was 30px; // Original was 30px
+  @include respond-to(medium) {
+    width: calc(40% - 10px); // Adjusted for 3 columns
+    margin-right: 0; // No margin on the last item in a row
+  }
 }
 
 // Styling for post dividers on the home page (Mobile-First)
