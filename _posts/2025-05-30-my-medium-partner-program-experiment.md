@@ -4,6 +4,8 @@ title: "My Medium Partner Program Experiment: A Look at Earnings"
 date: 2025-05-30
 ---
 
+
+todo write about views, reads and likes, and followers and yolo
 For a period, I experimented with Medium.com's Partner Program, placing some of my articles behind their paywall. It was an interesting venture into monetizing blog content directly through the platform. The earnings weren't astronomical, and I wasn't even trying to optimize for it. I learned one thing. There too much paid content on the internet. I can't justify making money from my blog posts. Let's share knowledge for free. 
 
 Here's a quick rundown of which posts generated some earnings during that time:

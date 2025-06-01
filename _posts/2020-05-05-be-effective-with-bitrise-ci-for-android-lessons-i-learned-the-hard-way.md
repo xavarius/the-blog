@@ -7,7 +7,6 @@ date: 2020-05-05
 ### **Be effective with Bitrise CI for Android — the lessons I learned the hard way.**
 ![Featured image](/assets/1*TQOKYOUKm5mDiYlF7cKO1A.png)
 
-***
 I won’t elaborate here on how important and crucial for any software development-oriented team the [continuous integration](https://www.thoughtworks.com/continuous-integration) (CI) practise is.  
 I’m pretty sure we can all agree on how CI tools support our day to day effectiveness. How they **might** save dozens of hours spent on non-essential tasks. Yet, it’s common to present CI tools as a hassle; slow, bulky,  
 and unreliable pipelines bloated with chaotic events instead of fast, maintainable feedback loop configured to support both product quality  
@@ -21,7 +20,6 @@ and tricks beyond optimisation will be included.
 It’s not a step-by-step tutorial. We gathered results that work for us,  
 and **you** have to **think them through.** If those solutions make sense to you then, and only then, apply them to your environment.
 
-***
 ### The landscape
 In order to fully understand **why** we provided a particular optimisation  
 it is crucial to understand how our landscape looked at the time.
@@ -42,7 +40,6 @@ It’s also important because we **value sh*t done the right way**.
 
 The basic measurement that **will prove effectiveness here is build time** — both *entire* build time or a particular step time (such as unit tests step or deploy step).
 
-***
 ### Improvements
 #### Unit testing
 The most commonly used feedback loop is unit tests suite, in particular  
@@ -122,7 +119,6 @@ at once, which means each flavour is responsible for its own unit tests finally.
 ![Total time when running all of the flavours.](/assets/1*eFTwp0OYl-5lIMLpKgx3GA.png)
 _Total time when running all of the flavours. Build time for those unit tests per one flavour._
 
-***
 ### Artefacts Deployment
 Review your *Deploy to Bitrise.io* step. According to the documentation [[1]](https://devcenter.bitrise.io/testing/test-reports/) [[2]](https://www.bitrise.io/integrations/steps/deploy-to-bitrise-io) [[3]](https://devcenter.bitrise.io/testing/device-testing-for-android/) for the following steps test reports are deployed automatically:
 
@@ -154,7 +150,6 @@ _That’s how quick it could be!_
 ![Oh yeah!](/assets/1*kFe06gXR1oM1b5rbmSR9BQ.jpeg)
 _Oh yeah! Source: [https://knowyourmeme.com/photos/988454-we-did-it-reddit](https://knowyourmeme.com/photos/988454-we-did-it-reddit)_
 
-***
 ### Automation workflow
 One of the low hanging fruits was to change what is being done  
 as a part of a particular workflow, since they all have different goals.  
@@ -172,7 +167,6 @@ By doing this, the *automation* build is a fast feedback loop for the SETs.
 **It takes around 10 minutes less than other builds.**  
 I believe it’s a huge win for the SETs team.
 
-***
 ### Investigating tools configuration
 Here is a quick and simple story as an example. Our builds produced *uatDebug* and *uatRelease* APKs. UAT stands for ‘[user acceptance testing](https://en.wikipedia.org/wiki/Acceptance_testing#User_acceptance_testing)’ and it’s also a name of one of our environment s— environment with almost *production* setup but more over *development* data — and simply used for testing purposes. So, producing those two build sounds about right, doesn’t it? I started asking questions anyway. We were sure we need *uatRelease* for testing purposes. It makes sense since testing production ready app (*release*) using development data (*uat*) is one of the best practices. But why do we need *uatDebug* then?
 
@@ -182,7 +176,6 @@ The sole reason was a misconfiguration of the [Charles proxy](https://www.charle
 #### Results
 A simple configuration fix to the existing toolset **brought an 8 minutes time reduction to each build and fixed SETs headache.**
 
-***
 ### All numbers together
 In summary
 
@@ -197,7 +190,6 @@ per each build**. That was a huge win and relief as you can imagine!
 We obviously made some rookie mistakes. But the most important part  
 is to learn from them. We were able to adapt quickly and we’re providing other small improvements since then. It can’t happen on a daily basis because we also need to deliver *business value* to our clients — but with an appropriate plan in place, I’m sure you can do even more.
 
-***
 ### Tips and tricks beyond optimisations
 Bitrise and its plugins’ documentation is quite limited. You will need to deep dive into the plugins code if you want to understand the platform fully. Plugins code is mostly open source — you can find links inside plugin documentation. In particular, review the [*main.go*](https://github.com/bitrise-steplib/steps-gradle-unit-test/blob/master/main.go) file if you’re looking for attributes and parameters which could customise the build.
 
@@ -216,13 +208,11 @@ Listen. Observe. Experiment. Formulate a plan and adopt only what’s needed for
 ![Donald Duck says Thank you!](/assets/1*BZQiSFYjEQF1yKdcpJuWXA.png)
 _Thanks! Source: [http://123emoji.com/donald-duck-stickers-2-9606/](http://123emoji.com/donald-duck-stickers-2-9606/)_
 
-***
 I hope you like this piece. As you can see I love a fast feedback loop —  
 if you have any objections, comments or questions — please drop a comment or DM message.
 
 The article showcases what we have done for one of our projects in [Tigerspike](https://tigerspike.com/). We’re [hiring](https://tigerspike.com/join-us/) — please mention my name! ;)
 
-***
 If you want to reach me out, I’m based in Wrocław, Poland.  
 I’m also visiting London from time to time.  
 Here is my [LinkedIn](https://pl.linkedin.com/in/maciejmalak) and [Twitter](https://twitter.com/monkeydevspl).
