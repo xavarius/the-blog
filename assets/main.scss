@@ -207,7 +207,9 @@ h6 {
 img,
 video,
 iframe {
-  max-width: 100%;
+  max-width: 75%; // No wider than 3/4 of text width
   height: auto;
-  display: block; // Helps prevent unexpected spacing issues
+  display: block;
+  margin-left: auto;  // Center the media
+  margin-right: auto; // Center the media
 }
