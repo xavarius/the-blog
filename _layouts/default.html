@@ -12,7 +12,36 @@
   </head>
   <body>
     <aside class="social-sidebar">
-      <img src="{{ '/assets/profile.png' | relative_url }}" alt="Profile Picture" class="profile-image">
+      <div class="sidebar-content-wrapper">
+        <div id="profileImageContainer" class="profile-image-wrapper">
+          <img src="{{ '/assets/profile.png' | relative_url }}" alt="Profile Picture" class="profile-pic main-profile-pic">
+          <img src="{{ '/assets/monkey-devs.png' | relative_url }}" alt="Alternate Profile Picture" class="profile-pic alt-profile-pic">
+        </div>
+        <div class="social-links-container">
+          <ul>
+          {%- for link in site.minima.social_links -%}
+            {%- assign link_url = link.user_url | default: link.url -%}
+            {%- if link_url and link_url != "" and link_url != "YOUR_LINKEDIN_URL_HERE" and link_url != "YOUR_MEDIUM_URL_HERE" -%}
+              {%- if link.platform == 'medium' -%}
+                <li class="social-icon-medium">
+                  <a href="{{ link_url | escape }}" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ '/assets/medium-square.svg' | relative_url }}" alt="Medium" class="svg-icon">
+                  </a>
+                </li>
+              {%- else -%}
+                <li class="social-icon-{{ link.platform | downcase }}">
+                  <a href="{{ link_url | escape }}" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
+                    <svg class="svg-icon">
+                      <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: link.platform | relative_url }}"></use>
+                    </svg>
+                  </a>
+                </li>
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+        </div>
+      </div>
     </aside>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -31,5 +60,56 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('profileImageContainer');
+        if (container) {
+          const mainPic = container.querySelector('.main-profile-pic');
+          const altPic = container.querySelector('.alt-profile-pic');
+
+          if (mainPic && altPic) {
+            let isMainPicBase = true; // true if mainPic is the current base image
+
+            // Function to set active image based on which one is 'base'
+            function showBaseImage() {
+              if (isMainPicBase) {
+                mainPic.style.opacity = '1';
+                altPic.style.opacity = '0';
+              } else {
+                mainPic.style.opacity = '0';
+                altPic.style.opacity = '1';
+              }
+            }
+
+            // Function to show the 'other' image (non-base)
+            function showOtherImage() {
+              if (isMainPicBase) {
+                mainPic.style.opacity = '0';
+                altPic.style.opacity = '1';
+              } else {
+                mainPic.style.opacity = '1';
+                altPic.style.opacity = '0';
+              }
+            }
+
+            // Initial state
+            showBaseImage();
+
+            container.addEventListener('mouseenter', () => {
+              showOtherImage();
+            });
+
+            container.addEventListener('mouseleave', () => {
+              showBaseImage();
+            });
+
+            container.addEventListener('click', () => {
+              isMainPicBase = !isMainPicBase; // Toggle the base image
+              showBaseImage(); // Show the new base image
+            });
+          }
+        }
+      });
+    </script>
   </body>
 </html>
