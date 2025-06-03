@@ -25,3 +25,34 @@ body {
   padding: 30px 0;
   text-align: center;
 }
+
+.social-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* You can adjust this width */
+  height: 100vh; /* Full viewport height */
+  background-color: #fff; /* White background, change as needed */
+  padding: 15px;
+  /* Shadow only on the right edge for elevation */
+  box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* This ensures the sidebar stays on top of other content */
+  /* Optional: round only the top-right and bottom-right corners */
+  border-radius: 0 8px 8px 0;
+  box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
+}
+
+.profile-image {
+  display: block; /* Allows margin auto for horizontal centering */
+  width: 120px;   /* Adjust as needed */
+  height: 120px;  /* Must be same as width for a perfect circle */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover;  /* This ensures the image covers the circular area well, cropping if necessary */
+  object-position: 50% 0%; /* Adjusts vertical position; 50% 50% is center. 50% 60% shifts image content down. */
+  margin: 20px auto;  /* Adds 20px margin at the top and bottom, and centers horizontally */
+}
+
+/* Adjust main content margin to prevent overlap with the fixed sidebar */
+.page-content {
+  margin-left: 220px; /* Adjust this value: sidebar width (200px) + desired gap (20px) */
+}

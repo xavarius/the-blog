@@ -1,3 +1,6 @@
+---
+---
+
 // Responsive Breakpoints (Mobile-First)
 $breakpoint-small: 576px;  // Small devices (landscape phones)
 $breakpoint-medium: 768px; // Medium devices (tablets)
@@ -26,7 +29,9 @@ $breakpoint-xlarge: 1200px; // Extra large devices (large desktops)
 // Basic Body Styles (Mobile-First)
 body {
   margin: 0;
-  padding: 0;
+  padding: 0; // Base padding reset
+  padding-left: 55px; // Space for the fixed sidebar (must match .social-sidebar width)
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // A common system font stack
   font-size: 16px; // Base font size, 1rem = 16px
   line-height: 1.6;
@@ -212,4 +217,59 @@ iframe {
   display: block;
   margin-left: auto;  // Center the media
   margin-right: auto; // Center the media
+}
+
+// Social Sidebar Styles
+.social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 55px; // Thin but visible width
+  background-color: #ffffff; // White background
+  // For a modern lifted feel, uncomment the line below:
+  // box-shadow: 2px 0 5px rgba(0,0,0,0.08);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // Vertically center the icon group
+  align-items: center;    // Horizontally center icons within the bar
+  z-index: 1000; // Ensure it's on top
+  box-sizing: border-box;
+
+  ul {
+    list-style-type: none; // Explicitly remove bullet points
+    list-style-image: none; // Ensure no image is used as a list marker
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+    fill: #555555; // Neutral icon color
+    transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+      fill: #007bff; // Primary color on hover
+      transform: scale(1.15); // Slight zoom on hover
+    }
+  }
+
+  // Specific styling for individual icons
+  li.social-icon-medium .svg-icon {
+    width: 24px; // Enforce standard size for Medium icon
+    height: 24px;
+  }
 }
