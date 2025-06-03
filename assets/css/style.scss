@@ -1,6 +1,5 @@
 ---
 ---
-
 // @import "minima"; // Temporarily commented out for lint error diagnosis
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -8,7 +7,8 @@
 
 // Your custom SCSS/CSS will go here
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
   margin: 0;
   padding: 0;
 }
