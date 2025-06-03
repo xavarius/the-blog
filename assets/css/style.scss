@@ -1,9 +1,10 @@
 ---
 ---
 
+// @import "minima"; // Temporarily commented out for lint error diagnosis
+
 // Import partials from `sass_dir` (defaults to `_sass`)
-// @import
-//   "minima"; // If you want to base it on Minima's styles, you'd copy its _sass folder too
+// If you want to base it on Minima's styles, you'd copy its _sass folder too
 
 // Your custom SCSS/CSS will go here
 body {
@@ -43,7 +44,10 @@ body {
 }
 
 .sidebar-content-wrapper {
-  padding-top: 15vh; /* Pushes content down by 25% of viewport height */
+  padding-top: 10vh; /* Pushes content down by 25% of viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children (profile image, social links) horizontally */
 }
 
 .profile-image-wrapper {
@@ -52,7 +56,7 @@ body {
   width: 120px;   /* Adjust as needed */
   height: 120px;  /* Must be same as width for a perfect circle */
   border-radius: 50%; /* This makes the image circular */
-  margin: 20px auto;  /* Adds 20px margin at the top and bottom, and centers horizontally */
+  margin: 10px auto;  /* Adds 20px margin at the top and bottom, and centers horizontally */
   overflow: hidden;   /* Important for circular crop and stacking */
   cursor: pointer;    /* Indicate interactivity */
 }
@@ -83,33 +87,32 @@ body {
 
 .social-links-container {
   text-align: center; /* Centers the <ul> block */
-  margin-top: 20px;   /* Space below the profile image */
-}
+  margin-top: 50px;   /* Space below the profile image */
 
-.social-links-container ul {
-  list-style: none;   /* Removes default bullet points */
-  padding: 0;
-  margin: 0;          /* Remove default browser margins for ul */
-  display: inline-block; /* Allows the ul to be centered by text-align on parent */
-}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Allows the ul to be centered by text-align on parent */
+  }
 
-.social-links-container li {
-  margin-bottom: 15px; /* Space between each icon */
-  line-height: 0; /* Prevent extra space that might affect alignment */
-}
+  li {
+    display: block; // Ensures vertical stacking
+    margin-bottom: 10px; /* Adjust spacing as needed. Minima might provide its own. */
+  }
 
-.social-links-container li a {
-  display: inline-flex; /* Use flexbox for centering icon */
-  align-items: center;    /* Vertically center icon */
-  justify-content: center; /* Horizontally center icon */
-  width: 56px;            /* Define the box for the icon */
-  height: 56px;           /* Define the box for the icon */
-}
+  // Specific styling for our <img> Medium icon to match Minima's SVG sizes.
+  .svg-icon { // Base style for ALL icons (SVG and IMG)
+    width: 18px;  // Uniform size for all icons
+    height: 18px; // Uniform size for all icons
+    vertical-align: middle;
+    fill: #555;
+    margin: 10px;   // Default fill for SVGs (won't apply to IMG)
+  }
 
-/* Optional: Adjust SVG icon size and color if needed */
-.social-links-container .svg-icon {
-  width: 100%; /* Icon fills the 'a' tag */
-  height: 100%; /* Icon fills the 'a' tag */
-  fill: #555; /* A slightly lighter gray, adjust as you like - for SVGs */
-  display: block; /* Helps with image behavior in flex containers */
+  img.svg-icon { // Specific adjustments for the Medium <img> icon
+    // Width and height are inherited from .svg-icon (18px)
+    object-fit: contain; // Ensures the image scales down to fit 18x18, maintaining aspect ratio.
+    // `fill` from .svg-icon does not apply to <img> tags.
+  }
 }
