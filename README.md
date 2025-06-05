@@ -17,6 +17,7 @@ Please let me know and attribute it appropriately, according to the [Creative Co
 - [ ] proof read blog posts
 - [ ] create deploy mechanism
 - [ ] attach domain to github pages
+- [x] Add analytics
 
 # Licensing
 Creative Commons BY Attribution 4.0 International
