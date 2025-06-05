@@ -113,8 +113,18 @@ body {
 
 /* Adjust main content margin to prevent overlap with the fixed sidebar */
 .page-content {
-  margin-left: 220px; /* Adjust this value: sidebar width (200px) + desired gap (20px) */
+  margin-left: 160px; /* Reduced from 220px to shift content left */
 }
+
+.page-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+
 
 .social-links-container {
   text-align: center; /* Centers the <ul> block */
