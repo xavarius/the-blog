@@ -1,6 +1,5 @@
 ---
 ---
-// @import "minima"; // Temporarily commented out for lint error diagnosis
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 // If you want to base it on Minima's styles, you'd copy its _sass folder too
@@ -65,6 +64,21 @@ body {
   margin-bottom: 5em; /* Add some space below the divider */
   margin-left: auto; /* Center the divider */
   margin-right: auto; /* Center the divider */
+}
+
+.cta-booking {
+  text-align: center;
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.9em; 
+  }
+
+  a {
+    font-weight: bold; 
+  }
 }
 
 .profile-image-wrapper {
