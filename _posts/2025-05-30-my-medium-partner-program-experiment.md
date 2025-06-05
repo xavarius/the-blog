@@ -1,22 +1,78 @@
 ---
 layout: default
-title: "My Medium Partner Program Experiment: A Look at Earnings"
+title: "My Medium Partner Program Experiment"
 date: 2025-05-30
 ---
 
+If you're an infrequent writer, as I am, and wondering if you should experiment with Medium's Partner Program, I would suggest to read my post. I have been using medium quite extensively, on a daily basis. Mostly to keep up with the industry, expand my point of view and make myself out of the information bubble. On the other hand, seeing how "popular" my first blog post was I decided to go with the flow and join partner program, and see what earnings I can get. 
 
-todo write about views, reads and likes, and followers and yolo
-For a period, I experimented with Medium.com's Partner Program, placing some of my articles behind their paywall. It was an interesting venture into monetizing blog content directly through the platform. The earnings weren't astronomical, and I wasn't even trying to optimize for it. I learned one thing. There too much paid content on the internet. I can't justify making money from my blog posts. Let's share knowledge for free. 
+#### Numbers! Numbers! Facts! 
 
-Here's a quick rundown of which posts generated some earnings during that time:
+<table class="medium-analytics-table">
+  <tr>
+    <td>Blog Post</td>
+    <td>Views</td>
+    <td>Reads</td>
+    <td>Earnings</td>
+  </tr>
+  <tr>
+    <td>Take your fucking notes in the era of AI.</td>
+    <td>32</td>
+    <td>57</td>
+    <td>$0.09</td>
+  </tr>
+  <tr>
+    <td>Android 15 enhanced App Links is an opportunity</td>
+    <td>177</td>
+    <td>65</td>
+    <td>$0.30</td>
+  </tr>
+  <tr>
+    <td>How do I feel like an ADHD-powered Software Engineer?</td>
+    <td>3</td>
+    <td>0</td>
+    <td>$0.00</td>
+  </tr>
+  <tr>
+    <td>Mobile DevOps Blueprint: Android UI testing on Bitrise</td>
+    <td>3,600</td>
+    <td>1,970</td>
+    <td>$0.11</td>
+  </tr>
+  <tr>
+    <td>App Links: Multiple Android Build Types, Single Domain</td>
+    <td>14,500</td>
+    <td>10,000</td>
+    <td>$0.29</td>
+  </tr>
+  <tr>
+    <td>You shouldn’t take AWS Pearson Vue Online Proctoring</td>
+    <td>3,800</td>
+    <td>1,300</td>
+    <td>$8.01</td>
+  </tr>
+  <tr>
+    <td>Be effective with Bitrise CI for Android—lessons learned</td>
+    <td>14,800</td>
+    <td>6,700</td>
+    <td>$8.09</td>
+  </tr>
+  <tr>
+    <td>How to start writing reusable components for Android apps?</td>
+    <td>14,800</td>
+    <td>6,700</td>
+    <td>$37.30</td>
+  </tr>
+  <tr>
+    <td><strong>Total</strong></td>
+    <td><strong>51,712</strong></td>
+    <td><strong>26,792</strong></td>
+    <td><strong>$54.19</strong></td>
+  </tr>
+</table>
 
-*   How to start writing reusable components for Android apps? - $37
-*   Be effective with Bitrise CI for Android—lessons I learned the hard way. - $8
-*   You shouldn’t take AWS Pearson Vue Online Proctoring, if you can, and here is why - $8
-*   Android 15 enhanced App Links is an opportunity to give a user an excellent experience - $0.20
-*   App Links: Associating Multiple Android App Build Types with a Single Domain - $0.20
-*   Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI - $0.20
-*   Take your fucking notes in the era of AI. - $0.20
-*   How do I feel like an ADHD-powered Software Engineer? - $0.10
+#### The final verdict
+As you can see, I reached almost 52 thousand views and 26 thousand reads, hundreds of claps (likes) and dozens of followers. With all that I was able to earn 54 bucks. Not bad - but not great. 
+Medium subscription costs 60 bucks per year. You have to have 50 followers and a few stories to join the program. Being casual writer does not pay for the subscription. I obviously know 
+I could generate tons of content from my notes and produce tons of mediocre posts, but it's not in my DNA. Let's have all that content here, for free. See ya around! 
 
-So, dear readers, that's for that couple cups of good coffee. :coffee:
