@@ -5,7 +5,8 @@ date: 2020-05-05
 ---
 
 ### **Be effective with Bitrise CI for Android — the lessons I learned the hard way.**
-![Featured image](/assets/1*TQOKYOUKm5mDiYlF7cKO1A.png)
+
+![Bitrise logo]({{ '/assets/1_TQOKYOUKm5mDiYlF7cKO1A.png' | relative_url }})
 
 I won’t elaborate here on how important and crucial for any software development-oriented team the [continuous integration](https://www.thoughtworks.com/continuous-integration) (CI) practise is.  
 I’m pretty sure we can all agree on how CI tools support our day to day effectiveness. How they **might** save dozens of hours spent on non-essential tasks. Yet, it’s common to present CI tools as a hassle; slow, bulky,  
@@ -52,12 +53,12 @@ Ok, let’s fix that.
 
 After a little bit of research it occurred to us that we used two separate steps for unit tests. [Android unit test step for Bitrise](https://devcenter.bitrise.io/testing/android-run-a-unit-test/) was running *app* module unit tests. [Gradle Unit Test](https://www.bitrise.io/integrations/steps/gradle-unit-test) step was just running *.gradlew test* task.
 
-![Total time for each step in minutes.](/assets/1*ZDxhzjlV0QFs2JDvktxfuA.png)
+![Total time for each step in minutes.]({{ '/assets/1_ZDxhzjlV0QFs2JDvktxfuA.png' | relative_url }})
 _Total time for each step in minutes._
 
 What’s wrong with gradle unit test step in our case? According to the Gradle documentation:
 
-![Gradle CLI documentation screenshot](/assets/1*6z7dHF2MnY1nAVjGlLGntQ.png)
+![Gradle CLI documentation screenshot]({{ '/assets/1_6z7dHF2MnY1nAVjGlLGntQ.png' | relative_url }})
 _Source: [https://docs.gradle.org/current/userguide/command_line_interface.html](https://docs.gradle.org/current/userguide/command_line_interface.html)_
 
 In simple terms, *./gradlew test* [triggers **dozens** of different *test* *tasks*](https://medium.com/android-testing-daily/running-your-tests-on-the-command-line-with-gradle-bcba78244487) from every module. In our case, it triggered both *debug* and *release* related tests  
@@ -79,7 +80,7 @@ _My gist lets you configure module dependent unit testing. Source: [https://gist
 
 Using *unit_test_task* attribute enables you to configure a particular task to be run. Basically, any gradle task. You can obviously chain gradle commands, but I want **granularity** here. Additionally, the usage of *title* attribute keeps build logs in order and enables you to track each step separately.
 
-![The result of applying the above mentioned recommendations.](/assets/1*SQSkq3ZylChkaKHJxCGHTw.png)
+![The result of applying the above mentioned recommendations.]({{ '/assets/1_SQSkq3ZylChkaKHJxCGHTw.png' | relative_url }})
 _The result of applying the above mentioned recommendations. Cleaning up resources gave us unit tests result in seconds instead of minutes._
 
 #### Flavour dependent unit tests
@@ -104,25 +105,26 @@ That way we’re all covered, no matter if we’re building all the flavours, or
 #### Results
 We started with around **30 minutes** per build.
 
-![Total time for unit testing then.](/assets/1*ZDxhzjlV0QFs2JDvktxfuA.png)
+![Total time for unit testing then.]({{ '/assets/1_ZDxhzjlV0QFs2JDvktxfuA.png' | relative_url }})
 _Total time for unit testing then._
 
 And finished up with the below results when running one flavour.  
 **Down to ~5/6 minutes per build.**
 
-![Total time for unit testing now.](/assets/1*-ah-XIlWh18Ac0-6z7JEXA.jpeg)
+![Total time for unit testing now.]({{ '/assets/1_-ah-XIlWh18Ac0-6z7JEXA.jpg' | relative_url }})
 _Total time for unit testing now._
 
 And also **down to ~3 minutes per build** when running all the flavours  
 at once, which means each flavour is responsible for its own unit tests finally. Yes, that’s a separate config in order to optimise build time even further.
 
-![Total time when running all of the flavours.](/assets/1*eFTwp0OYl-5lIMLpKgx3GA.png)
+![Total time when running all of the flavours.]({{ '/assets/1_eFTwp0OYl-5lIMLpKgx3GA.png' | relative_url }})
 _Total time when running all of the flavours. Build time for those unit tests per one flavour._
 
 ### Artefacts Deployment
 Review your *Deploy to Bitrise.io* step. According to the documentation [[1]](https://devcenter.bitrise.io/testing/test-reports/) [[2]](https://www.bitrise.io/integrations/steps/deploy-to-bitrise-io) [[3]](https://devcenter.bitrise.io/testing/device-testing-for-android/) for the following steps test reports are deployed automatically:
 
-- Xcode Test for iOS
+{{ ... }}
+```
 - Android Unit Test
 - iOS Device Testing
 - Virtual Device Testing for Android
@@ -139,15 +141,15 @@ Also, *Deploy to Bitrise.io* step is always triggered before unit tests but afte
 
 Initially *deploy to Bitrise.io* **step took from 2.1 to 3.2 minutes**.
 
-![Initially 3.2 min was total time per this step.](/assets/1*rPm9k8yro36t8KsQr9f1oQ.png)
+![Initially 3.2 min was total time per this step.]({{ '/assets/1_rPm9k8yro36t8KsQr9f1oQ.png' | relative_url }})
 _Initially 3.2 min was total time per this step._
 
 **After the changes it’s 0 minutes for some builds. It is ~8 seconds for most of them.**
 
-![That’s how quick it could be!](/assets/1*QkK3s1i0SLgx5Zo1NBNw0A.png)
+![That’s how quick it could be!]({{ '/assets/1_QkK3s1i0SLgx5Zo1NBNw0A.png' | relative_url }})
 _That’s how quick it could be!_
 
-![Oh yeah!](/assets/1*kFe06gXR1oM1b5rbmSR9BQ.jpeg)
+![Oh yeah!]({{ '/assets/1_kFe06gXR1oM1b5rbmSR9BQ.jpg' | relative_url }})
 _Oh yeah! Source: [https://knowyourmeme.com/photos/988454-we-did-it-reddit](https://knowyourmeme.com/photos/988454-we-did-it-reddit)_
 
 ### Automation workflow
@@ -205,14 +207,8 @@ That’s a separate story but in Tigerspike, we **optimised APK size by 13%** du
 
 Listen. Observe. Experiment. Formulate a plan and adopt only what’s needed for your team. Good luck!
 
-![Donald Duck says Thank you!](/assets/1*BZQiSFYjEQF1yKdcpJuWXA.png)
+![Donald Duck says Thank you!]({{ '/assets/1_BZQiSFYjEQF1yKdcpJuWXA.png' | relative_url }})
 _Thanks! Source: [http://123emoji.com/donald-duck-stickers-2-9606/](http://123emoji.com/donald-duck-stickers-2-9606/)_
 
 I hope you like this piece. As you can see I love a fast feedback loop —  
 if you have any objections, comments or questions — please drop a comment or DM message.
-
-The article showcases what we have done for one of our projects in [Tigerspike](https://tigerspike.com/). We’re [hiring](https://tigerspike.com/join-us/) — please mention my name! ;)
-
-If you want to reach me out, I’m based in Wrocław, Poland.  
-I’m also visiting London from time to time.  
-Here is my [LinkedIn](https://pl.linkedin.com/in/maciejmalak) and [Twitter](https://twitter.com/monkeydevspl).

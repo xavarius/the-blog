@@ -8,7 +8,6 @@ date: 2025-02-26
 
 And poke with “AI” but does not assume it’s gonna do the job if you can’t.
 
-
 Most of us, young folks, are aware that in the era of so-called-AI or so-called-Gen-AI everything needs to be automated, are we? Is that what we want?
 I doubt that, highly.
 

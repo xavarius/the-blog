@@ -6,14 +6,11 @@ date: 2025-01-29
 
 ### Android 15 enhanced App Links is an opportunity to give a user an excellent experience
 
-![Featured image for "Android 15 enhanced App Links..."](/assets/1*b6AzImEA43XyjdHhOQ1YNg.png)
-
 In the latest Android 15 update, developers are greeted with enhanced control over App Links. It’s introducing a level of flexibility and precision that was previously unattainable. Let’s talk quickly about that.
 For the example and summary please jump at the end of the article.
 
-Software Engineers now have the power to *exclude* or *allow* app links.
-It’s something new, delivering fine grained experience - as you can imagine disabling/enabling an entire group of app links or *a very specific* *scenario*
-is now available to us.
+Software Engineers now have the power to `exclude` or `allow` app links.
+It’s something new, delivering fine grained experience - as you can imagine disabling/enabling an entire group of app links or a very specific scenario is now available to us.
 
 On top of the above, beyond the traditional `<data>` attributes,
 Android 15 extends its functionality to allow filtering based on:
@@ -25,19 +22,13 @@ Android 15 extends its functionality to allow filtering based on:
 The granular approach Google introduced to app link management ensures that a user is taken to the appropriate resources in your application.
 Mixing that with accurate data being passed as query params, in example,
 a user can see improvements from enhanced filtering and smoother experience, to less bandwidth heavy and more narrowed
-API calls! As long as your code can handle it. ;)
+API calls! As long as your code can handle it.
 
 Embracing these updates, developers can craft more refined and targeted app experiences, while users enjoy more customised interaction with their apps.
 
+No more talking! Lets dive into some details and examples.
 
-No more talking!
-
-![No more talking GIF](/assets/1*i5SnphHIujLd3oz9CIrDfA.gif)
-
-
-Lets dive into some details and examples.
-
-![Review the new stuff. The work is mine.](/assets/1*_NzlS8Vr5mhbBRsD-KnLMw.jpeg)
+![Review the new stuff. The work is mine.]({{ '/assets/1*_NzlS8Vr5mhbBRsD-KnLMw.jpeg' | relative_url }})
 *Review the new stuff. The work is mine.*
 
 Having in mind the fact, that nothing is perfect, including the schema and the designs on URL/URI in every company, the new App Links capabilities could save us from impossible scenarios.
@@ -60,4 +51,4 @@ I want you to imagine how could you improve your user experience and business me
 *   You can prevent to fallback to native apps whenever they aren’t ready while attaining nice app links coverage where needed.
 *   You can workaround/hackaround bad URLs schema design in your company and get what you really need for our app/user.
 
-Thanks for reading, hit that clap or subscribe button hard! :)
+Thanks for reading!

@@ -4,7 +4,8 @@ title: "My Medium Partner Program Experiment"
 date: 2025-05-30
 ---
 
-If you're an infrequent writer, as I am, and wondering if you should experiment with Medium's Partner Program, I would suggest to read my post. I have been using medium quite extensively, on a daily basis. Mostly to keep up with the industry, expand my point of view and make myself out of the information bubble. On the other hand, seeing how "popular" my first blog post was I decided to go with the flow and join partner program, and see what earnings I can get. 
+If you're an infrequent writer, as I am, and wondering if you should experiment with Medium's Partner Program, I would suggest to read my post. I have been using medium quite extensively, on a daily basis. Mostly to keep up with the industry, expand my point of view and make myself out of the information bubble. On the other hand, seeing how "popular" my first blog post was I decided to go with the flow 
+and join partner program, and see what earnings I can get. 
 
 #### Numbers! Numbers! Facts! 
 
@@ -72,7 +73,9 @@ If you're an infrequent writer, as I am, and wondering if you should experiment 
 </table>
 
 #### The final verdict
-As you can see, I reached almost 52 thousand views and 26 thousand reads, hundreds of claps (likes) and dozens of followers. With all that I was able to earn 54 bucks. Not bad - but not great. 
-Medium subscription costs 60 bucks per year. You have to have 50 followers and a few stories to join the program. Being casual writer does not pay for the subscription. I obviously know 
-I could generate tons of content from my notes and produce tons of mediocre posts, but it's not in my DNA. Let's have all that content here, for free. See ya around! 
+As you can see, I reached almost 52 thousand views and 26 thousand reads, hundreds of claps (likes) and dozens of followers. With all that I was able to earn 54 bucks. 
+Not bad - but not great. Medium subscription costs 60 bucks per year. You have to have 50 followers and a few stories to join the program. 
+Being casual writer does not pay for the subscription. I obviously know 
+I could generate tons of content from my notes and produce tons of mediocre posts, 
+but it's not in my DNA. Let's have all that content here, for free. See ya around! 
 

@@ -22,8 +22,8 @@ title: Maciej Malak
 email: hellomonkeydevs@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   You can review testimonials here, companies I worked with here and my values here. Here are my blog posts.
-baseurl: "/the-blog" # the subpath of your site, e.g. /blog
-url: "https://xavarius.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://maciejmalak.com" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: "Maciej Malak"
 github_username: xavarius

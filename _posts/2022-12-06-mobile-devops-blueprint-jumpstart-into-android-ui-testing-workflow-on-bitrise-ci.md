@@ -4,9 +4,6 @@ title: "Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on B
 date: 2022-12-06
 ---
 
-![Illustration of a child jumping on a trampoline](/assets/1*i5a9u-Ec_NYsMcKm1e8MYw.jpeg)
-*Image source: [Creative Commons Attribution](https://vectorportal.com/pt/vector/crian%C3%A7a-pulando-em-um-trampolim/35471)*
-
 ### Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI
 
 #### Just run those tests in minutes
@@ -72,11 +69,7 @@ Just basic configs, nothing to see here, really. *runTest* steps live alongside 
       - cache-pull@2: { } # gets prev cached artifacts, faster build
       - install-missing-android-tools@3: { } # update
       - android-sdk-update@1: { } # update
-# this
-# is
-# where
-# testing
-# happens
+      # this is where testing happens
       - custom-test-results-export@0.1: # Test reports. You want them.
           inputs:
             - test_name: "*"
@@ -174,9 +167,5 @@ You can compare what I have shown you with the official documentation from Githu
 
 We’re finally at the end. Now, you can use provided a blueprint and run your test suite in minutes via Bitrise. Happy coding!
 
-I hope you like this piece. As you can see I love a fast feedback loop —
-if you have any objections, comments, or questions — please drop a comment or DM message.
-
-If you want to reach out, I’m based in Wrocław, Poland.
-Here are my [LinkedIn](https://pl.linkedin.com/in/maciejmalak) and [Twitter](https://twitter.com/monkeydevspl).
+I hope you like this piece I love a fast feedback loop. If you have any objections, comments, or questions — please drop a comment or DM message.
 
