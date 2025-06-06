@@ -35,6 +35,12 @@
                     <img src="{{ '/assets/medium-square.svg' | relative_url }}" alt="Medium" class="svg-icon">
                   </a>
                 </li>
+              {%- elsif link.platform == 'strava' -%}
+                <li class="social-icon-strava">
+                  <a href="{{ link_url | escape }}" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ '/assets/strava.svg' | relative_url }}" alt="Strava" class="svg-icon">
+                  </a>
+                </li>
               {%- else -%}
                 <li class="social-icon-{{ link.platform | downcase }}">
                   <a href="{{ link_url | escape }}" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
