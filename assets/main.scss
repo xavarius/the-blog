@@ -1,0 +1,275 @@
+---
+---
+
+// Responsive Breakpoints (Mobile-First)
+$breakpoint-small: 576px;  // Small devices (landscape phones)
+$breakpoint-medium: 768px; // Medium devices (tablets)
+$breakpoint-large: 992px;  // Large devices (desktops)
+$breakpoint-xlarge: 1200px; // Extra large devices (large desktops)
+
+// Mixin for mobile-first media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $breakpoint-small) { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media (min-width: $breakpoint-medium) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (min-width: $breakpoint-large) { @content; }
+  }
+  @else if $breakpoint == xlarge {
+    @media (min-width: $breakpoint-xlarge) { @content; }
+  }
+  @else {
+    @warn "Breakpoint `#{$breakpoint}` not recognized.";
+  }
+}
+
+// Basic Body Styles (Mobile-First)
+body {
+  margin: 0;
+  padding: 0; // Base padding reset
+  padding-left: 55px; // Space for the fixed sidebar (must match .social-sidebar width)
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // A common system font stack
+  font-size: 16px; // Base font size, 1rem = 16px
+  line-height: 1.6;
+  color: #333; // Default text color
+  background-color: #fff; // Default background
+}
+
+// Wrapper for main content (Mobile-First)
+.wrapper {
+  padding-left: 15px;  // Basic padding for mobile
+  padding-right: 15px; // Basic padding for mobile
+  width: 100%;
+  box-sizing: border-box; // Include padding and border in the element's total width and height
+
+  @include respond-to(medium) { // For tablets and larger
+    max-width: calc(#{$breakpoint-medium} - 30px); 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include respond-to(large) { // For desktops
+    max-width: calc(#{$breakpoint-large} - 60px);
+  }
+
+  @include respond-to(xlarge) { // For very large desktops
+    max-width: calc(#{$breakpoint-xlarge} - 100px);
+  }
+}
+
+// Styles for page-content, often used with wrapper
+.page-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// Typography (Mobile-First)
+p {
+  font-size: 1rem; // Approx 16px
+  margin-top: 0;
+  margin-bottom: 1rem; // Approx 16px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 600; // A bit bolder than normal
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;    // Approx 32px
+  margin-bottom: 1.5rem;
+  @include respond-to(medium) {
+    font-size: 2.5rem; // Approx 40px
+  }
+}
+
+h2 {
+  font-size: 1.75rem; // Approx 28px
+  margin-bottom: 1.25rem;
+  @include respond-to(medium) {
+    font-size: 2.15rem; // Approx 34px
+  }
+}
+
+h3 {
+  font-size: 1.5rem;  // Approx 24px
+  margin-bottom: 1rem;
+  @include respond-to(medium) {
+    font-size: 1.75rem; // Approx 28px
+  }
+}
+
+h4 {
+  font-size: 1.25rem; // Approx 20px
+  margin-bottom: 0.75rem;
+  @include respond-to(medium) {
+    font-size: 1.5rem; // Approx 24px
+  }
+}
+
+h5 {
+  font-size: 1.1rem;  // Approx 17.6px
+  margin-bottom: 0.5rem;
+  @include respond-to(medium) {
+    font-size: 1.25rem; // Approx 20px
+  }
+}
+
+h6 {
+  font-size: 1rem;    // Approx 16px
+  margin-bottom: 0.5rem;
+  font-weight: 700; // Bolder for smallest heading
+  @include respond-to(medium) {
+    font-size: 1.1rem; // Approx 17.6px
+  }
+}
+
+
+// Site Footer (Mobile-First)
+.site-footer {
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+  @include respond-to(medium) {
+    display: flex;
+    justify-content: space-between; // Distribute columns
+    flex-wrap: wrap; // Allow wrapping if needed
+  }
+}
+
+// Footer Columns (Mobile-First)
+.footer-col { // A common class for all footer columns for base styling
+  width: 100%;
+  margin-bottom: 15px; // Spacing when stacked vertically
+  box-sizing: border-box; // Ensure padding doesn't add to width
+
+  @include respond-to(medium) {
+    margin-bottom: 0; // Remove bottom margin when horizontal
+  }
+}
+
+.footer-col-1 {
+  @extend .footer-col; // Inherit common styles
+
+  @include respond-to(medium) {
+    width: calc(30% - 10px); // Adjusted for 3 columns with some space
+    margin-right: 15px; // Space between col-1 and col-2
+  }
+}
+
+.footer-col-2 {
+  @extend .footer-col; // Inherit common styles
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to(medium) {
+    width: calc(30% - 10px); // Adjusted for 3 columns with some space
+    margin-right: 15px; // Space between col-2 and col-3
+  }
+}
+
+.footer-col-3 {
+  @extend .footer-col; // Inherit common styles
+  margin-bottom: 0; // Last column, no bottom margin needed when stacked
+
+  @include respond-to(medium) {
+    width: calc(40% - 10px); // Adjusted for 3 columns
+    margin-right: 0; // No margin on the last item in a row
+  }
+}
+
+// Styling for post dividers on the home page (Mobile-First)
+.post-divider {
+  width: 80%; // Wider for mobile
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;    // Adjusted for mobile
+  margin-bottom: 30px; // Adjusted for mobile
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+
+  @include respond-to(medium) { // For tablets and larger
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(large) { // For desktops and larger
+    width: 35%;
+  }
+}
+
+// Global Styles for Responsive Media
+img,
+video,
+iframe {
+  max-width: 75%; // No wider than 3/4 of text width
+  height: auto;
+  display: block;
+  margin-left: auto;  // Center the media
+  margin-right: auto; // Center the media
+}
+
+// Social Sidebar Styles
+.social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 55px; // Thin but visible width
+  background-color: #ffffff; // White background
+  // For a modern lifted feel, uncomment the line below:
+  // box-shadow: 2px 0 5px rgba(0,0,0,0.08);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // Vertically center the icon group
+  align-items: center;    // Horizontally center icons within the bar
+  z-index: 1000; // Ensure it's on top
+  box-sizing: border-box;
+
+  ul {
+    list-style-type: none; // Explicitly remove bullet points
+    list-style-image: none; // Ensure no image is used as a list marker
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+    fill: #555555; // Neutral icon color
+    transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+      fill: #007bff; // Primary color on hover
+      transform: scale(1.15); // Slight zoom on hover
+    }
+  }
+
+  // Specific styling for individual icons
+  li.social-icon-medium .svg-icon {
+    width: 24px; // Enforce standard size for Medium icon
+    height: 24px;
+  }
+}

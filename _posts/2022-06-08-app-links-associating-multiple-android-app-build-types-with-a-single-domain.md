@@ -15,7 +15,7 @@ using a Digital Asset Links JSON file.
 Simply put, how to get rid of disambiguous dialog in such an environment.
 
 ![We do not want that, ever!]({{ '/assets/1_sNCApKUp4caWwqZWqXZrMA.jpg' | relative_url }})
-*We do not want that, ever! [Source](https://www.flickr.com/photos/adewale_oshineye/21830113332) (CC Licence).*
+*We do not want that, ever! Source: [https://www.flickr.com/photos/adewale_oshineye/21830113332](https://www.flickr.com/photos/adewale_oshineye/21830113332) Licence CC.*
 
 While it’s not groundbreaking research, this guide can spare you
 a couple of hours or even days of waiting impatiently to see if ownership

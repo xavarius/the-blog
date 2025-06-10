@@ -59,7 +59,7 @@ _Total time for each step in minutes._
 What’s wrong with gradle unit test step in our case? According to the Gradle documentation:
 
 ![Gradle CLI documentation screenshot]({{ '/assets/1_6z7dHF2MnY1nAVjGlLGntQ.png' | relative_url }})
-_Source: [docs.gradle.org](https://docs.gradle.org/current/userguide/command_line_interface.html)_
+_Source: [https://docs.gradle.org/current/userguide/command_line_interface.html](https://docs.gradle.org/current/userguide/command_line_interface.html)_
 
 In simple terms, *./gradlew test* [triggers **dozens** of different *test* *tasks*](https://medium.com/android-testing-daily/running-your-tests-on-the-command-line-with-gradle-bcba78244487) from every module. In our case, it triggered both *debug* and *release* related tests  
 for every *subproject (*module*)*. That’s too much redundancy; consider the final result of *./gradlew test* command:
@@ -76,7 +76,7 @@ Of course we don’t! Where does it lead us?
 Split *flavour dependent* and *flavour agnostic* unit tests. Gain greater control over how your application is tested. Use [Gradle Unit Test step](https://www.bitrise.io/integrations/steps/gradle-unit-test) in your [Bitrise.yml](https://devcenter.bitrise.io/bitrise-cli/basics-of-bitrise-yml/) to run targeted *flavour agnostic* unit tests, like this:
 
 {% gist xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3 %}
-_My gist lets you configure module dependent unit testing. [Source gist](https://gist.github.com/xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3)_
+_My gist lets you configure module dependent unit testing. Source: [https://gist.github.com/xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3](https://gist.github.com/xavarius/6132a1ed16bdd944d3cbe0e9cf4ca2b3)_
 
 Using *unit_test_task* attribute enables you to configure a particular task to be run. Basically, any gradle task. You can obviously chain gradle commands, but I want **granularity** here. Additionally, the usage of *title* attribute keeps build logs in order and enables you to track each step separately.
 
@@ -91,7 +91,7 @@ I would recommend you to run only what you need. But I came to conclusion that �
 It’s **really easy** to break one of the flavours by introducing changes to only one of them. That’s why we ended up with running unit tests for every flavour in every build. In addition, the above mentioned set of *flavour agnostic* tests is triggered. What does it mean when it comes to Bitrise CI setup?
 
 {% gist xavarius/d14bb74261ac9cc40f134b20e66f5542 %}
-_Targeted unit tests per flavour. [Source gist](https://gist.github.com/xavarius/d14bb74261ac9cc40f134b20e66f5542)_
+_Targeted unit tests per flavour. Source: [https://gist.github.com/xavarius/d14bb74261ac9cc40f134b20e66f5542](https://gist.github.com/xavarius/d14bb74261ac9cc40f134b20e66f5542)_
 
 The above snippet runs unit tests for the *app* module for a particular flavour injected as an [*environment variable*](https://devcenter.bitrise.io/builds/env-vars-secret-env-vars/) and a particular build variant.  
 So, if CI builds only one flavour at time, this snippet is supposed to be triggered three times, once for each flavour. If all of the flavours are built simultaneously, then each flavour should run its own unit tests in order to avoid redundancy and save a few minutes from build. Notice that, before *_UnitTestsPerFlavour step, UnitTests_Flavour_Agnostic_Modules* step is triggered. It runs flavour agnostic tests, so *domain*, *data and feature* modules unit tests. Either way, all unit tests are always validated.
@@ -150,7 +150,7 @@ _Initially 3.2 min was total time per this step._
 _That’s how quick it could be!_
 
 ![Oh yeah!]({{ '/assets/1_kFe06gXR1oM1b5rbmSR9BQ.jpg' | relative_url }})
-_Oh yeah! [Source](https://knowyourmeme.com/photos/988454-we-did-it-reddit)_
+_Oh yeah! Source: [https://knowyourmeme.com/photos/988454-we-did-it-reddit](https://knowyourmeme.com/photos/988454-we-did-it-reddit)_
 
 ### Automation workflow
 One of the low hanging fruits was to change what is being done  
@@ -208,7 +208,7 @@ That’s a separate story but in Tigerspike, we **optimised APK size by 13%** du
 Listen. Observe. Experiment. Formulate a plan and adopt only what’s needed for your team. Good luck!
 
 ![Donald Duck says Thank you!]({{ '/assets/1_BZQiSFYjEQF1yKdcpJuWXA.png' | relative_url }})
-_Thanks! [Source](http://123emoji.com/donald-duck-stickers-2-9606/)_
+_Thanks! Source: [http://123emoji.com/donald-duck-stickers-2-9606/](http://123emoji.com/donald-duck-stickers-2-9606/)_
 
 I hope you like this piece. As you can see I love a fast feedback loop —  
 if you have any objections, comments or questions — please drop a comment or DM message.
