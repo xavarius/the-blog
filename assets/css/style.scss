@@ -1,6 +1,30 @@
 ---
 ---
 
+// Breakpoints and responsive mixin
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $breakpoint-small) { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media (min-width: $breakpoint-medium) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (min-width: $breakpoint-large) { @content; }
+  }
+  @else if $breakpoint == xlarge {
+    @media (min-width: $breakpoint-xlarge) { @content; }
+  }
+  @else {
+    @warn "Breakpoint `#{$breakpoint}` not recognized.";
+  }
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 // If you want to base it on Minima's styles, you'd copy its _sass folder too
 
@@ -32,19 +56,23 @@ body {
 }
 
 .social-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px; /* You can adjust this width */
-  height: 100vh; /* Full viewport height */
-  background-color: #fff; /* White background, change as needed */
-  padding: 0 15px 15px 15px; /* Remove top padding, keep others */
-  /* Shadow only on the right edge for elevation */
-  box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* This ensures the sidebar stays on top of other content */
-  /* Optional: round only the top-right and bottom-right corners */
-  border-radius: 0 8px 8px 0;
-  box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
+  display: none;
+
+  @include respond-to(small) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* You can adjust this width */
+    height: 100vh; /* Full viewport height */
+    background-color: #fff; /* White background, change as needed */
+    padding: 0 15px 15px 15px; /* Remove top padding, keep others */
+    /* Shadow only on the right edge for elevation */
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* This ensures the sidebar stays on top of other content */
+    /* Optional: round only the top-right and bottom-right corners */
+    border-radius: 0 8px 8px 0;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
+  }
 }
 
 .sidebar-content-wrapper {
@@ -113,7 +141,11 @@ body {
 
 /* Adjust main content margin to prevent overlap with the fixed sidebar */
 .page-content {
-  margin-left: 160px; /* Reduced from 220px to shift content left */
+  margin-left: 0;
+
+  @include respond-to(small) {
+    margin-left: 160px; /* Reduced from 220px to shift content left */
+  }
 }
 
 .page-content img {
