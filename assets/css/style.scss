@@ -1,119 +1,86 @@
 ---
 ---
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-// If you want to base it on Minima's styles, you'd copy its _sass folder too
+// Responsive Breakpoints (Mobile-First)
+$breakpoint-small: 576px;  // Small devices (landscape phones)
+$breakpoint-medium: 768px; // Medium devices (tablets)
+$breakpoint-large: 992px;  // Large devices (desktops)
+$breakpoint-xlarge: 1200px; // Extra large devices (large desktops)
 
-// Your custom SCSS/CSS will go here
+// Mixin for mobile-first media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $breakpoint-small) { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media (min-width: $breakpoint-medium) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (min-width: $breakpoint-large) { @content; }
+  }
+  @else if $breakpoint == xlarge {
+    @media (min-width: $breakpoint-xlarge) { @content; }
+  }
+  @else {
+    @warn "Breakpoint `#{$breakpoint}` not recognized.";
+  }
+}
+
+// Basic Body Styles
 body {
+  margin: 0;
+  padding: 0; // Base padding reset
+  box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-weight: 200;
-  margin: 0;
-  padding: 0;
+  font-size: 16px; // Base font size, 1rem = 16px
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+
+  @include respond-to(medium) {
+    padding-left: 55px; // Space for the fixed sidebar on larger screens
+  }
 }
 
+// Wrapper for main content
 .wrapper {
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include respond-to(medium) {
+    max-width: calc(#{$breakpoint-medium} - 30px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include respond-to(large) {
+    max-width: calc(#{$breakpoint-large} - 60px);
+  }
+
+  @include respond-to(xlarge) {
+    max-width: calc(#{$breakpoint-xlarge} - 100px);
+  }
 }
 
+// Post list spacing
 .post-list {
   margin-top: 5em;
 }
 
-.site-footer {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding: 30px 0;
-  text-align: center;
-}
-
-.social-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px; /* You can adjust this width */
-  height: 100vh; /* Full viewport height */
-  background-color: #fff; /* White background, change as needed */
-  padding: 0 15px 15px 15px; /* Remove top padding, keep others */
-  /* Shadow only on the right edge for elevation */
-  box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* This ensures the sidebar stays on top of other content */
-  /* Optional: round only the top-right and bottom-right corners */
-  border-radius: 0 8px 8px 0;
-  box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
-}
-
-.sidebar-content-wrapper {
-  height: 100vh; /* Full viewport height */
-  padding-top: 10vh; /* Pushes content down by 25% of viewport height */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center children (profile image, social links) horizontally */
-}
-
-.post-divider {
-  border: none; /* Remove default border */
-  height: 1px; /* Thin line */
-  background-color: black; /* Black color */
-  width: 30%; /* 30% of viewport width */
-  margin-top: 5em; /* Add some space above the divider */
-  margin-bottom: 5em; /* Add some space below the divider */
-  margin-left: auto; /* Center the divider */
-  margin-right: auto; /* Center the divider */
-}
-
-.cta-booking {
-  text-align: center;
-  margin-top: 15px; 
-  margin-bottom: 15px; 
-
-  p {
-    margin-bottom: 0;
-    font-size: 0.9em; 
-  }
-
-  a {
-    font-weight: bold; 
-  }
-}
-
-.profile-image-wrapper {
-  position: relative; /* For absolute positioning of child images */
-  display: block; /* Or inline-block if preferred, but block works with margin:auto */
-  width: 120px;   /* Adjust as needed */
-  height: 120px;  /* Must be same as width for a perfect circle */
-  border-radius: 50%; /* This makes the image circular */
-  margin: 10px auto;  /* Adds 20px margin at the top and bottom, and centers horizontally */
-  overflow: hidden;   /* Important for circular crop and stacking */
-  cursor: pointer;    /* Indicate interactivity */
-}
-
-.profile-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* This ensures the image covers the circular area well */
-  object-position: 50% 0%; /* Your preferred vertical position */
-  transition: opacity 0.3s ease-in-out; /* Smooth fade transition */
-}
-
-.main-profile-pic {
-  opacity: 1; /* Visible by default */
-}
-
-.alt-profile-pic {
-  opacity: 0; /* Hidden by default */
-}
-
-/* Adjust main content margin to prevent overlap with the fixed sidebar */
+// Styles for page-content
 .page-content {
-  margin-left: 160px; /* Reduced from 220px to shift content left */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 0; // default to full width on mobile
+
+  @include respond-to(medium) {
+    margin-left: 160px; // leave room for sidebar on larger screens
+  }
 }
 
 .page-content img {
@@ -125,48 +92,297 @@ body {
   max-width: 100%;
 }
 
+// Typography
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  @include respond-to(medium) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  @include respond-to(medium) {
+    font-size: 2.15rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  @include respond-to(medium) {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  @include respond-to(medium) {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  @include respond-to(medium) {
+    font-size: 1.25rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  @include respond-to(medium) {
+    font-size: 1.1rem;
+  }
+}
+
+// Site Footer
+.site-footer {
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+  @include respond-to(medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-col {
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  @include respond-to(medium) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-col-1 {
+  @extend .footer-col;
+  @include respond-to(medium) {
+    width: calc(30% - 10px);
+    margin-right: 15px;
+  }
+}
+
+.footer-col-2 {
+  @extend .footer-col;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond-to(medium) {
+    width: calc(30% - 10px);
+    margin-right: 15px;
+  }
+}
+
+.footer-col-3 {
+  @extend .footer-col;
+  margin-bottom: 0;
+  @include respond-to(medium) {
+    width: calc(40% - 10px);
+    margin-right: 0;
+  }
+}
+
+// Divider style
+.post-divider {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+
+  @include respond-to(medium) {
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(large) {
+    width: 35%;
+  }
+}
+
+// Global responsive media
+img,
+video,
+iframe {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Sidebar styles
+.social-sidebar {
+  display: none;
+
+  @include respond-to(medium) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 55px;
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+    fill: #555555;
+    transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
+    &:hover {
+      fill: #007bff;
+      transform: scale(1.15);
+    }
+  }
+
+  li.social-icon-medium .svg-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.sidebar-content-wrapper {
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image-wrapper {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 10px auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.main-profile-pic {
+  opacity: 1;
+}
+
+.alt-profile-pic {
+  opacity: 0;
+}
+
+.cta-booking {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
 
 .social-links-container {
-  text-align: center; /* Centers the <ul> block */
-  margin-top: 50px;   /* Space below the profile image */
+  text-align: center;
+  margin-top: 50px;
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-block; /* Allows the ul to be centered by text-align on parent */
+    display: inline-block;
   }
 
   li {
-    display: block; // Ensures vertical stacking
-    margin-bottom: 10px; /* Adjust spacing as needed. Minima might provide its own. */
+    display: block;
+    margin-bottom: 10px;
   }
 
-  // Specific styling for our <img> Medium icon to match Minima's SVG sizes.
-  .svg-icon { // Base style for ALL icons (SVG and IMG)
-    width: 18px;  // Uniform size for all icons
-    height: 18px; // Uniform size for all icons
+  .svg-icon {
+    width: 18px;
+    height: 18px;
     vertical-align: middle;
     fill: #555;
-    margin: 10px;   // Default fill for SVGs (won't apply to IMG)
+    margin: 10px;
   }
 
-  img.svg-icon { // Specific adjustments for the Medium <img> icon
-    // Width and height are inherited from .svg-icon (18px)
-    object-fit: contain; // Ensures the image scales down to fit 18x18, maintaining aspect ratio.
-    // `fill` from .svg-icon does not apply to <img> tags.
+  img.svg-icon {
+    object-fit: contain;
   }
 }
 
 .medium-analytics-table {
   width: 80%;
   border-collapse: separate;
-  border-spacing: 0.3em 0.3em; /* 0.5em between columns, 0.75em between rows */
+  border-spacing: 0.3em 0.3em;
   font-family: inherit;
   font-size: 0.7em;
 }
+
 .medium-analytics-table td {
-  padding: 0.75em 1.25em; /* More horizontal padding for columns */
+  padding: 0.75em 1.25em;
   border: none;
   font-weight: normal;
 }

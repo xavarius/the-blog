@@ -10,7 +10,7 @@ Please let me know and attribute it appropriately, according to the [Creative Co
 # Blog Development TODO List
 
 - [x] style footer vs sidebar
-- [ ] make sidebar and the content trully responsive
+- [x] make sidebar and the content trully responsive
 - [ ] fix images on a blog post
 - [x] style spacings between blog posts
 - [ ] style blog posts
