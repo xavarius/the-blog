@@ -9,14 +9,16 @@ title: Home
 <div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
+      <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        
+
         <div class="post-content-preview">
           {{ post.content }}
         </div>
-        {%- unless forloop.last -%}
-          <hr class="post-divider">
-        {%- endunless -%}
+      </li>
+      {%- unless forloop.last -%}
+        <hr class="post-divider">
+      {%- endunless -%}
     {% endfor %}
   </ul>
 </div>
