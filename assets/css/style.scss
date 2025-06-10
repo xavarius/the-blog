@@ -39,7 +39,7 @@ body {
   background-color: #fff;
 
   @include respond-to(medium) {
-    padding-left: 55px; // Space for the fixed sidebar on larger screens
+    padding-left: 210px; // Space for sidebar plus a small gap
   }
 }
 
@@ -340,9 +340,10 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  padding-top: 50px;
 
   @include respond-to(medium) {
-    height: 100vh;
     padding-top: 10vh;
   }
 }
@@ -352,7 +353,7 @@ code {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 10px auto;
+  margin: 40px auto 10px;
   overflow: hidden;
   cursor: pointer;
 
@@ -374,7 +375,7 @@ code {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 0%;
+  object-position: 50% 50%;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -399,8 +400,10 @@ code {
   }
 
   .calendar-icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    fill: #555;
   }
 
   .booking-text {
@@ -412,12 +415,20 @@ code {
     display: inline;
   }
 
+  .social-sidebar.expanded & .calendar-icon {
+    display: none;
+  }
+
   @include respond-to(medium) {
     margin-top: 15px;
     margin-bottom: 15px;
 
     .booking-text {
       display: inline;
+    }
+
+    .calendar-icon {
+      display: none;
     }
   }
 }
