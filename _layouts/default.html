@@ -25,7 +25,7 @@
         <div class="cta-booking">
           <a href="https://booking.akiflow.com/maciej-malak" target="_blank" rel="noopener noreferrer" class="booking-link">
             <img src="{{ '/assets/calendar.svg' | relative_url }}" alt="Book a call" class="calendar-icon svg-icon">
-            <span class="booking-text">Book a call with me!</span>
+            <span class="booking-text">Wanna work with me? Let's talk!</span>
           </a>
         </div>
         <div class="social-links-container">
@@ -135,6 +135,20 @@
             toggleBtn.innerHTML = sidebar.classList.contains('expanded') ? '&#x2715;' : '&#9776;';
           });
         }
+
+        // simple lightbox for post images
+        document.querySelectorAll('.page-content img').forEach(img => {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.className = 'image-overlay';
+            const enlarged = document.createElement('img');
+            enlarged.src = img.src;
+            overlay.appendChild(enlarged);
+            overlay.addEventListener('click', () => overlay.remove());
+            document.body.appendChild(overlay);
+          });
+        });
       });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da2f9767654d419d9266525c90865eb9"}'></script><!-- End Cloudflare Web Analytics -->
