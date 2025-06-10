@@ -76,11 +76,7 @@ body {
 .page-content {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 0; // default to full width on mobile
-
-  @include respond-to(medium) {
-    margin-left: 160px; // leave room for sidebar on larger screens
-  }
+  margin-left: 0; // content aligns with body padding
 }
 
 .page-content img {
@@ -237,24 +233,41 @@ iframe {
   margin-right: auto;
 }
 
+pre {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 1em;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+code {
+  word-break: break-word;
+}
+
 // Sidebar styles
+
 .social-sidebar {
-  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
 
   @include respond-to(medium) {
-    position: fixed;
-    left: 0;
     top: 0;
-    height: 100vh;
+    bottom: auto;
     width: 55px;
-    background-color: #ffffff;
+    height: 100vh;
     padding: 20px 0;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    box-sizing: border-box;
   }
 
   ul {
@@ -263,14 +276,22 @@ iframe {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+
+    @include respond-to(medium) {
+      flex-direction: column;
+    }
   }
 
   li {
-    margin-bottom: 18px;
-    &:last-child {
-      margin-bottom: 0;
+    margin: 0 12px;
+
+    @include respond-to(medium) {
+      margin: 0 0 18px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -291,23 +312,33 @@ iframe {
   }
 }
 
+
 .sidebar-content-wrapper {
-  height: 100vh;
-  padding-top: 10vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+
+  @include respond-to(medium) {
+    height: 100vh;
+    padding-top: 10vh;
+    flex-direction: column;
+  }
 }
 
 .profile-image-wrapper {
-  position: relative;
-  display: block;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 10px auto;
-  overflow: hidden;
-  cursor: pointer;
+  display: none;
+
+  @include respond-to(medium) {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
 }
 
 .profile-pic {
@@ -329,43 +360,68 @@ iframe {
   opacity: 0;
 }
 
+
 .cta-booking {
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  display: none;
 
-  p {
-    margin-bottom: 0;
-    font-size: 0.9em;
-  }
+  @include respond-to(medium) {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
-  a {
-    font-weight: bold;
+    p {
+      margin-bottom: 0;
+      font-size: 0.9em;
+    }
+
+    a {
+      font-weight: bold;
+    }
   }
 }
 
+
 .social-links-container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0;
+
+  @include respond-to(medium) {
+    margin-top: 50px;
+  }
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-block;
+    display: flex;
+
+    @include respond-to(medium) {
+      display: inline-block;
+    }
   }
 
   li {
-    display: block;
-    margin-bottom: 10px;
+    display: inline-block;
+    margin: 0 10px;
+
+    @include respond-to(medium) {
+      display: block;
+      margin-bottom: 10px;
+    }
   }
 
   .svg-icon {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
     fill: #555;
-    margin: 10px;
+    margin: 8px;
+
+    @include respond-to(medium) {
+      width: 18px;
+      height: 18px;
+      margin: 10px;
+    }
   }
 
   img.svg-icon {
