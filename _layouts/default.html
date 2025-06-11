@@ -67,6 +67,7 @@
         {{ content }}
       </div>
     </main>
+    <div class="lightbox-overlay"><img alt="enlarged image"></div>
 
     <footer class="site-footer h-card">
       <data class="u-url" href="{{ "/" | relative_url }}"></data>
@@ -159,6 +160,18 @@
             });
           }
         }
+
+        const lightbox = document.querySelector('.lightbox-overlay');
+        const lightboxImg = lightbox.querySelector('img');
+        document.querySelectorAll('.page-content img').forEach(img => {
+          img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+          });
+        });
+        lightbox.addEventListener('click', () => {
+          lightbox.classList.remove('active');
+        });
       });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da2f9767654d419d9266525c90865eb9"}'></script><!-- End Cloudflare Web Analytics -->
