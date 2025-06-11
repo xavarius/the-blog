@@ -56,7 +56,34 @@ The answer is: Yes, it can be easily achieved.
 
 This is an assetlinks.json content you have to [upload](https://developer.android.com/training/app-links/verify-site-associations) to your subdomains.
 
-{% gist xavarius/2a532bf2d187b5911d38d00fb3de7385 %}
+```json
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.app.buildType1",
+      "sha256_cert_fingerprints": ["debugCertificateFingerprintHere"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.app.buildType2",
+      "sha256_cert_fingerprints": ["releaseCertificateFingerprintHere"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.app.buildType3",
+      "sha256_cert_fingerprints": ["anyOtherFancyCertificateFingerprintHere"]
+    }
+  }
+]
+```
 
 In the example above, the Digital Asset Links JSON file is configured to support a particular build type
 

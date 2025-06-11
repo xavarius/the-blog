@@ -27,6 +27,11 @@
         </div>
         <div class="social-links-container">
           <ul>
+            <li class="social-icon-calendar">
+              <a href="https://booking.akiflow.com/maciej-malak" title="Book a call" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/calendar.svg' | relative_url }}" alt="Book a call" class="svg-icon" />
+              </a>
+            </li>
           {%- for link in site.minima.social_links -%}
             {%- assign link_url = link.user_url | default: link.url -%}
             {%- if link_url and link_url != "" and link_url != "YOUR_LINKEDIN_URL_HERE" and link_url != "YOUR_MEDIUM_URL_HERE" -%}
@@ -53,11 +58,6 @@
               {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
-            <li class="social-icon-calendar">
-              <a href="https://booking.akiflow.com/maciej-malak" title="Book a call" target="_blank" rel="noopener noreferrer">
-                <img src="{{ '/assets/calendar.svg' | relative_url }}" alt="Book a call" class="svg-icon" />
-              </a>
-            </li>
         </ul>
         </div>
       </div>
