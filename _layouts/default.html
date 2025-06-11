@@ -16,7 +16,6 @@
   </head>
   <body>
     <aside class="social-sidebar">
-      <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle sidebar">✕</button>
       <div class="sidebar-content-wrapper">
         <div id="profileImageContainer" class="profile-image-wrapper">
           <img src="{{ '/assets/profile.png' | relative_url }}" alt="Profile Picture" class="profile-pic main-profile-pic">
@@ -92,21 +91,11 @@
           } else {
             body.classList.remove('sidebar-collapsed');
           }
-          updateToggleIcon();
-        }
-
-        function updateToggleIcon() {
-          if (body.classList.contains('sidebar-collapsed')) {
-            toggleBtn.textContent = '☰';
-          } else {
-            toggleBtn.textContent = '✕';
-          }
         }
 
         if (toggleBtn) {
           toggleBtn.addEventListener('click', () => {
             body.classList.toggle('sidebar-collapsed');
-            updateToggleIcon();
           });
         }
 
