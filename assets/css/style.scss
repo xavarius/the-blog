@@ -10,6 +10,9 @@ body {
   font-weight: 200;
   margin: 0;
   padding: 0;
+  --sidebar-width: 200px;
+  --sidebar-collapsed-width: 60px;
+  --sidebar-gap: 10px;
 }
 
 .wrapper {
@@ -35,8 +38,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px; /* You can adjust this width */
-  height: 100vh; /* Full viewport height */
+  width: var(--sidebar-width);
+  height: 100dvh; /* Full viewport height on mobile as well */
   background-color: #fff; /* White background, change as needed */
   padding: 0 15px 15px 15px; /* Remove top padding, keep others */
   /* Shadow only on the right edge for elevation */
@@ -47,12 +50,36 @@ body {
   box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
 }
 
+.sidebar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+body.sidebar-collapsed .sidebar-toggle {
+  right: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .sidebar-content-wrapper {
-  height: 100vh; /* Full viewport height */
-  padding-top: 10vh; /* Pushes content down by 25% of viewport height */
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children (profile image, social links) horizontally */
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 20px;
+  box-sizing: border-box;
+}
+
+body.sidebar-collapsed .sidebar-content-wrapper {
+  padding-top: 70px;
 }
 
 .post-divider {
@@ -99,7 +126,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;  /* This ensures the image covers the circular area well */
-  object-position: 50% 0%; /* Your preferred vertical position */
+  object-position: 50% 5%; /* Move image slightly downward */
   transition: opacity 0.3s ease-in-out; /* Smooth fade transition */
 }
 
@@ -113,7 +140,7 @@ body {
 
 /* Adjust main content margin to prevent overlap with the fixed sidebar */
 .page-content {
-  margin-left: 160px; /* Reduced from 220px to shift content left */
+  margin-left: calc(var(--sidebar-width) + var(--sidebar-gap));
 }
 
 .page-content img {
@@ -169,4 +196,91 @@ body {
   padding: 0.75em 1.25em; /* More horizontal padding for columns */
   border: none;
   font-weight: normal;
+}
+
+/* Collapsed sidebar state */
+body.sidebar-collapsed .social-sidebar {
+  width: var(--sidebar-collapsed-width);
+}
+
+body.sidebar-collapsed .page-content {
+  margin-left: calc(var(--sidebar-collapsed-width) + var(--sidebar-gap));
+}
+
+body.sidebar-collapsed .cta-booking {
+  display: none;
+}
+
+body.sidebar-collapsed .social-icon-calendar {
+  display: block;
+}
+
+.social-icon-calendar {
+  display: none;
+}
+
+body.sidebar-collapsed .profile-image-wrapper {
+  width: 27px;
+  height: 27px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --sidebar-gap: 4px;
+  }
+  .sidebar-toggle {
+    display: block;
+  }
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .medium-analytics-table {
+    width: 100%;
+  }
+}
+
+/* Lightbox overlay for images */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+}
+
+/* Code block styling */
+pre {
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+code {
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
 }

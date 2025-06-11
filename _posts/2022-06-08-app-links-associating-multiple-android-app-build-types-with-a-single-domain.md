@@ -15,7 +15,7 @@ using a Digital Asset Links JSON file.
 Simply put, how to get rid of disambiguous dialog in such an environment.
 
 ![We do not want that, ever!]({{ '/assets/1_sNCApKUp4caWwqZWqXZrMA.jpg' | relative_url }})
-*We do not want that, ever! Source: [https://www.flickr.com/photos/adewale_oshineye/21830113332](https://www.flickr.com/photos/adewale_oshineye/21830113332) Licence CC.*
+*We do not want that, ever! Source: [flickr](https://www.flickr.com/photos/adewale_oshineye/21830113332) Licence CC.*
 
 While it’s not groundbreaking research, this guide can spare you
 a couple of hours or even days of waiting impatiently to see if ownership
@@ -56,21 +56,56 @@ The answer is: Yes, it can be easily achieved.
 
 This is an assetlinks.json content you have to [upload](https://developer.android.com/training/app-links/verify-site-associations) to your subdomains.
 
-{% gist xavarius/2a532bf2d187b5911d38d00fb3de7385 %}
+```json
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.app.buildType1",
+      "sha256_cert_fingerprints": ["debugCertificateFingerprintHere"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.app.buildType2",
+      "sha256_cert_fingerprints": ["releaseCertificateFingerprintHere"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.app.buildType3",
+      "sha256_cert_fingerprints": ["anyOtherFancyCertificateFingerprintHere"]
+    }
+  }
+]
+```
 
 In the example above, the Digital Asset Links JSON file is configured to support a particular build type
 
-> “package_name”: “com.example.app.buildType1”
+```
+"package_name": "com.example.app.buildType1"
+```
 
 which should be verified using debug SHA-1 certificate
 
-> “sha256_cert_fingerprints”: [“debugCertificateFingerprintHere”]
+```
+"sha256_cert_fingerprints": ["debugCertificateFingerprintHere"]
+```
 
-while the second build type has a “release” nature and uses a release SHA-1 certificate for ownership to be verified
+while the second build type has a "release" nature and uses a release SHA-1 certificate for ownership to be verified
 
-> “package_name”: “com.example.app.buildType2”,
+```
+"package_name": "com.example.app.buildType2"
+```
 
-> “sha256_cert_fingerprints”: [“releaseCertificateFingerprintHere”]
+```
+"sha256_cert_fingerprints": ["releaseCertificateFingerprintHere"]
+```
 
 Lemme explain a bit. The Digital Asset Links JSON file is a plain JSON file.
 

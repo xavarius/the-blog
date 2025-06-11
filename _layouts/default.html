@@ -16,6 +16,7 @@
   </head>
   <body>
     <aside class="social-sidebar">
+      <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle sidebar">✕</button>
       <div class="sidebar-content-wrapper">
         <div id="profileImageContainer" class="profile-image-wrapper">
           <img src="{{ '/assets/profile.png' | relative_url }}" alt="Profile Picture" class="profile-pic main-profile-pic">
@@ -26,6 +27,11 @@
         </div>
         <div class="social-links-container">
           <ul>
+            <li class="social-icon-calendar">
+              <a href="https://booking.akiflow.com/maciej-malak" title="Book a call" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/calendar.svg' | relative_url }}" alt="Book a call" class="svg-icon" />
+              </a>
+            </li>
           {%- for link in site.minima.social_links -%}
             {%- assign link_url = link.user_url | default: link.url -%}
             {%- if link_url and link_url != "" and link_url != "YOUR_LINKEDIN_URL_HERE" and link_url != "YOUR_MEDIUM_URL_HERE" -%}
@@ -61,6 +67,7 @@
         {{ content }}
       </div>
     </main>
+    <div class="lightbox-overlay"><img alt="enlarged image"></div>
 
     <footer class="site-footer h-card">
       <data class="u-url" href="{{ "/" | relative_url }}"></data>
@@ -75,6 +82,37 @@
     </footer>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+        const body = document.body;
+        const toggleBtn = document.getElementById('sidebarToggle');
+        const mq = window.matchMedia('(max-width: 768px)');
+
+        function setInitialState() {
+          if (mq.matches) {
+            body.classList.add('sidebar-collapsed');
+          } else {
+            body.classList.remove('sidebar-collapsed');
+          }
+          updateToggleIcon();
+        }
+
+        function updateToggleIcon() {
+          if (body.classList.contains('sidebar-collapsed')) {
+            toggleBtn.textContent = '☰';
+          } else {
+            toggleBtn.textContent = '✕';
+          }
+        }
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('sidebar-collapsed');
+            updateToggleIcon();
+          });
+        }
+
+        mq.addEventListener('change', setInitialState);
+        setInitialState();
+
         const container = document.getElementById('profileImageContainer');
         if (container) {
           const mainPic = container.querySelector('.main-profile-pic');
@@ -122,6 +160,18 @@
             });
           }
         }
+
+        const lightbox = document.querySelector('.lightbox-overlay');
+        const lightboxImg = lightbox.querySelector('img');
+        document.querySelectorAll('.page-content img').forEach(img => {
+          img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+          });
+        });
+        lightbox.addEventListener('click', () => {
+          lightbox.classList.remove('active');
+        });
       });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da2f9767654d419d9266525c90865eb9"}'></script><!-- End Cloudflare Web Analytics -->
