@@ -16,6 +16,7 @@
   </head>
   <body>
     <aside class="social-sidebar">
+      <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle sidebar">✕</button>
       <div class="sidebar-content-wrapper">
         <div id="profileImageContainer" class="profile-image-wrapper">
           <img src="{{ '/assets/profile.png' | relative_url }}" alt="Profile Picture" class="profile-pic main-profile-pic">
@@ -52,6 +53,11 @@
               {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
+            <li class="social-icon-calendar">
+              <a href="https://booking.akiflow.com/maciej-malak" title="Book a call" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/calendar.svg' | relative_url }}" alt="Book a call" class="svg-icon" />
+              </a>
+            </li>
         </ul>
         </div>
       </div>
@@ -75,6 +81,37 @@
     </footer>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+        const body = document.body;
+        const toggleBtn = document.getElementById('sidebarToggle');
+        const mq = window.matchMedia('(max-width: 768px)');
+
+        function setInitialState() {
+          if (mq.matches) {
+            body.classList.add('sidebar-collapsed');
+          } else {
+            body.classList.remove('sidebar-collapsed');
+          }
+          updateToggleIcon();
+        }
+
+        function updateToggleIcon() {
+          if (body.classList.contains('sidebar-collapsed')) {
+            toggleBtn.textContent = '☰';
+          } else {
+            toggleBtn.textContent = '✕';
+          }
+        }
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('sidebar-collapsed');
+            updateToggleIcon();
+          });
+        }
+
+        mq.addEventListener('change', setInitialState);
+        setInitialState();
+
         const container = document.getElementById('profileImageContainer');
         if (container) {
           const mainPic = container.querySelector('.main-profile-pic');

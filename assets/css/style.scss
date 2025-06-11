@@ -10,6 +10,9 @@ body {
   font-weight: 200;
   margin: 0;
   padding: 0;
+  --sidebar-width: 200px;
+  --sidebar-collapsed-width: 60px;
+  --sidebar-gap: 20px;
 }
 
 .wrapper {
@@ -35,7 +38,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px; /* You can adjust this width */
+  width: var(--sidebar-width);
   height: 100vh; /* Full viewport height */
   background-color: #fff; /* White background, change as needed */
   padding: 0 15px 15px 15px; /* Remove top padding, keep others */
@@ -45,6 +48,17 @@ body {
   /* Optional: round only the top-right and bottom-right corners */
   border-radius: 0 8px 8px 0;
   box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
 }
 
 .sidebar-content-wrapper {
@@ -113,7 +127,7 @@ body {
 
 /* Adjust main content margin to prevent overlap with the fixed sidebar */
 .page-content {
-  margin-left: 160px; /* Reduced from 220px to shift content left */
+  margin-left: calc(var(--sidebar-width) + var(--sidebar-gap));
 }
 
 .page-content img {
@@ -169,4 +183,37 @@ body {
   padding: 0.75em 1.25em; /* More horizontal padding for columns */
   border: none;
   font-weight: normal;
+}
+
+/* Collapsed sidebar state */
+body.sidebar-collapsed .social-sidebar {
+  width: var(--sidebar-collapsed-width);
+}
+
+body.sidebar-collapsed .page-content {
+  margin-left: calc(var(--sidebar-collapsed-width) + var(--sidebar-gap));
+}
+
+body.sidebar-collapsed .cta-booking {
+  display: none;
+}
+
+body.sidebar-collapsed .social-icon-calendar {
+  display: block;
+}
+
+.social-icon-calendar {
+  display: none;
+}
+
+body.sidebar-collapsed .profile-image-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
 }
