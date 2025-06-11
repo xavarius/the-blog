@@ -87,17 +87,25 @@ This is an assetlinks.json content you have to [upload](https://developer.androi
 
 In the example above, the Digital Asset Links JSON file is configured to support a particular build type
 
-> “package_name”: “com.example.app.buildType1”
+```
+"package_name": "com.example.app.buildType1"
+```
 
 which should be verified using debug SHA-1 certificate
 
-> “sha256_cert_fingerprints”: [“debugCertificateFingerprintHere”]
+```
+"sha256_cert_fingerprints": ["debugCertificateFingerprintHere"]
+```
 
-while the second build type has a “release” nature and uses a release SHA-1 certificate for ownership to be verified
+while the second build type has a "release" nature and uses a release SHA-1 certificate for ownership to be verified
 
-> “package_name”: “com.example.app.buildType2”,
+```
+"package_name": "com.example.app.buildType2"
+```
 
-> “sha256_cert_fingerprints”: [“releaseCertificateFingerprintHere”]
+```
+"sha256_cert_fingerprints": ["releaseCertificateFingerprintHere"]
+```
 
 Lemme explain a bit. The Digital Asset Links JSON file is a plain JSON file.
 

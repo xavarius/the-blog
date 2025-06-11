@@ -39,7 +39,7 @@ body {
   top: 0;
   left: 0;
   width: var(--sidebar-width);
-  height: 100vh; /* Full viewport height */
+  height: 100dvh; /* Full viewport height on mobile as well */
   background-color: #fff; /* White background, change as needed */
   padding: 0 15px 15px 15px; /* Remove top padding, keep others */
   /* Shadow only on the right edge for elevation */
@@ -64,7 +64,8 @@ body {
 body.sidebar-collapsed .sidebar-toggle {
   right: auto;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sidebar-content-wrapper {
@@ -125,7 +126,7 @@ body.sidebar-collapsed .sidebar-content-wrapper {
   width: 100%;
   height: 100%;
   object-fit: cover;  /* This ensures the image covers the circular area well */
-  object-position: 50% 50%; /* Center the image within the circle */
+  object-position: 50% 65%; /* Move image slightly downward */
   transition: opacity 0.3s ease-in-out; /* Smooth fade transition */
 }
 
@@ -230,6 +231,13 @@ body.sidebar-collapsed .profile-image-wrapper {
   }
   .sidebar-toggle {
     display: block;
+  }
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .medium-analytics-table {
+    width: 100%;
   }
 }
 
