@@ -6,7 +6,7 @@ date: "2025-06-17"
 
 ## A Route from Żmigród to Wrocław
 
-<img src="../../assets/zm-wro/0.png" alt="Route from Żmigród to Wrocław" style="width:50%;">
+<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="14827631236" data-style="standard" data-from-embed="false"></div><script src="https://strava-embeds.com/embed.js"></script>
 
 #### Stats
 55 km
