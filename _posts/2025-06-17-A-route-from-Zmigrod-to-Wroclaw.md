@@ -8,12 +8,6 @@ date: "2025-06-17"
 
 <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="14827631236" data-style="standard" data-from-embed="false"></div><script src="https://strava-embeds.com/embed.js"></script>
 
-#### Stats
-55 km
-Up to 200m of elevation gain
-Chill, easy, and effortless
-Get there by train
-
 #### What I liked about this route
 
 I loved the wilderness. The effortless way of hopping onto the route. And its extermally easy to navigate paths, even without maps or apps. The first part is immersed in nature, or at least it is separated from (calm) asphalt roads.
