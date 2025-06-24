@@ -8,7 +8,7 @@ date: 2020-05-05
 
 ![Bitrise logo]({{ '/assets/1_TQOKYOUKm5mDiYlF7cKO1A.png' | relative_url }})
 
-I won’t elaborate here on how important and crucial for any software development-oriented team the [continuous integration](https://www.thoughtworks.com/continuous-integration) (CI) practise is.  
+I won’t elaborate here on how important and crucial for any software development-oriented team the [continuous integration](https://martinfowler.com/articles/continuousIntegration.html) (CI) practise is.  
 I’m pretty sure we can all agree on how CI tools support our day to day effectiveness. How they **might** save dozens of hours spent on non-essential tasks. Yet, it’s common to present CI tools as a hassle; slow, bulky,  
 and unreliable pipelines bloated with chaotic events instead of fast, maintainable feedback loop configured to support both product quality  
 and team flexibility.
@@ -29,7 +29,7 @@ There is [git flow approach](https://nvie.com/posts/a-successful-git-branching-m
 as “a part of“ the feature in some cases.
 
 We are supporting multiple modules as a part of our architecture.  
-Let’s assume it is a [clean-ish architecture](https://five.agency/android-architecture-part-2-clean-architecture/) with *domain*, *data* and *app* layers packed into separate modules. Each of the modules has its own unit tests suite — between dozens to few hundreds of them per module. We have to support multiple *flavours* and they differ greatly. Each flavour has  
+Let’s assume it is a [clean-ish architecture](https://fivenyc.medium.com/android-architecture-part-2-the-clean-architecture-d2ca4877acec) with *domain*, *data* and *app* layers packed into separate modules. Each of the modules has its own unit tests suite — between dozens to few hundreds of them per module. We have to support multiple *flavours* and they differ greatly. Each flavour has  
 a separate set of automation and unit test, although most of them are shared.
 
 When it comes to infrastructure, there is a separate Bitrise workflow for every build type. Also, a separate one for each of: *feature* development,  

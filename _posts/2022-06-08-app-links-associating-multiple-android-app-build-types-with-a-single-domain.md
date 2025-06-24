@@ -7,7 +7,7 @@ date: 2022-06-08
 ### **App Links: Associating Multiple Android App Build Types with a Single Domain**
 
 Although I won’t go into the configuration nor benefits of Android App Links,
-you can find them [here](https://developer.android.com/training/app-links), [here](https://developer.android.com/training/app-links/verify-site-associations), and [here](https://developers.google.com/digital-asset-links/v1/create-statement), I would like to elaborate on the missing documentation bit.
+you can find them [here](https://developer.android.com/training/app-links), [here](https://developer.android.com/training/app-links/verify-android-applinks), and [here](https://developers.google.com/digital-asset-links/v1/create-statement), I would like to elaborate on the missing documentation bit.
 
 Specifically, how to associate and verify ownership between your domain
 (a website) and multiple build types **of the same** Android application
@@ -34,7 +34,9 @@ More precisely app links usually require a bit of collaboration from a mobile te
 Let’s give an answer by starting with a question.
 
 **Given** the fact that an app has multiple build types, each having its own, distinct certificate fingerprint SHA-1
+
 **When** a subset of build types points into the same domain
+
 **Then** could ownership be verified for all build types using a single domain?
 
 ![This is the “complexity” we’re facing.]({{ '/assets/1_MSFfUt4ondPMJ5aVmTPGuQ.jpg' | relative_url }})
@@ -48,13 +50,13 @@ two **distinct** signing key configs: two distinct SHA-1 certificate fingerprint
 
 If you have a single domain, can you verify ownership of two apps using two distinct certificates?
 
-Yes, you can, it’s [documented](https://developer.android.com/training/app-links/verify-site-associations#multiple-apps).
+Yes, you can, it’s [documented](https://developer.android.com/training/app-links/verify-android-applinks#multi-site).
 
 Our case is a bit different. What if an app also has links configured for *uat.mobile.example.com* subdomain and both *debug* and *release* build types of the same app are pointed into it? Could I verify ownership upon a second subdomain using both *debug* and *release* certificates again?
 
 The answer is: Yes, it can be easily achieved.
 
-This is an assetlinks.json content you have to [upload](https://developer.android.com/training/app-links/verify-site-associations) to your subdomains.
+This is an assetlinks.json content you have to [upload](https://developer.android.com/training/app-links/verify-android-applinks#publish-json) to your subdomains.
 
 ```json
 [
@@ -111,7 +113,7 @@ Lemme explain a bit. The Digital Asset Links JSON file is a plain JSON file.
 
 It contains a list (table) of elements as a top-level element.
 
-All you have to do is to provide an entry for each of your build types with an appropriate SHA-1 fingerprint. And [deploy](https://developer.android.com/training/app-links/verify-site-associations) it in [each domain](https://developers.google.com/digital-asset-links/v1/create-statement#website_statement_file) you’re interested in. Voila!
+All you have to do is to provide an entry for each of your build types with an appropriate SHA-1 fingerprint. And deploy it into [each domain](https://developers.google.com/digital-asset-links/v1/create-statement#website_statement_file) you’re interested in. Voila!
 
 This configuration is extremely useful if you love the flexibility and the opportunity of using any number of environments with any of your build types. It enhances the testability of an app and increases data diversity while easing debugging— all because you can choose which environment will be used while implementing and testing your application.
 
