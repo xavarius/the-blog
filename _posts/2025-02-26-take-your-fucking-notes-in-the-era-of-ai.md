@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "Take your fucking notes in the era of AI."
 date: 2025-02-26
+category: Tech
 ---
-
-### Take your fucking notes in the era of AI.
 
 And poke with “AI” but does not assume it’s gonna do the job if you can’t.
 

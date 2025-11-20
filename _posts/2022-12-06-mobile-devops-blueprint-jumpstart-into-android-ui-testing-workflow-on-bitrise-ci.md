@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI"
 date: 2022-12-06
+category: Android
 ---
-
-### Mobile DevOps Blueprint: Jumpstart into Android UI testing workflow on Bitrise CI
 
 #### Just run those tests in minutes
 

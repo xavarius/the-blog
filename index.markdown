@@ -1,23 +1,27 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: Home
 ---
 
 <div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        
-        <div class="post-content-preview">
-          {{ post.content }}
+  {% assign categories = "Tech,Android,Routes,Poetry" | split: "," %}
+  
+  {% for category in categories %}
+    {% assign category_posts = site.posts | where: "category", category %}
+    {% if category_posts.size > 0 %}
+      <section class="category-section">
+        <h2 class="category-header">{{ category }}</h2>
+        <div class="post-list">
+          {% for post in category_posts %}
+            <div class="post-item">
+              <a href="{{ post.url | relative_url }}" class="post-link">
+                {{ post.title }}
+              </a>
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+          {% endfor %}
         </div>
-        {%- unless forloop.last -%}
-          <hr class="post-divider">
-        {%- endunless -%}
-    {% endfor %}
-  </ul>
+      </section>
+    {% endif %}
+  {% endfor %}
 </div>
-

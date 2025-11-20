@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title: "My Medium Partner Program Experiment"
 date: 2025-05-30
+category: Tech
 ---
 
 If you're an infrequent writer, as I am, and wondering if you should experiment with Medium's Partner Program, I would suggest to read my post. I have been using medium quite extensively, on a daily basis. Mostly to keep up with the industry, expand my point of view and make myself out of the information bubble. On the other hand, seeing how "popular" my first blog post was I decided to go with the flow 

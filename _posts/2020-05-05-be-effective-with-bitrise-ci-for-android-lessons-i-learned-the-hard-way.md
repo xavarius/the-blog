@@ -1,10 +1,9 @@
 ---
-layout: default
-title: "Be effective with Bitrise CI for Android — lessons I learned the hard way."
+layout: post
+title: "Be effective with Bitrise CI for Android - lessons I learned the hard way"
 date: 2020-05-05
+category: Android
 ---
-
-### **Be effective with Bitrise CI for Android — the lessons I learned the hard way.**
 
 ![Bitrise logo]({{ '/assets/1_TQOKYOUKm5mDiYlF7cKO1A.png' | relative_url }})
 

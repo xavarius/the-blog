@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <title>{{ page.title | default: site.title | default: "Your Site Title" }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="icon" href="{{ '/assets/favicon.png' | relative_url }}" type="image/png">
     {% feed_meta %}
@@ -84,86 +85,65 @@
     </footer>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const body = document.body;
-        const toggleBtn = document.getElementById('sidebarToggle');
-        const mq = window.matchMedia('(max-width: 768px)');
-
-        function setInitialState() {
-          if (mq.matches) {
-            body.classList.add('sidebar-collapsed');
-          } else {
-            body.classList.remove('sidebar-collapsed');
-          }
-        }
-
-        if (toggleBtn) {
-          toggleBtn.addEventListener('click', () => {
-            body.classList.toggle('sidebar-collapsed');
-          });
-        }
-
-        mq.addEventListener('change', setInitialState);
-        setInitialState();
-
+        // Profile image toggle
         const container = document.getElementById('profileImageContainer');
         if (container) {
           const mainPic = container.querySelector('.main-profile-pic');
           const altPic = container.querySelector('.alt-profile-pic');
 
           if (mainPic && altPic) {
-            let isMainPicBase = true; // true if mainPic is the current base image
+            let isMainPicBase = true;
 
-            // Function to set active image based on which one is 'base'
-            function showBaseImage() {
-              if (isMainPicBase) {
-                mainPic.style.opacity = '1';
-                altPic.style.opacity = '0';
-              } else {
-                mainPic.style.opacity = '0';
-                altPic.style.opacity = '1';
-              }
-            }
+            const showBaseImage = () => {
+              mainPic.style.opacity = isMainPicBase ? '1' : '0';
+              altPic.style.opacity = isMainPicBase ? '0' : '1';
+            };
 
-            // Function to show the 'other' image (non-base)
-            function showOtherImage() {
-              if (isMainPicBase) {
-                mainPic.style.opacity = '0';
-                altPic.style.opacity = '1';
-              } else {
-                mainPic.style.opacity = '1';
-                altPic.style.opacity = '0';
-              }
-            }
+            const showOtherImage = () => {
+              mainPic.style.opacity = isMainPicBase ? '0' : '1';
+              altPic.style.opacity = isMainPicBase ? '1' : '0';
+            };
 
-            // Initial state
             showBaseImage();
-
-            container.addEventListener('mouseenter', () => {
-              showOtherImage();
-            });
-
-            container.addEventListener('mouseleave', () => {
-              showBaseImage();
-            });
-
+            container.addEventListener('mouseenter', showOtherImage);
+            container.addEventListener('mouseleave', showBaseImage);
             container.addEventListener('click', () => {
-              isMainPicBase = !isMainPicBase; // Toggle the base image
-              showBaseImage(); // Show the new base image
+              isMainPicBase = !isMainPicBase;
+              showBaseImage();
             });
           }
         }
 
-        const lightbox = document.querySelector('.lightbox-overlay');
-        const lightboxImg = lightbox.querySelector('img');
+        // Lazy loading images - add loading attribute and handle fade-in
         document.querySelectorAll('.page-content img').forEach(img => {
-          img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
-            lightbox.classList.add('active');
+          if (!img.hasAttribute('loading')) {
+            img.setAttribute('loading', 'lazy');
+          }
+          
+          // Add loaded class when image loads
+          if (img.complete) {
+            img.classList.add('loaded');
+          } else {
+            img.addEventListener('load', () => {
+              img.classList.add('loaded');
+            });
+          }
+        });
+
+        // Lightbox for images
+        const lightbox = document.querySelector('.lightbox-overlay');
+        if (lightbox) {
+          const lightboxImg = lightbox.querySelector('img');
+          document.querySelectorAll('.page-content img').forEach(img => {
+            img.addEventListener('click', () => {
+              lightboxImg.src = img.src;
+              lightbox.classList.add('active');
+            });
           });
-        });
-        lightbox.addEventListener('click', () => {
-          lightbox.classList.remove('active');
-        });
+          lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+          });
+        }
       });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da2f9767654d419d9266525c90865eb9"}'></script><!-- End Cloudflare Web Analytics -->

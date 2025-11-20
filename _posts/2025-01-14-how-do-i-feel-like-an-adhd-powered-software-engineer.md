@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "How do I feel like an ADHD-powered Software Engineer?"
 date: 2025-01-14
+category: Tech
 ---
-
-How do I feel like an ADHD-powered Software Engineer?
 
 It’s like being a chipset with one processor and one virtual thread. However, you’re forced to run software that requires sophisticated parallel processing. You know you could do better sometimes but you can’t. You day dream about you wasted potential.
 

@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "App Links: Associating Multiple Android App Build Types with a Single Domain"
 date: 2022-06-08
+category: Android
 ---
-
-### **App Links: Associating Multiple Android App Build Types with a Single Domain**
 
 Although I won’t go into the configuration nor benefits of Android App Links,
 you can find them [here](https://developer.android.com/training/app-links), [here](https://developer.android.com/training/app-links/verify-android-applinks), and [here](https://developers.google.com/digital-asset-links/v1/create-statement), I would like to elaborate on the missing documentation bit.

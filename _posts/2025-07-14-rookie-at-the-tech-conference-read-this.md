@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "Rookie At A Tech Conference? Read this!"
 date: 2025-07-14
+category: Tech
 ---
-
-### **Rookie At A Tech Conference? Read this!**
 
 ![Rookie At A Tech Conference? Read this!]({{ '/assets/PXL_20250709_173040702.MP.jpg' | relative_url }})
 

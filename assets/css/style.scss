@@ -284,3 +284,60 @@ code {
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
+
+// Home container - centers all content vertically
+.home {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Category Section Styles
+.category-section {
+  margin-bottom: 3rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.category-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  color: #333;
+}
+
+// Post item styles
+.post-item {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  line-height: 1;
+}
+
+.post-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+  margin-right: 4rem;
+
+  &:hover {
+    color: #007bff;
+  }
+}
+
+.post-date {
+  color: #888;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}

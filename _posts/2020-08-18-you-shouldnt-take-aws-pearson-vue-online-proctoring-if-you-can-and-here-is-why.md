@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "You shouldn’t take AWS Pearson Vue Online Proctoring, if you can, and here is why"
 date: 2020-08-18
+category: Tech
 ---
-
-### You shouldn’t take AWS Pearson Vue Online Proctoring exam and here is why
 
 Today, I took AWS Architect Associate exam. I’m already a holder of a [AWS Developer Associate certification](https://www.linkedin.com/posts/maciejmalak_aws-certified-developer-associate-activity-6644182230807654400--1E_) so I expected no issues. I couldn’t be more wrong!
 

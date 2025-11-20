@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title: "Android 15 enhanced App Links is an opportunity to give a user an excellent experience"
 date: 2025-01-29
+category: Android
 ---
-
-### Android 15 enhanced App Links is an opportunity to give a user an excellent experience
 
 In the latest Android 15 update, developers are greeted with enhanced control over App Links. It’s introducing a level of flexibility and precision that was previously unattainable. Let’s talk quickly about that.
 For the example and summary please jump at the end of the article.
