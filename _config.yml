@@ -38,12 +38,12 @@ job_title: Stuff Software Engineer
 minima:
   social_links:
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/maciejmalak", title: "LinkedIn" }
-    - { platform: github,   user_url: "https://github.com/xavarius", title: "GitHub" }
-    - { platform: twitter,  user_url: "https://twitter.com/MonkeyDevsPl", title: "Twitter" }
-    - { platform: instagram, user_url: "https://www.instagram.com/weneedtogodeeper", title: "Instagram" }
     - { platform: medium,   user_url: "https://medium.com/@maciekmalak", title: "Medium" }
-    - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/2230031", title: "Stack Overflow" }
     - { platform: strava, user_url: "https://www.strava.com/athletes/27710457", title: "Strava" }
+    - { platform: github,   user_url: "https://github.com/xavarius", title: "GitHub" }
+    - { platform: instagram, user_url: "https://www.instagram.com/weneedtogodeeper", title: "Instagram" }
+    - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/2230031", title: "Stack Overflow" }
+    - { platform: twitter,  user_url: "https://twitter.com/MonkeyDevsPl", title: "Twitter" }
 
 # Build settings
 # theme: minima
