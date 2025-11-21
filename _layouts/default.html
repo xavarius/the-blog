@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <title>{{ page.title | default: site.title | default: "Your Site Title" }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +71,39 @@
       </div>
     </main>
     <div class="lightbox-overlay"><img alt="enlarged image"></div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+      <div class="mobile-profile-section">
+        <img src="{{ '/assets/profile.jpeg' | relative_url }}" alt="Profile Picture" class="mobile-profile-pic">
+        <span class="mobile-name">{{ site.author.name | default: "Maciej Malak" }}</span>
+      </div>
+      <div class="mobile-social-icons">
+        {%- for link in site.minima.social_links limit:3 -%}
+          {%- assign link_url = link.user_url | default: link.url -%}
+          {%- if link_url and link_url != "" and link_url != "YOUR_LINKEDIN_URL_HERE" and link_url != "YOUR_MEDIUM_URL_HERE" -%}
+            {%- if link.platform == 'medium' -%}
+              <a href="{{ link_url | escape }}" class="mobile-social-link" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/medium-square.svg' | relative_url }}" alt="Medium" class="svg-icon">
+              </a>
+            {%- elsif link.platform == 'strava' -%}
+              <a href="{{ link_url | escape }}" class="mobile-social-link" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/strava.svg' | relative_url }}" alt="Strava" class="svg-icon">
+              </a>
+            {%- else -%}
+              <a href="{{ link_url | escape }}" class="mobile-social-link" title="{{ link.title | default: link.platform | escape }}" target="_blank" rel="noopener noreferrer">
+                <svg class="svg-icon">
+                  <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: link.platform | relative_url }}"></use>
+                </svg>
+              </a>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        <a href="https://booking.akiflow.com/maciej-malak" class="mobile-cta-button" title="Book a call" target="_blank" rel="noopener noreferrer">
+          <img src="{{ '/assets/calendar.svg' | relative_url }}" alt="Book a call" class="svg-icon" />
+        </a>
+      </div>
+    </nav>
 
     <footer class="site-footer h-card">
       <data class="u-url" href="{{ "/" | relative_url }}"></data>
