@@ -5,7 +5,7 @@ date: 2020-05-05
 category: Android
 ---
 
-![Bitrise logo]({{ '/assets/1_TQOKYOUKm5mDiYlF7cKO1A.png' | relative_url }})
+<img src="{{ '/assets/1_TQOKYOUKm5mDiYlF7cKO1A.webp' | relative_url }}" alt="Bitrise logo" width="800" height="399" loading="lazy" decoding="async">
 
 I won’t elaborate here on how important and crucial for any software development-oriented team the [continuous integration](https://martinfowler.com/articles/continuousIntegration.html) (CI) practise is.  
 I’m pretty sure we can all agree on how CI tools support our day to day effectiveness. How they **might** save dozens of hours spent on non-essential tasks. Yet, it’s common to present CI tools as a hassle; slow, bulky,  
@@ -52,12 +52,12 @@ Ok, let’s fix that.
 
 After a little bit of research it occurred to us that we used two separate steps for unit tests. [Android unit test step for Bitrise](https://devcenter.bitrise.io/testing/android-run-a-unit-test/) was running *app* module unit tests. [Gradle Unit Test](https://www.bitrise.io/integrations/steps/gradle-unit-test) step was just running *.gradlew test* task.
 
-![Total time for each step in minutes.]({{ '/assets/1_ZDxhzjlV0QFs2JDvktxfuA.png' | relative_url }})
+<img src="{{ '/assets/1_ZDxhzjlV0QFs2JDvktxfuA.webp' | relative_url }}" alt="Total time for each step in minutes." width="681" height="87" loading="lazy" decoding="async">
 _Total time for each step in minutes._
 
 What’s wrong with gradle unit test step in our case? According to the Gradle documentation:
 
-![Gradle CLI documentation screenshot]({{ '/assets/1_6z7dHF2MnY1nAVjGlLGntQ.png' | relative_url }})
+<img src="{{ '/assets/1_6z7dHF2MnY1nAVjGlLGntQ.webp' | relative_url }}" alt="Gradle CLI documentation screenshot" width="800" height="123" loading="lazy" decoding="async">
 _Source: [Gradle documentation](https://docs.gradle.org/current/userguide/command_line_interface.html)_
 
 In simple terms, *./gradlew test* [triggers **dozens** of different *test* *tasks*](https://medium.com/android-testing-daily/running-your-tests-on-the-command-line-with-gradle-bcba78244487) from every module. In our case, it triggered both *debug* and *release* related tests  
@@ -79,7 +79,7 @@ _My gist lets you configure module dependent unit testing. Source: [this gist](h
 
 Using *unit_test_task* attribute enables you to configure a particular task to be run. Basically, any gradle task. You can obviously chain gradle commands, but I want **granularity** here. Additionally, the usage of *title* attribute keeps build logs in order and enables you to track each step separately.
 
-![The result of applying the above mentioned recommendations.]({{ '/assets/1_SQSkq3ZylChkaKHJxCGHTw.png' | relative_url }})
+<img src="{{ '/assets/1_SQSkq3ZylChkaKHJxCGHTw.webp' | relative_url }}" alt="The result of applying the above mentioned recommendations." width="678" height="123" loading="lazy" decoding="async">
 _The result of applying the above mentioned recommendations. Cleaning up resources gave us unit tests result in seconds instead of minutes._
 
 #### Flavour dependent unit tests
@@ -104,19 +104,19 @@ That way we’re all covered, no matter if we’re building all the flavours, or
 #### Results
 We started with around **30 minutes** per build.
 
-![Total time for unit testing then.]({{ '/assets/1_ZDxhzjlV0QFs2JDvktxfuA.png' | relative_url }})
+<img src="{{ '/assets/1_ZDxhzjlV0QFs2JDvktxfuA.webp' | relative_url }}" alt="Total time for unit testing then." width="681" height="87" loading="lazy" decoding="async">
 _Total time for unit testing then._
 
 And finished up with the below results when running one flavour.  
 **Down to ~5/6 minutes per build.**
 
-![Total time for unit testing now.]({{ '/assets/1_-ah-XIlWh18Ac0-6z7JEXA.jpg' | relative_url }})
+<img src="{{ '/assets/1_-ah-XIlWh18Ac0-6z7JEXA.webp' | relative_url }}" alt="Total time for unit testing now." width="678" height="238" loading="lazy" decoding="async">
 _Total time for unit testing now._
 
 And also **down to ~3 minutes per build** when running all the flavours  
 at once, which means each flavour is responsible for its own unit tests finally. Yes, that’s a separate config in order to optimise build time even further.
 
-![Total time when running all of the flavours.]({{ '/assets/1_eFTwp0OYl-5lIMLpKgx3GA.png' | relative_url }})
+<img src="{{ '/assets/1_eFTwp0OYl-5lIMLpKgx3GA.webp' | relative_url }}" alt="Total time when running all of the flavours." width="678" height="162" loading="lazy" decoding="async">
 _Total time when running all of the flavours. Build time for those unit tests per one flavour._
 
 ### Artefacts Deployment
@@ -140,15 +140,15 @@ Also, *Deploy to Bitrise.io* step is always triggered before unit tests but afte
 
 Initially *deploy to Bitrise.io* **step took from 2.1 to 3.2 minutes**.
 
-![Initially 3.2 min was total time per this step.]({{ '/assets/1_rPm9k8yro36t8KsQr9f1oQ.png' | relative_url }})
+<img src="{{ '/assets/1_rPm9k8yro36t8KsQr9f1oQ.webp' | relative_url }}" alt="Initially 3.2 min was total time per this step." width="679" height="51" loading="lazy" decoding="async">
 _Initially 3.2 min was total time per this step._
 
 **After the changes it’s 0 minutes for some builds. It is ~8 seconds for most of them.**
 
-![That’s how quick it could be!]({{ '/assets/1_QkK3s1i0SLgx5Zo1NBNw0A.png' | relative_url }})
+<img src="{{ '/assets/1_QkK3s1i0SLgx5Zo1NBNw0A.webp' | relative_url }}" alt="That’s how quick it could be!" width="679" height="48" loading="lazy" decoding="async">
 _That’s how quick it could be!_
 
-![Oh yeah!]({{ '/assets/1_kFe06gXR1oM1b5rbmSR9BQ.jpg' | relative_url }})
+<img src="{{ '/assets/1_kFe06gXR1oM1b5rbmSR9BQ.webp' | relative_url }}" alt="Oh yeah!" width="476" height="313" loading="lazy" decoding="async">
 _Oh yeah! Source: [Know Your Meme](https://knowyourmeme.com/photos/988454-we-did-it-reddit)_
 
 ### Automation workflow
@@ -206,7 +206,7 @@ That’s a separate story but in Tigerspike, we **optimised APK size by 13%** du
 
 Listen. Observe. Experiment. Formulate a plan and adopt only what’s needed for your team. Good luck!
 
-![Donald Duck says Thank you!]({{ '/assets/1_BZQiSFYjEQF1yKdcpJuWXA.png' | relative_url }})
+<img src="{{ '/assets/1_BZQiSFYjEQF1yKdcpJuWXA.webp' | relative_url }}" alt="Donald Duck says Thank you!" width="225" height="225" loading="lazy" decoding="async">
 _Thanks! Source: [123emoji.com](http://123emoji.com/donald-duck-stickers-2-9606/)_
 
 I hope you like this piece. As you can see I love a fast feedback loop —  

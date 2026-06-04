@@ -13,7 +13,7 @@ Specifically, how to associate and verify ownership between your domain
 using a Digital Asset Links JSON file.
 Simply put, how to get rid of disambiguous dialog in such an environment.
 
-![We do not want that, ever!]({{ '/assets/1_sNCApKUp4caWwqZWqXZrMA.jpg' | relative_url }})
+<img src="{{ '/assets/1_sNCApKUp4caWwqZWqXZrMA.webp' | relative_url }}" alt="We do not want that, ever!" width="576" height="1024" loading="lazy" decoding="async">
 *We do not want that, ever! Source: [flickr](https://www.flickr.com/photos/adewale_oshineye/21830113332) Licence CC.*
 
 While it’s not groundbreaking research, this guide can spare you
@@ -38,7 +38,7 @@ Let’s give an answer by starting with a question.
 
 **Then** could ownership be verified for all build types using a single domain?
 
-![This is the “complexity” we’re facing.]({{ '/assets/1_MSFfUt4ondPMJ5aVmTPGuQ.jpg' | relative_url }})
+<img src="{{ '/assets/1_MSFfUt4ondPMJ5aVmTPGuQ.webp' | relative_url }}" alt="This is the “complexity” we’re facing." width="742" height="692" loading="lazy" decoding="async">
 *This is the “complexity” we’re facing. Source: DIY.*
 
 Let’s give an example since it might be confusing.
@@ -116,7 +116,7 @@ All you have to do is to provide an entry for each of your build types with an a
 
 This configuration is extremely useful if you love the flexibility and the opportunity of using any number of environments with any of your build types. It enhances the testability of an app and increases data diversity while easing debugging— all because you can choose which environment will be used while implementing and testing your application.
 
-![Yeah, sharing is caring, remember that!]({{ '/assets/1_pqei5mOJjnLprLAotZuAZg.jpg' | relative_url }})
+<img src="{{ '/assets/1_pqei5mOJjnLprLAotZuAZg.webp' | relative_url }}" alt="Yeah, sharing is caring, remember that!" width="800" height="915" loading="lazy" decoding="async">
 *Yeah, **sharing is caring**, remember that!*
 
 Thank you, [Wojtek](https://www.linkedin.com/in/wdawiskiba/) for the peer review. It’s delightful to have such support. :)

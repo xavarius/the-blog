@@ -150,6 +150,8 @@ body.sidebar-collapsed .sidebar-content-wrapper {
   margin-top: 2em;
   margin-bottom: 2em;
   max-width: 100%;
+  height: auto; /* preserve aspect ratio now that width/height attrs are set, preventing distortion + CLS */
+  cursor: zoom-in; /* hints the lightbox click affordance */
 }
 
 
@@ -228,6 +230,33 @@ body.sidebar-collapsed .profile-image-wrapper {
 /* Hide mobile navigation on desktop */
 .mobile-bottom-nav {
   display: none;
+}
+
+/* Tablet: narrow the fixed sidebar and tighten spacing so iPads
+   (769–1024px) stop getting the cramped full-desktop layout. */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    --sidebar-width: 150px;
+    --sidebar-gap: 16px;
+  }
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-sidebar {
+    padding: 0 10px 10px 10px;
+  }
+
+  .cta-booking p {
+    font-size: 0.82em;
+  }
+
+  /* Keep title/date from crowding on the narrower content column */
+  .post-link {
+    margin-right: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

@@ -5,7 +5,7 @@ date: 2025-07-14
 category: Tech
 ---
 
-![Rookie At A Tech Conference? Read this!]({{ '/assets/PXL_20250709_173040702.MP.jpg' | relative_url }})
+<img src="{{ '/assets/PXL_20250709_173040702.MP.webp' | relative_url }}" alt="Rookie At A Tech Conference? Read this!" width="1600" height="2131" loading="lazy" decoding="async">
 
 I had attended a couple of big tech conferences, including We Are Developers three times (15k+ people), a few DroidCons around the world (5k+ people attending) and a few, smaller ones. I think we need to discuss how to survive those.
 

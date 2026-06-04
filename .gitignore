@@ -1,6 +1,7 @@
 
 .windsurf
 _site/
+assets/_site/
 
 /.jekyll-cache
 **/.DS_Store

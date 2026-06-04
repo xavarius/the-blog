@@ -27,7 +27,7 @@ Embracing these updates, developers can craft more refined and targeted app expe
 
 No more talking! Lets dive into some details and examples.
 
-![Review the new stuff. The work is mine.]({{ '/assets/1*_NzlS8Vr5mhbBRsD-KnLMw.jpeg' | relative_url }})
+<img src="{{ '/assets/1*_NzlS8Vr5mhbBRsD-KnLMw.webp' | relative_url }}" alt="Review the new stuff. The work is mine." width="720" height="270" loading="lazy" decoding="async">
 *Review the new stuff. The work is mine.*
 
 Having in mind the fact, that nothing is perfect, including the schema and the designs on URL/URI in every company, the new App Links capabilities could save us from impossible scenarios.

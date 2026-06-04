@@ -28,8 +28,6 @@ author:
   name: "Maciej Malak"
 github_username: xavarius
 linkedin_username: maciejmalak
-twitter_username: MonkeyDevsPl
-instagram_username: weneedtogodeeper
 stackoverflow_id: "2230031"
 medium_profile_url: "https://medium.com/@maciekmalak"
 job_title: Stuff Software Engineer
@@ -41,15 +39,17 @@ minima:
     - { platform: medium,   user_url: "https://medium.com/@maciekmalak", title: "Medium" }
     - { platform: strava, user_url: "https://www.strava.com/athletes/27710457", title: "Strava" }
     - { platform: github,   user_url: "https://github.com/xavarius", title: "GitHub" }
-    - { platform: instagram, user_url: "https://www.instagram.com/weneedtogodeeper", title: "Instagram" }
     - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/2230031", title: "Stack Overflow" }
-    - { platform: twitter,  user_url: "https://twitter.com/MonkeyDevsPl", title: "Twitter" }
 
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
   - jekyll-gist
+
+# Compress the compiled CSS to shrink the render-blocking stylesheet.
+sass:
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.

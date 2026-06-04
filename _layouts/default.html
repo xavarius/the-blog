@@ -14,16 +14,14 @@
     {% if jekyll.environment == 'production' and site.google_analytics %}
       {% include google-analytics.html %}
     {% endif %}
-    <script src="https://tinylytics.app/embed/_Vs5ZN-_SHw4TyMFv7BU.js" defer></script>
-    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 
   </head>
   <body>
     <aside class="social-sidebar">
       <div class="sidebar-content-wrapper">
         <div id="profileImageContainer" class="profile-image-wrapper">
-          <img src="{{ '/assets/profile.jpeg' | relative_url }}" alt="Profile Picture" class="profile-pic main-profile-pic">
-          <img src="{{ '/assets/monkey-devs.png' | relative_url }}" alt="Alternate Profile Picture" class="profile-pic alt-profile-pic">
+          <img src="{{ '/assets/profile.webp' | relative_url }}" alt="Profile Picture" width="240" height="240" class="profile-pic main-profile-pic">
+          <img src="{{ '/assets/monkey-devs.webp' | relative_url }}" alt="Alternate Profile Picture" width="240" height="240" class="profile-pic alt-profile-pic">
         </div>
         <div class="cta-booking">
           <p>Wanna work together? <a href="https://booking.akiflow.com/maciej-malak" target="_blank" rel="noopener noreferrer">Book a call with me!</a></p>
@@ -75,7 +73,7 @@
     <!-- Mobile Bottom Navigation -->
     <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
       <div class="mobile-profile-section">
-        <img src="{{ '/assets/profile.jpeg' | relative_url }}" alt="Profile Picture" class="mobile-profile-pic">
+        <img src="{{ '/assets/profile.webp' | relative_url }}" alt="Profile Picture" width="40" height="40" class="mobile-profile-pic">
         <span class="mobile-name">{{ site.author.name | default: "Maciej Malak" }}</span>
       </div>
       <div class="mobile-social-icons">
@@ -146,22 +144,6 @@
             });
           }
         }
-
-        // Lazy loading images - add loading attribute and handle fade-in
-        document.querySelectorAll('.page-content img').forEach(img => {
-          if (!img.hasAttribute('loading')) {
-            img.setAttribute('loading', 'lazy');
-          }
-          
-          // Add loaded class when image loads
-          if (img.complete) {
-            img.classList.add('loaded');
-          } else {
-            img.addEventListener('load', () => {
-              img.classList.add('loaded');
-            });
-          }
-        });
 
         // Lightbox for images
         const lightbox = document.querySelector('.lightbox-overlay');
